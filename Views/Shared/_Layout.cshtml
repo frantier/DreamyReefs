@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DreamyReefs</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/DreamyReefs.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Container.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/Cards.css" asp-append-version="true">
+</head>
+<body>
+    <header>
+    <!-- header section start -->
+    <div class="header_section">
+        <div class="header_main">
+            <div class="mobile_menu">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="logo_mobile"><a asp-area="" asp-controller="Login" asp-action="Login">DreamyReefs</a></div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Tour" asp-action="Index2">Tours</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Acerca de</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a class="nav-link " href="#">Comentarios</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="container-fluid">
+                    <div class="logo"><a asp-area="" asp-controller="Login" asp-action="Login"><h1>DreamyReefs</h1></a></div>
+                <div class="menu_main">
+                    <ul>
+                            <li class="active"><a asp-area="" asp-controller="Home" asp-action="Index">Inicio</a></li>
+                            <li><a asp-area="" asp-controller="Tour" asp-action="Index2">Tours</a></li>
+                            <li><a href="#">Acerca de</a></li>
+                            <li><a href="#">Comentarios</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- banner section start -->
+        <div class="banner_section layout_padding">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                                <h1 class="banner_taital">Maravillas de Cozumel: Descubre el Tesoro Escondido del Caribe</h1>
+                            <p class="banner_text">
+                                    Sumérgete en las aguas cristalinas de Cozumel y descubre un mundo submarino lleno de vida. 
+                                    Realiza emocionantes actividades como buceo, snorkel y explora los impresionantes arrecifes de coral que rodean la isla.
+                            </p>
+                            <div class="read_bt"><a href="#">Realiza tu recervación</a></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                                <h1 class="banner_taital">Cozumel, el escape soñado de la vida agitada</h1>
+                            <p class="banner_text">
+                                    Escápate del bullicio de la vida cotidiana y sumérgete en un oasis de tranquilidad en Cozumel. 
+                                    Disfruta de las hermosas playas de arena blanca, el suave murmullo de las olas y el cálido sol caribeño.
+                            </p>
+                                <div class="read_bt"><a href="#">Realiza tu recervación</a></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                                <h1 class="banner_taital">Un viaje en el tiempo a la majestuosidad de la civilización maya</h1>
+                            <p class="banner_text">
+                                    Descubre la rica historia y cultura de Cozumel explorando sus sitios arqueológicos y pintorescos pueblos. 
+                                    Visita el antiguo templo maya de San Gervasio y aprende sobre la fascinante civilización maya.
+                            </p>
+                                <div class="read_bt"><a href="#">Realiza tu recervación</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- banner section end -->
+    </div>
+    </header>
+    <div class="container2">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- footer section start -->
+    <div class="footer_section layout_padding">
+        <div class="container">
+            <div class="social_icon">
+                <ul>
+                    <li><a href="https://www.facebook.com/aleandro.ruvas" target="_blank"><img src="~/images/fb-icon.png"></a></li>
+                    <li><a href="https://www.instagram.com/alex.cozumel/" target="_blank"><img src="~/images/instagram-icon.png"></a></li>
+                    <li><a href="https://wa.me/524495168427" target="_blank"><img src="~/images/Whats2.png"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- footer section end -->
+    <!-- copyright section start -->
+    <div class="copyright_section">
+        <div class="container">
+            <p class="copyright_text">
+                2023 Todos los derechos reservados por DreamyReef.
+            </p>
+        </div>
+    </div>
+    <!-- copyright section end -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

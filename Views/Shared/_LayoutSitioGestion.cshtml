@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Dashboard - Analytics | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+
+    <meta name="description" content="" />
+    <link rel="icon" type="image/x-icon" href="~/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="~/fonts/boxicons.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="~/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="~/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="~/css/demo.css" />
+    <link rel="stylesheet" href="~/css/Cards.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="~/lib/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <link rel="stylesheet" href="~/lib/apex-charts/apex-charts.css" />
+
+    <!-- Page CSS -->
+    <!-- Helpers -->
+    <script src="~/js/helpers.js"></script>
+    <script src="~/js/config.js"></script>
+</head>
+
+<body>
+<!-- Layout wrapper -->
+<div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+        <!-- Menu -->
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+            <div class="app-brand demo">
+                <a asp-controller="Home" asp-action="Index" class="app-brand-link">
+                    <h3><span class="app-brand-text demo menu-text fw-bolder ms-2">Dreamy Reefs</span></h3>
+                </a>
+            </div>
+
+            <div class="menu-inner-shadow"></div>
+
+            <ul class="menu-inner py-1">
+                <!-- Dashboard -->
+                <li class="menu-item">
+                    <a asp-controller="Dashboard" asp-action="Index" class="menu-link">
+                        <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                        <div data-i18n="Analytics">Dashboard</div>
+                    </a>
+                </li>
+                <!-- Components -->
+                <li class="menu-header small text-uppercase"><span class="menu-header-text">Módulos</span></li>
+                <!-- Cards -->
+                <li class="menu-item">
+                    <a asp-controller="Reservacion" asp-action="Index" class="menu-link">
+                        <i class="menu-icon tf-icons bx bx-collection"></i>
+                        <div data-i18n="Basic">Reservaciones</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a asp-controller="Transporte" asp-action="Index" class="menu-link">
+                        <i class="menu-icon tf-icons bx bx-collection"></i>
+                        <div data-i18n="Basic">Transportes</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a asp-controller="Empresa" asp-action="Index" class="menu-link">
+                        <i class="menu-icon tf-icons bx bx-collection"></i>
+                        <div data-i18n="Basic">Empresas</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a asp-controller="Review" asp-action="Index" class="menu-link">
+                        <i class="menu-icon tf-icons bx bx-collection"></i>
+                        <div data-i18n="Basic">Reviews</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a asp-controller="Tour" asp-action="Index" class="menu-link">
+                        <i class="menu-icon tf-icons bx bx-collection"></i>
+                        <div data-i18n="Basic">Tours</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a asp-controller="Usuario" asp-action="Index" class="menu-link">
+                        <i class="menu-icon tf-icons bx bx-collection"></i>
+                        <div data-i18n="Basic">Usuarios</div>
+                    </a>
+                </li>
+            </ul>
+            <div class="menu-toggle">
+                <span class="menu-toggle-icon"></span>
+            </div>
+        </aside>
+        @RenderBody()
+    </div>
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+</div>
+
+<script>
+    var menuToggle = document.querySelector('.menu-toggle');
+    var menu = document.querySelector('#layout-menu');
+
+    menuToggle.addEventListener('click', function() {
+        menu.classList.toggle('menu-open');
+    });
+
+    // Resaltar enlace activo
+    var currentUrl = window.location.href;
+    var menuLinks = document.querySelectorAll('.menu-link');
+
+    menuLinks.forEach(function (link) {
+        if (link.href === currentUrl) {
+            link.parentElement.classList.add('active');
+        } else {
+            link.parentElement.classList.remove('active');
+        }
+    });
+</script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="~/jquery/jquery.js"></script>
+    <script src="~/popper/popper.js"></script>
+    <script src="~/js/bootstrap_sneat.js"></script>
+    <script src="~/lib/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="~/js/menu.js"></script>
+    <!-- endbuild -->
+    <!-- Vendors JS -->
+    <script src="~/lib/apex-charts/apexcharts.js"></script>
+
+    <!-- Main JS -->
+    <script src="~/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="~/js/dashboards-analytics.js"></script>
+</body>
+
+</html>
