@@ -1,4 +1,4 @@
-﻿namespace DreamyReefs.Class
+﻿namespace DreamyReefs.Models
 {
     public class Disponibilidad
     {

@@ -1,6 +1,6 @@
 ﻿using System.Net.NetworkInformation;
 
-namespace DreamyReefs.Class
+namespace DreamyReefs.Models
 {
     public class Tours
     {

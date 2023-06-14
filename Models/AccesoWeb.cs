@@ -1,6 +1,6 @@
-﻿namespace DreamyReefs.Class
+namespace DreamyReefs.Models
 {
-    public class Acceso_Web
+    public class AccesoWeb
     {
         public int IDAccesoWeb { get; set; }
         public string? Usuario { get; set; }

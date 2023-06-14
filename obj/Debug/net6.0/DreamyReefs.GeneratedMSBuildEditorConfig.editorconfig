@@ -9,85 +9,97 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DreamyReefs
 build_property.RootNamespace = DreamyReefs
-build_property.ProjectDir = C:\Users\Pedro\OneDrive - addereMX+Córima\Escritorio\DreamyReefs\
+build_property.ProjectDir = C:\Users\Usuario\Desktop\Tareas\Word\9°B\Desarrollo web integral\DreamyReefs\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Pedro\OneDrive - addereMX+Córima\Escritorio\DreamyReefs
+build_property.MSBuildProjectDirectory = C:\Users\Usuario\Desktop\Tareas\Word\9°B\Desarrollo web integral\DreamyReefs
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Pedro/OneDrive - addereMX+Córima/Escritorio/DreamyReefs/Views/Dashboard/Index.cshtml]
+[C:/Users/Usuario/Desktop/Tareas/Word/9°B/Desarrollo web integral/DreamyReefs/Views/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pedro/OneDrive - addereMX+Córima/Escritorio/DreamyReefs/Views/Empresa/Index.cshtml]
+[C:/Users/Usuario/Desktop/Tareas/Word/9°B/Desarrollo web integral/DreamyReefs/Views/Empresa/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pedro/OneDrive - addereMX+Córima/Escritorio/DreamyReefs/Views/Home/Index.cshtml]
+[C:/Users/Usuario/Desktop/Tareas/Word/9°B/Desarrollo web integral/DreamyReefs/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pedro/OneDrive - addereMX+Córima/Escritorio/DreamyReefs/Views/Home/Privacy.cshtml]
+[C:/Users/Usuario/Desktop/Tareas/Word/9°B/Desarrollo web integral/DreamyReefs/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pedro/OneDrive - addereMX+Córima/Escritorio/DreamyReefs/Views/Login/Login.cshtml]
+[C:/Users/Usuario/Desktop/Tareas/Word/9°B/Desarrollo web integral/DreamyReefs/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pedro/OneDrive - addereMX+Córima/Escritorio/DreamyReefs/Views/Reservacion/Index.cshtml]
+[C:/Users/Usuario/Desktop/Tareas/Word/9°B/Desarrollo web integral/DreamyReefs/Views/Reservacion/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YWNpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pedro/OneDrive - addereMX+Córima/Escritorio/DreamyReefs/Views/Review/Index.cshtml]
+[C:/Users/Usuario/Desktop/Tareas/Word/9°B/Desarrollo web integral/DreamyReefs/Views/Review/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pedro/OneDrive - addereMX+Córima/Escritorio/DreamyReefs/Views/Shared/Error.cshtml]
+[C:/Users/Usuario/Desktop/Tareas/Word/9°B/Desarrollo web integral/DreamyReefs/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pedro/OneDrive - addereMX+Córima/Escritorio/DreamyReefs/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Usuario/Desktop/Tareas/Word/9°B/Desarrollo web integral/DreamyReefs/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pedro/OneDrive - addereMX+Córima/Escritorio/DreamyReefs/Views/Tour/Detalle.cshtml]
+[C:/Users/Usuario/Desktop/Tareas/Word/9°B/Desarrollo web integral/DreamyReefs/Views/Tour/Detalle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91clxEZXRhbGxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pedro/OneDrive - addereMX+Córima/Escritorio/DreamyReefs/Views/Tour/Index.cshtml]
+[C:/Users/Usuario/Desktop/Tareas/Word/9°B/Desarrollo web integral/DreamyReefs/Views/Tour/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91clxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pedro/OneDrive - addereMX+Córima/Escritorio/DreamyReefs/Views/Tour/Index2.cshtml]
+[C:/Users/Usuario/Desktop/Tareas/Word/9°B/Desarrollo web integral/DreamyReefs/Views/Tour/Index2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG91clxJbmRleDIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pedro/OneDrive - addereMX+Córima/Escritorio/DreamyReefs/Views/Transporte/Index.cshtml]
+[C:/Users/Usuario/Desktop/Tareas/Word/9°B/Desarrollo web integral/DreamyReefs/Views/Transporte/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNwb3J0ZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pedro/OneDrive - addereMX+Córima/Escritorio/DreamyReefs/Views/Usuario/Index.cshtml]
+[C:/Users/Usuario/Desktop/Tareas/Word/9°B/Desarrollo web integral/DreamyReefs/Views/Usuario/Actualizar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xBY3R1YWxpemFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/Desktop/Tareas/Word/9°B/Desarrollo web integral/DreamyReefs/Views/Usuario/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDcmVhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/Desktop/Tareas/Word/9°B/Desarrollo web integral/DreamyReefs/Views/Usuario/Eliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFbGltaW5hci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Usuario/Desktop/Tareas/Word/9°B/Desarrollo web integral/DreamyReefs/Views/Usuario/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pedro/OneDrive - addereMX+Córima/Escritorio/DreamyReefs/Views/_ViewImports.cshtml]
+[C:/Users/Usuario/Desktop/Tareas/Word/9°B/Desarrollo web integral/DreamyReefs/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pedro/OneDrive - addereMX+Córima/Escritorio/DreamyReefs/Views/_ViewStart.cshtml]
+[C:/Users/Usuario/Desktop/Tareas/Word/9°B/Desarrollo web integral/DreamyReefs/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pedro/OneDrive - addereMX+Córima/Escritorio/DreamyReefs/Views/Shared/_Layout.cshtml]
+[C:/Users/Usuario/Desktop/Tareas/Word/9°B/Desarrollo web integral/DreamyReefs/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-x2q77t9yxk
 
-[C:/Users/Pedro/OneDrive - addereMX+Córima/Escritorio/DreamyReefs/Views/Shared/_LayoutLogin.cshtml]
+[C:/Users/Usuario/Desktop/Tareas/Word/9°B/Desarrollo web integral/DreamyReefs/Views/Shared/_LayoutLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-mlmt2j4r3i
 
-[C:/Users/Pedro/OneDrive - addereMX+Córima/Escritorio/DreamyReefs/Views/Shared/_LayoutSitioGestion.cshtml]
+[C:/Users/Usuario/Desktop/Tareas/Word/9°B/Desarrollo web integral/DreamyReefs/Views/Shared/_LayoutSitioGestion.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRTaXRpb0dlc3Rpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-lbwv5aqnlj
