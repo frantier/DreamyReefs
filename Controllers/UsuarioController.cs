@@ -6,6 +6,7 @@ using System.Diagnostics;
 
 namespace DreamyReefs.Controllers
 {
+    
     public class UsuarioController : Controller
     {
         private readonly Conexion _conexion;

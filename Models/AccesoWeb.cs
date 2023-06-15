@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace DreamyReefs.Models
 {
     public class AccesoWeb
@@ -8,5 +10,8 @@ namespace DreamyReefs.Models
         public string? Correo { get; set; }
         public string? Contrasena { get; set; }
         public string? Estatus { get; set; }
+
+        [NotMapped]
+        public bool sesion { get; set; }
     }
 }

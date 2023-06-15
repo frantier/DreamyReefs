@@ -1,4 +1,5 @@
-﻿using DreamyReefs.Models;
+﻿using DreamyReefs.Data;
+using DreamyReefs.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -7,15 +8,68 @@ namespace DreamyReefs.Controllers
 {
     public class ReservacionController : Controller
     {
-        private readonly ILogger<ReservacionController> _logger;
+        private readonly Conexion _conexion;
 
-        public ReservacionController(ILogger<ReservacionController> logger)
-        {
-            _logger = logger;
-        }
-        public IActionResult Index()
-        {
-            return View();
-        }
+            public ReservacionController(Conexion con)
+            {
+                _conexion = con;
+            }
+
+            public IActionResult Index()
+            {
+                var reservaciones = _conexion.GetAllReservaciones().ToList();
+                return View(reservaciones);
+            }
+
+            public IActionResult Crear()
+            {
+                return View();
+            }
+
+            [HttpPost]
+            public IActionResult Crear(Reservacion reservacion)
+            {
+                if (ModelState.IsValid && reservacion.NombreCompleto is not null && reservacion.Telefono is not null && reservacion.Email is not null && reservacion.Adultos > 0 && reservacion.Infantes > 0 && reservacion.Estatus is not null)
+                {
+                    _conexion.CrearReservaciones(reservacion.NombreCompleto, reservacion.Telefono, reservacion.Email, reservacion.Adultos, reservacion.Infantes, reservacion.Estatus);
+                    return RedirectToAction("Index");
+                }
+                return View();
+            }
+
+            public IActionResult Actualizar(int id)
+            {
+                var reservacion = _conexion.GetOneReservaciones(id);
+                return View(reservacion);
+            }
+
+            [HttpPost]
+            public IActionResult Actualizar(Reservacion reservacion)
+            {
+                if (ModelState.IsValid && reservacion.IDReservaciones > 0 && reservacion.NombreCompleto is not null && reservacion.Telefono is not null && reservacion.Email is not null && reservacion.Adultos > 0 && reservacion.Infantes > 0 && reservacion.Estatus is not null)
+                {
+                    _conexion.ActualizarReservaciones(reservacion.IDReservaciones, reservacion.NombreCompleto, reservacion.Telefono, reservacion.Email, reservacion.Adultos, reservacion.Infantes, reservacion.Estatus);
+                    return RedirectToAction("Index");
+                }
+                return View();
+            }
+
+            public IActionResult Eliminar(int id)
+            {
+                var reservacion = _conexion.GetOneReservaciones(id);
+                return View(reservacion);
+            }
+
+
+            [HttpPost]
+            public IActionResult Eliminar(Reservacion reservacion)
+            {
+                if (reservacion.IDReservaciones > 0)
+                {
+                    _conexion.EliminarReservaciones(reservacion.IDReservaciones);
+                    return RedirectToAction("Index");
+                }
+                return View();
+            }     
     }
 }

@@ -7,7 +7,7 @@ namespace DreamyReefs.Models
         public int IDTours { get; set; }
         public string? Nombre { get; set; }
         public string? Itinerario { get; set; }
-        public float Precio { get; set; }
+        public int Precio { get; set; }
         public string? Descripcion { get; set; }
         public string? Disponibilidad { get; set; }
         public string? Idioma { get; set; }
@@ -19,5 +19,10 @@ namespace DreamyReefs.Models
         public string? Caracteristica2 { get; set; }
         public string? Caracteristica3 { get; set; }
         public string? Estatus { get; set; }
+        public int PrecioAdulto { get; set; }
+        public int PrecioInfantes { get; set; }
+        // public int IDCategorias { get; set; }
+        // public Categoria? categoria { get; set; }
+        // public List<Categoria>? ListaCategorias { get; set; }
     }
 }

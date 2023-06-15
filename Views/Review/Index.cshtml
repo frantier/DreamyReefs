@@ -1,70 +1,65 @@
-﻿@{    ViewData["Title"] = "Reviews";
+﻿@{    
+    ViewData["Title"] = "Reviews";
     Layout = "_LayoutSitioGestion";
+    List<Review> listReviews = Model;
 }
+
+@if (Model == null || Model.Count == 0)
+{
+    <div class="layout-page">
+        <br />
+        <br />
+        <div class="row justify-content-center">
+            
+            <div class="col-md-8 ">
+                <div class="card">
+                    <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">No hay Reviews para mostrar</h1>                  
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
 <div class="layout-page">
     <br />
     <br />
     <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Reviews</h1>
     <div class="ms-4 me-4 mt-4 mb-4">
         <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+            @foreach (var reviews in Model)
+            {
             <div class="col-sm-10 col-md-8 col-lg-6">
                 <div class="card m-2">
                     <div class="card-body">
                         <div>
                             <div>
                                 <label style="font-size: medium; font-weight: bold; display: inline-block;">TourID:</label>
-                                <h6 class="card-title" style="display: inline-block;">0001</h6>
+                                <h6 class="card-title" style="display: inline-block;">@reviews.IDReviews</h6>
                             </div>
 
                             <div>
                                 <label style="font-size: medium; font-weight: bold; display: inline-block;">Nombre del Tours:</label>
-                                <h6 class="card-title" style="display: inline-block;">Tour el cielo</h6>
+                                <h6 class="card-title" style="display: inline-block;">@reviews.TourID</h6>
                             </div>
 
                             <div>
                                 <label style="font-size: medium; font-weight: bold; display: inline-block;">Comentario:</label>
-                                <h6 class="card-title" style="text-align: justify;">El tour en Cozumel fue simplemente excepcional, y no puedo agradecer lo suficiente a todo el equipo por brindarnos una experiencia inolvidable. Además, el almuerzo que se nos proporcionó fue delicioso, y las vistas panorámicas desde el barco fueron impresionantes.</h6>
+                                <h6 class="card-title" style="text-align: justify;">@reviews.Comentario</h6>
                             </div>
 
                         </div>
 
                         <div class="d-flex justify-content-end">
-                            <a type="button" class="btn btn-primary text-white btn-modify">Modificar</a>
-                            &ensp;
-                            <a type="button" class="btn btn-secondary text-white btn-delete">Eliminar</a>
+                            <a type="button" class="btn btn-primary text-white btn-modify" asp-action="Actualizar" asp-route-id="@reviews.IDReviews">Modificar</a>
+                                &nbsp;
+                            <a type="button" class="btn btn-secondary text-white btn-delete" asp-action="Eliminar" asp-route-id="@reviews.IDReviews">Eliminar</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-10 col-md-8 col-lg-6">
-                <div class="card m-2">
-                    <div class="card-body">
-                        <div>
-                            <div>
-                                <label style="font-size: medium; font-weight: bold; display: inline-block;">TourID:</label>
-                                <h6 class="card-title" style="display: inline-block;">0002</h6>
-                            </div>
-
-                            <div>
-                                <label style="font-size: medium; font-weight: bold; display: inline-block;">Nombre del Tours:</label>
-                                <h6 class="card-title" style="display: inline-block;">Tour el cielito</h6>
-                            </div>
-
-                            <div>
-                                <label style="font-size: medium; font-weight: bold; display: inline-block;">Comentario:</label>
-                                <h6 class="card-title" style="text-align: justify;">La atención al detalle y el nivel de servicio que recibimos durante todo el recorrido fueron impecables. Además, quiero mencionar lo bien que se adaptaron a nuestras necesidades y preferencias individuales. Sin duda alguna, volvería a elegir este tour en mi próxima visita a Cozumel.</h6>
-                            </div>
-
-                        </div>
-
-                        <div class="d-flex justify-content-end">
-                            <a type="button" class="btn btn-primary text-white btn-modify">Modificar</a>
-                            &ensp;
-                            <a type="button" class="btn btn-secondary text-white btn-delete">Eliminar</a>
-                        </div>
-                    </div>
-                </div>
-            </div>         
+            </div>      
+            }   
         </div>
     </div>
 </div>
+}

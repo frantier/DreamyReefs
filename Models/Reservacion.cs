@@ -8,7 +8,6 @@
         public string? Email { get; set; }
         public int Adultos { get; set; }
         public int Infantes { get; set; }
-        public int RecienNacidos { get; set; }
         public string? Estatus { get; set; }
     }
 }

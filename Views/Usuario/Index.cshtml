@@ -13,7 +13,7 @@
             
             <div class="col-md-8 ">
                 <div class="card">
-                    <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">No hay datos para mostrar</h1>                  
+                    <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">No hay Usuarios para mostrar</h1>                  
                 </div>
             </div>
         </div>
@@ -37,13 +37,20 @@ else
                             <div class="card m-2">
                                 <div class="card-body">
                                     <div class="d-flex justify-content-center">
-                                        <h6 class="fw-medium" style="color: rgb(40, 180, 99);">@accesosweb.Estatus</h6>
+                                        @if (accesosweb.Estatus == "Activo")
+                                        {
+                                            <h6 class="fw-medium" style="color: rgb(40, 180, 99);">@accesosweb.Estatus</h6>
+                                        }
+                                        else if (accesosweb.Estatus == "Inactivo")
+                                        {
+                                            <h6 class="fw-medium" style="color: rgb(180, 40, 40, 0.793);">@accesosweb.Estatus</h6>
+                                        }
                                     </div>
 
                                     <div>
                                         <div>
                                             <label style="font-size: medium; font-weight: bold; display: inline-block;">Usuario:</label>
-                                            <h6 class="card-title" style="display: inline-block;">@accesosweb.Nombre</h6>
+                                            <h6 class="card-title" style="display: inline-block;">@accesosweb.Usuario</h6>
                                         </div>
 
                                         <div>

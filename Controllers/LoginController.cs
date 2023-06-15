@@ -1,4 +1,5 @@
-﻿using DreamyReefs.Models;
+﻿using DreamyReefs.Data;
+using DreamyReefs.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,11 +7,11 @@ namespace DreamyReefs.Controllers
 {
     public class LoginController : Controller
     {
-        private readonly ILogger<LoginController> _logger;
+        private readonly Conexion _conexion;
 
-        public LoginController(ILogger<LoginController> logger)
+        public LoginController(Conexion con)
         {
-            _logger = logger;
+            _conexion = con;
         }
 
         public IActionResult Login()

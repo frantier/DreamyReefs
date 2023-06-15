@@ -29,14 +29,14 @@
                                         <span asp-validation-for="Usuario" class="text-danger" readonly disabled></span>
                                     </div>
                                     <div>
-                                        <label asp-for="Nombre" class="form-label">Nombre</label>
-                                        <input asp-for="Nombre" class="form-control" readonly />
+                                        <label asp-for="Nombre" class="form-label" hidden>Nombre</label>
+                                        <input asp-for="Nombre" class="form-control" hidden readonly />
                                         <span asp-validation-for="Nombre" class="text-danger" readonly disabled></span>
                                     </div>
                                     <div>
-                                        <label asp-for="Correo" class="form-label" hidden>Correo</label>
-                                        <input asp-for="Correo" class="form-control" hidden readonly disabled />
-                                        <span asp-validation-for="Correo" class="text-danger"></span>
+                                        <label asp-for="Correo" class="form-label">Correo</label>
+                                        <input asp-for="Correo" class="form-control" readonly disabled />
+                                        <span asp-validation-for="Correo" class="text-danger" readonly disabled></span>
                                     </div>
                                     <div>
                                         <label asp-for="Contrasena" class="form-label" hidden>Contraseña</label>

@@ -1,0 +1,135 @@
+@model DreamyReefs.Models.Tours
+@{
+    ViewData["Title"] = "Tours";
+    Layout = "_LayoutSitioGestion";
+}
+
+    <div class="layout-page">
+        <br />
+        <br />
+        <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Actualizar Tour</h1>
+        <div class="ms-4 me-4 mt-4 mb-4">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <div class="row row-cols-1 row-cols-md-2 justify-content-center">
+                    <div class="col">
+                        <div class="card m-2">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center">
+                                        <h6 class="fw-medium" style="color: rgb(40, 180, 99);"></h6>
+                                    </div>
+                                    <div>
+                                        <form asp-action="Actualizar" method="post">
+                                            <div>
+                                                <label asp-for="IDTours" hidden></label>
+                                                <input asp-for="IDTours"
+                                                    class="form-control" hidden/>
+                                            </div>
+                                            <div>
+                                                <label asp-for="Nombre"></label>
+                                                <input asp-for="Nombre"
+                                                    placeholder="Nombre del Tour" class="form-control"/>
+                                                <span asp-validation-for="Nombre" class="text-danger"></span>
+                                            </div>
+                                            <div>
+                                                <label asp-for="Itinerario" class="form-label"></label>
+                                                <input asp-for="Itinerario"
+                                                    placeholder="Itinerario del tour" class="form-control"/>
+                                                <span asp-validation-for="Itinerario" class="text-danger"></span>
+                                            </div>
+                                            <div>
+                                                <label asp-for="Precio" class="form-label"></label>
+                                                <input asp-for="Precio"
+                                                    placeholder="Precio del tour" class="form-control"/>
+                                                <span asp-validation-for="Precio" class="text-danger"></span>
+                                            </div>
+                                            <div>
+                                                <label asp-for="Descripcion" class="form-label"></label>
+                                                <input asp-for="Descripcion"
+                                                    placeholder="Descripcion del tour" class="form-control"/>
+                                                <span asp-validation-for="Descripcion" class="text-danger"></span>
+                                            </div>
+                                            <div>
+                                                <label asp-for="Disponibilidad" class="form-label"></label>
+                                                <input asp-for="Disponibilidad"
+                                                    placeholder="Disponibilidad del tour" class="form-control"/>
+                                                <span asp-validation-for="Disponibilidad" class="text-danger"></span>
+                                            </div>
+                                            <div>
+                                                <label asp-for="Idioma"></label>
+                                                <input asp-for="Idioma"
+                                                    placeholder="Idioma del Tour" class="form-control"/>
+                                                <span asp-validation-for="Idioma" class="text-danger"></span>
+                                            </div>
+                                            <div>
+                                                <label asp-for="Categoria1" class="form-label"></label>
+                                                <input asp-for="Categoria1"
+                                                    class="form-control"/>
+                                                <span asp-validation-for="Categoria1" class="text-danger"></span>
+                                            </div>
+                                            <div>
+                                                <label asp-for="Categoria2" class="form-label"></label>
+                                                <input asp-for="Categoria2"
+                                                    class="form-control"/>
+                                                <span asp-validation-for="Categoria2" class="text-danger"></span>
+                                            </div>
+                                            <div>
+                                                <label asp-for="Categoria3" class="form-label"></label>
+                                                <input asp-for="Categoria3"
+                                                    class="form-control"/>
+                                                <span asp-validation-for="Categoria3" class="text-danger"></span>
+                                            </div>
+                                            <div>
+                                                <label asp-for="Categoria4" class="form-label"></label>
+                                                <input asp-for="Categoria4"
+                                                    class="form-control"/>
+                                                <span asp-validation-for="Categoria4" class="text-danger"></span>
+                                            </div>
+                                            <div>
+                                                <label asp-for="Caracteristica1" class="form-label"></label>
+                                                <input asp-for="Caracteristica1"
+                                                    class="form-control"/>
+                                                <span asp-validation-for="Caracteristica1" class="text-danger"></span>
+                                            </div>
+                                            <div>
+                                                <label asp-for="Caracteristica2" class="form-label"></label>
+                                                <input asp-for="Caracteristica2"
+                                                    class="form-control"/>
+                                                <span asp-validation-for="Caracteristica2" class="text-danger"></span>
+                                            </div>
+                                            <div>
+                                                <label asp-for="Caracteristica3" class="form-label"></label>
+                                                <input asp-for="Caracteristica3"
+                                                    class="form-control"/>
+                                                <span asp-validation-for="Caracteristica3" class="text-danger"></span>
+                                            </div>
+                                            <div>
+                                                <label asp-for="Estatus" class="form-label"></label>
+                                                <input asp-for="Estatus"
+                                                    placeholder="Estatus del Tour" class="form-control"/>
+                                                <span asp-validation-for="Estatus" class="text-danger"></span>
+                                            </div>
+                                            <div>
+                                                <label asp-for="PrecioAdulto" class="form-label"></label>
+                                                <input asp-for="PrecioAdulto"
+                                                    placeholder="Precio adulto del Tour" class="form-control"/>
+                                                <span asp-validation-for="PrecioAdulto" class="text-danger"></span>
+                                            </div>
+                                            <div>
+                                                <label asp-for="PrecioInfantes" class="form-label"></label>
+                                                <input asp-for="PrecioInfantes"
+                                                    placeholder="Precio infante del Tour" class="form-control"/>
+                                                <span asp-validation-for="PrecioInfantes" class="text-danger"></span>
+                                            </div>
+                                            <div class="d-flex justify-content-center">
+                                                <input type="submit" value="Actualizar tour" class="btn btn-warning d-grid w-100"/>
+                                                <a asp-action="Index" class="btn btn-primary d-grid w-100">Volver al listado</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

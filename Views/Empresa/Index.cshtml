@@ -1,86 +1,64 @@
 ﻿@{
     ViewData["Title"] = "Empresas";
-
     Layout = "_LayoutSitioGestion";
+    List<Empresa> listEmpresa = Model;
 }
 
+@if (Model == null || Model.Count == 0)
+{
+    <div class="layout-page">
+        <br />
+        <br />
+        <div class="row justify-content-center">
+            
+            <div class="col-md-8 ">
+                <div class="card">
+                    <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">No hay Empresas para mostrar</h1>                  
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
 <div class="layout-page">
     <br />
     <br />
     <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Empresas</h1>
+    <div class="d-flex justify-content-center">
+        <a class="col col-2 btn btn-primary d-grid" asp-action="Crear">Agregar</a>
+    </div>
     <div class="ms-4 me-4 mt-4 mb-4">
         <div>
             <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+                @foreach (var empresas in Model)
+                {
                 <div class="col-sm-6 col-md-4">
                     <div class="card m-2">
                         <div class="card-body">
-                            <div class="d-flex justify-content-center">
+                            @* <div class="d-flex justify-content-center">
                                 <h6 class="fw-medium" style="color: rgb(40, 180, 99);">Activo</h6>
-                            </div>
-
+                            </div> *@
                             <div>
-                                <h5 class="card-title">Marineros</h5>
-                                <h6 class="fw-normal">MAR902275875</h6>
-                                <h6 class="fw-normal" style="font-size: 14px;">marinero@mail.com</h6>
-                                <h6 class="fw-normal" style="font-size: 14px;">Calle 69b #532 Itzimna</h6>
+                                <h5 class="card-title">@empresas.NombreEmpresa</h5>
+                                <h6 class="fw-normal">@empresas.RFC</h6>
+                                <h6 class="fw-normal" style="font-size: 14px;">@empresas.Correo</h6>
+                                <h6 class="fw-normal" style="font-size: 14px;">@empresas.Direccion</h6>
                             </div>
 
                             <div class="d-flex justify-content-end">
-                                <a type="button" class="btn btn-primary text-white btn-modify">Modificar</a>
+                                <a type="button" class="btn btn-primary text-white btn-modify" asp-action="Actualizar" asp-route-id="@empresas.IDEmpresas">Modificar</a>
                                 &nbsp;
-                                <a type="button" class="btn btn-secondary text-white btn-delete">Eliminar</a>
+                            <a type="button" class="btn btn-secondary text-white btn-delete" asp-action="Eliminar" asp-route-id="@empresas.IDEmpresas">Eliminar</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="card m-2">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-center">
-                                <h6 class="fw-medium" style="color: rgb(40, 180, 99);">Activo</h6>
-                            </div>
-
-                            <div>
-                                <h5 class="card-title">Capitanes</h5>
-                                <h6 class="fw-normal">CAP902275875</h6>
-                                <h6 class="fw-normal" style="font-size: 14px;">capitanes@mail.com</h6>
-                                <h6 class="fw-normal" style="font-size: 14px;">Calle 69b #532 Itzimna</h6>
-                            </div>
-
-                            <div class="d-flex justify-content-end">
-                                <a type="button" class="btn btn-primary text-white btn-modify">Modificar</a>
-                                &nbsp;
-                                <a type="button" class="btn btn-secondary text-white btn-delete">Eliminar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="card m-2">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-center">
-                                <h6 class="fw-medium" style="color: rgba(180, 40, 40, 0.793);">Inactivo</h6>
-                            </div>
-
-                            <div>
-                                <h5 class="card-title">Tenientes</h5>
-                                <h6 class="fw-normal">TEN902275875</h6>
-                                <h6 class="fw-normal" style="font-size: 14px;">tenientes@mail.com</h6>
-                                <h6 class="fw-normal" style="font-size: 14px;">Calle 69b #532 Itzimna</h6>
-                            </div>
-
-                            <div class="d-flex justify-content-end">
-                                <a type="button" class="btn btn-primary text-white btn-modify">Modificar</a>
-                                &nbsp;
-                                <a type="button" class="btn btn-secondary text-white btn-delete">Eliminar</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                }
             </div>
             &nbsp;
         </div>
     </div>
 </div>
+
+}
