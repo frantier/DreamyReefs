@@ -1,571 +1,571 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DreamyReefs.bundle.scp.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DreamyReefs.bundle.scp.css",
       "PackagePath": "staticwebassets\\DreamyReefs.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\.DS_Store",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\.DS_Store",
       "PackagePath": "staticwebassets\\css\\.DS_Store"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\Cards.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\Cards.css",
       "PackagePath": "staticwebassets\\css\\Cards.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\Container.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\Container.css",
       "PackagePath": "staticwebassets\\css\\Container.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\animate.min.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\animate.min.css",
       "PackagePath": "staticwebassets\\css\\animate.min.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\bootstrap.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\core.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\core.css",
       "PackagePath": "staticwebassets\\css\\core.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\default-skin.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\default-skin.css",
       "PackagePath": "staticwebassets\\css\\default-skin.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\font-awesome.min.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\font-awesome.min.css",
       "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\icomoon.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\icomoon.css",
       "PackagePath": "staticwebassets\\css\\icomoon.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\jquery-ui.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\jquery-ui.css",
       "PackagePath": "staticwebassets\\css\\jquery-ui.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\jquery.fancybox.min.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\jquery.fancybox.min.css",
       "PackagePath": "staticwebassets\\css\\jquery.fancybox.min.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\jquery.mCustomScrollbar.min.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\jquery.mCustomScrollbar.min.css",
       "PackagePath": "staticwebassets\\css\\jquery.mCustomScrollbar.min.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\meanmenu.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\meanmenu.css",
       "PackagePath": "staticwebassets\\css\\meanmenu.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\nice-select.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\nice-select.css",
       "PackagePath": "staticwebassets\\css\\nice-select.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\normalize.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\normalize.css",
       "PackagePath": "staticwebassets\\css\\normalize.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\owl.carousel.min.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\owl.carousel.min.css",
       "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\pages\\page-account-settings.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\pages\\page-account-settings.css",
       "PackagePath": "staticwebassets\\css\\pages\\page-account-settings.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\pages\\page-auth.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\pages\\page-auth.css",
       "PackagePath": "staticwebassets\\css\\pages\\page-auth.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\pages\\page-icons.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\pages\\page-icons.css",
       "PackagePath": "staticwebassets\\css\\pages\\page-icons.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\pages\\page-misc.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\pages\\page-misc.css",
       "PackagePath": "staticwebassets\\css\\pages\\page-misc.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\responsive.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\responsive.css",
       "PackagePath": "staticwebassets\\css\\responsive.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\slick.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\slick.css",
       "PackagePath": "staticwebassets\\css\\slick.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\style.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\css\\theme-default.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\theme-default.css",
       "PackagePath": "staticwebassets\\css\\theme-default.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\fonts\\boxicons.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\fonts\\boxicons.css",
       "PackagePath": "staticwebassets\\fonts\\boxicons.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\fonts\\boxicons\\boxicons.eot",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\fonts\\boxicons\\boxicons.eot",
       "PackagePath": "staticwebassets\\fonts\\boxicons\\boxicons.eot"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\fonts\\boxicons\\boxicons.svg",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\fonts\\boxicons\\boxicons.svg",
       "PackagePath": "staticwebassets\\fonts\\boxicons\\boxicons.svg"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\fonts\\boxicons\\boxicons.ttf",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\fonts\\boxicons\\boxicons.ttf",
       "PackagePath": "staticwebassets\\fonts\\boxicons\\boxicons.ttf"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\fonts\\boxicons\\boxicons.woff",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\fonts\\boxicons\\boxicons.woff",
       "PackagePath": "staticwebassets\\fonts\\boxicons\\boxicons.woff"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\fonts\\boxicons\\boxicons.woff2",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\fonts\\boxicons\\boxicons.woff2",
       "PackagePath": "staticwebassets\\fonts\\boxicons\\boxicons.woff2"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\images\\20220809_za_sangervasio_head.jpeg",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\20220809_za_sangervasio_head.jpeg",
       "PackagePath": "staticwebassets\\images\\20220809_za_sangervasio_head.jpeg"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\images\\PM_20_3COL_BYN_MIRADOR-750x406.jpeg",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\PM_20_3COL_BYN_MIRADOR-750x406.jpeg",
       "PackagePath": "staticwebassets\\images\\PM_20_3COL_BYN_MIRADOR-750x406.jpeg"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\images\\Whats2.png",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\Whats2.png",
       "PackagePath": "staticwebassets\\images\\Whats2.png"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\images\\arrecife-paraiso.jpg",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\arrecife-paraiso.jpg",
       "PackagePath": "staticwebassets\\images\\arrecife-paraiso.jpg"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\images\\banner-bg.png",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\banner-bg.png",
       "PackagePath": "staticwebassets\\images\\banner-bg.png"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\images\\blog-bg.png",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\blog-bg.png",
       "PackagePath": "staticwebassets\\images\\blog-bg.png"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\images\\blog-mobile-bg.png",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\blog-mobile-bg.png",
       "PackagePath": "staticwebassets\\images\\blog-mobile-bg.png"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\images\\buceo-luis-canul-960x480.jpg",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\buceo-luis-canul-960x480.jpg",
       "PackagePath": "staticwebassets\\images\\buceo-luis-canul-960x480.jpg"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\images\\call-icon.png",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\call-icon.png",
       "PackagePath": "staticwebassets\\images\\call-icon.png"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\images\\cielo_tour.jpg",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\cielo_tour.jpg",
       "PackagePath": "staticwebassets\\images\\cielo_tour.jpg"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\images\\client-img1.png",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\client-img1.png",
       "PackagePath": "staticwebassets\\images\\client-img1.png"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\images\\club_playa.jpg",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\club_playa.jpg",
       "PackagePath": "staticwebassets\\images\\club_playa.jpg"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\images\\cozumel-diving-naw.jpg",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\cozumel-diving-naw.jpg",
       "PackagePath": "staticwebassets\\images\\cozumel-diving-naw.jpg"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\images\\fb-icon.png",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\fb-icon.png",
       "PackagePath": "staticwebassets\\images\\fb-icon.png"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\images\\fondo_card.jpg",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\fondo_card.jpg",
       "PackagePath": "staticwebassets\\images\\fondo_card.jpg"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\images\\footer-bg.png",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\footer-bg.png",
       "PackagePath": "staticwebassets\\images\\footer-bg.png"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\images\\footer-mobile-bg.png",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\footer-mobile-bg.png",
       "PackagePath": "staticwebassets\\images\\footer-mobile-bg.png"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\images\\instagram-icon.png",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\instagram-icon.png",
       "PackagePath": "staticwebassets\\images\\instagram-icon.png"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\images\\mail-icon.png",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\mail-icon.png",
       "PackagePath": "staticwebassets\\images\\mail-icon.png"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\images\\map-icon.png",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\map-icon.png",
       "PackagePath": "staticwebassets\\images\\map-icon.png"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\images\\mobile-bg.png",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\mobile-bg.png",
       "PackagePath": "staticwebassets\\images\\mobile-bg.png"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\js\\.DS_Store",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\.DS_Store",
       "PackagePath": "staticwebassets\\js\\.DS_Store"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\js\\bootstrap.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\js\\custom.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\custom.js",
       "PackagePath": "staticwebassets\\js\\custom.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\js\\helpers.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\helpers.js",
       "PackagePath": "staticwebassets\\js\\helpers.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\js\\jquery-3.0.0.min.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\jquery-3.0.0.min.js",
       "PackagePath": "staticwebassets\\js\\jquery-3.0.0.min.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\js\\jquery.mCustomScrollbar.concat.min.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\jquery.mCustomScrollbar.concat.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.mCustomScrollbar.concat.min.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\js\\jquery.min.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\jquery.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\js\\jquery.validate.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\jquery.validate.js",
       "PackagePath": "staticwebassets\\js\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\js\\modernizer.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\modernizer.js",
       "PackagePath": "staticwebassets\\js\\modernizer.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\js\\plugin.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\plugin.js",
       "PackagePath": "staticwebassets\\js\\plugin.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\js\\popper.min.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\popper.min.js",
       "PackagePath": "staticwebassets\\js\\popper.min.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\js\\slider-setting.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\slider-setting.js",
       "PackagePath": "staticwebassets\\js\\slider-setting.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

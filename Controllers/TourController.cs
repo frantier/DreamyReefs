@@ -17,6 +17,11 @@ namespace DreamyReefs.Controllers
             _conexion = con;
         }
 
+        public IActionResult Index2()
+        {
+            return View();
+        }
+
         public IActionResult Index()
         {
             var tours = _conexion.GetAllTours().ToList();

@@ -1,5 +1,6 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,87 +11,65 @@
     <link rel="stylesheet" href="~/css/Container.css" asp-append-version="true">
     <link rel="stylesheet" href="~/css/Cards.css" asp-append-version="true">
 </head>
+
 <body>
     <header>
-    <!-- header section start -->
-    <div class="header_section">
-        <div class="header_main">
-            <div class="mobile_menu">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <div class="logo_mobile"><a asp-area="" asp-controller="Login" asp-action="Login">DreamyReefs</a></div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        <!-- header section start -->
+        <div class="header_section">
+            <div class="header_main">
+                <div class="mobile_menu">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="logo_mobile"><a asp-area="" asp-controller="Login"
+                                asp-action="Login">DreamyReefs</a></div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
                                     <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
-                            </li>
-                            <li class="nav-item">
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" asp-area="" asp-controller="Tour" asp-action="Index2">Tours</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Acerca de</a>
-                            </li>
-                            <li class="nav-item">
-                                    <a class="nav-link " href="#">Comentarios</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            <div class="container-fluid">
-                    <div class="logo"><a asp-area="" asp-controller="Login" asp-action="Login"><h1>DreamyReefs</h1></a></div>
-                <div class="menu_main">
-                    <ul>
-                            <li class="active"><a asp-area="" asp-controller="Home" asp-action="Index">Inicio</a></li>
-                            <li><a asp-area="" asp-controller="Tour" asp-action="Index2">Tours</a></li>
-                            <li><a href="#">Acerca de</a></li>
-                            <li><a href="#">Comentarios</a></li>
-                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Acerca de</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Comentarios</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" asp-area="" asp-controller="Login"
+                                asp-action="Login">DreamyReefs</a>
+                        </div>
+                        <div class="menu_main justify-content-center">
+                            <!-- Agregamos la clase 'justify-content-center' -->
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Home"
+                                        asp-action="Index">Inicio</a></li>
+                                <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Tour"
+                                        asp-action="Index2">Tours</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Acerca de</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Comentarios</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div>
+                    <a href="https://wa.me/524495168427" class="btn-wsp" target="_blank">
+                        <i class="fa fa-whatsapp icono"></i>
+                    </a>
                 </div>
             </div>
         </div>
-        <!-- banner section start -->
-        <div class="banner_section layout_padding">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="container">
-                                <h1 class="banner_taital">Maravillas de Cozumel: Descubre el Tesoro Escondido del Caribe</h1>
-                            <p class="banner_text">
-                                    Sumérgete en las aguas cristalinas de Cozumel y descubre un mundo submarino lleno de vida. 
-                                    Realiza emocionantes actividades como buceo, snorkel y explora los impresionantes arrecifes de coral que rodean la isla.
-                            </p>
-                            <div class="read_bt"><a href="#">Realiza tu recervación</a></div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="container">
-                                <h1 class="banner_taital">Cozumel, el escape soñado de la vida agitada</h1>
-                            <p class="banner_text">
-                                    Escápate del bullicio de la vida cotidiana y sumérgete en un oasis de tranquilidad en Cozumel. 
-                                    Disfruta de las hermosas playas de arena blanca, el suave murmullo de las olas y el cálido sol caribeño.
-                            </p>
-                                <div class="read_bt"><a href="#">Realiza tu recervación</a></div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="container">
-                                <h1 class="banner_taital">Un viaje en el tiempo a la majestuosidad de la civilización maya</h1>
-                            <p class="banner_text">
-                                    Descubre la rica historia y cultura de Cozumel explorando sus sitios arqueológicos y pintorescos pueblos. 
-                                    Visita el antiguo templo maya de San Gervasio y aprende sobre la fascinante civilización maya.
-                            </p>
-                                <div class="read_bt"><a href="#">Realiza tu recervación</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- banner section end -->
-    </div>
+
     </header>
     <div class="container2">
         <main role="main" class="pb-3">
@@ -103,8 +82,10 @@
         <div class="container">
             <div class="social_icon">
                 <ul>
-                    <li><a href="https://www.facebook.com/aleandro.ruvas" target="_blank"><img src="~/images/fb-icon.png"></a></li>
-                    <li><a href="https://www.instagram.com/alex.cozumel/" target="_blank"><img src="~/images/instagram-icon.png"></a></li>
+                    <li><a href="https://www.facebook.com/aleandro.ruvas" target="_blank"><img
+                                src="~/images/fb-icon.png"></a></li>
+                    <li><a href="https://www.instagram.com/alex.cozumel/" target="_blank"><img
+                                src="~/images/instagram-icon.png"></a></li>
                     <li><a href="https://wa.me/524495168427" target="_blank"><img src="~/images/Whats2.png"></a></li>
                 </ul>
             </div>
@@ -120,9 +101,30 @@
         </div>
     </div>
     <!-- copyright section end -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cv5UpnX6tkyXm2g4g6kX8TKJs34" crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7jyb9Jq+5jj6pUecp9tnXn4D10Dz+3e/j3f5+8nM6zp4IT7e"
+        crossorigin="anonymous"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpD0NniBpcfQFq2Xkc5TMlOBUlFHiPUzFqLw6XlJQ8e/J6dO6p5wJ6Jp6A"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUzF72TlZs2GpDQ+EA7CqD2v+6i2zV3Tjwo5TM6+0n2i"
+        crossorigin="anonymous"></script>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
