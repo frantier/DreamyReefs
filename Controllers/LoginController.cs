@@ -18,5 +18,16 @@ namespace DreamyReefs.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public IActionResult Login(AccesoWeb accesoWeb)
+        {
+            if (accesoWeb.Correo is not null && accesoWeb.Contrasena is not null)
+            {
+                _conexion.InicioSesion(accesoWeb.Correo, accesoWeb.Contrasena);
+                return RedirectToAction("Index", "Dashboard");
+            }
+            return View();
+        }
     }
 }

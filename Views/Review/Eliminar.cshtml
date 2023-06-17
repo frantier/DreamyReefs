@@ -22,22 +22,22 @@
                                             <div>
                                                 <label asp-for="IDReviews" hidden></label>
                                                 <input asp-for="IDReviews"
-                                                    placeholder="IDReviews" class="form-control" hidden readonly disabled />
+                                                    placeholder="IDReviews" class="form-control" hidden readonly />
                                             </div>
                                             <div>
                                                 <label asp-for="TourID"></label>
                                                 <input asp-for="TourID"
-                                                    placeholder="Nombre del Tour" class="form-control" readonly disabled />
-                                                <span asp-validation-for="TourID" class="text-danger" readonly disabled ></span>
+                                                    placeholder="Nombre del Tour" class="form-control" readonly  />
+                                                <span asp-validation-for="TourID" class="text-danger" readonly  ></span>
                                             </div>
                                             <div>
                                                 <label asp-for="Comentario" class="form-label"></label>
                                                 <input asp-for="Comentario"
-                                                    placeholder="Comentario" class="form-control" readonly disabled />
-                                                <span asp-validation-for="Comentario" class="text-danger" readonly disabled ></span>
+                                                    placeholder="Comentario" class="form-control" readonly  />
+                                                <span asp-validation-for="Comentario" class="text-danger" readonly  ></span>
                                             </div>
                                             <div class="d-flex justify-content-center">
-                                                <input type="submit" value="Publicar opinion" class="btn btn-danger d-grid w-100"/>
+                                                <input type="submit" value="Eminiar opinion" class="btn btn-danger d-grid w-100"/>
                                                 <a asp-action="Index" class="btn btn-primary d-grid w-100">Volver al listado</a>
                                             </div>
                                         </form>

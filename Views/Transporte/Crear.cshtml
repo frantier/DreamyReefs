@@ -1,4 +1,4 @@
-@model DreamyReefs.Models.Transporte
+@model DreamyReefs.Models.Transportes
 @{
     ViewData["Title"] = "Reviews";
     Layout = "_LayoutSitioGestion";
@@ -26,10 +26,10 @@
                                                 <span asp-validation-for="NombreEmpresa" class="text-danger"></span>
                                             </div>
                                             <div>
-                                                <label asp-for="transporte" class="form-label">Transporte</label>
-                                                <input asp-for="transporte"
+                                                <label asp-for="Transporte" class="form-label">Transporte</label>
+                                                <input asp-for="Transporte"
                                                     placeholder="Transporte de la empresa" class="form-control"/>
-                                                <span asp-validation-for="transporte" class="text-danger"></span>
+                                                <span asp-validation-for="Transporte" class="text-danger"></span>
                                             </div>
                                             <div class="d-flex justify-content-center">
                                                 <input type="submit" value="Agregar Transporte" class="btn btn-success d-grid w-100"/>

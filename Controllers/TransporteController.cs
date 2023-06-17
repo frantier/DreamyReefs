@@ -28,11 +28,11 @@ namespace DreamyReefs.Controllers
         }
 
         [HttpPost]
-        public IActionResult Crear(Transporte transporte)
+        public IActionResult Crear(Transportes transportes)
         {
-            if (ModelState.IsValid && transporte.NombreEmpresa is not null && transporte.transporte is not null)
+            if (ModelState.IsValid && transportes.NombreEmpresa is not null && transportes.Transporte is not null)
             {
-                _conexion.CrearTransportes(transporte.NombreEmpresa, transporte.transporte);
+                _conexion.CrearTransportes(transportes.NombreEmpresa, transportes.Transporte);
                 return RedirectToAction("Index");
             }
             return View();
@@ -45,11 +45,11 @@ namespace DreamyReefs.Controllers
         }
 
         [HttpPost]
-        public IActionResult Actualizar(Transporte transporte)
+        public IActionResult Actualizar(Transportes transportes)
         {
-            if (ModelState.IsValid && transporte.IDTransportes > 0 && transporte.NombreEmpresa is not null && transporte.transporte is not null)
+            if (ModelState.IsValid && transportes.IDTransportes > 0 && transportes.NombreEmpresa is not null && transportes.Transporte is not null)
             {
-                _conexion.ActualizarTransportes(transporte.IDTransportes, transporte.NombreEmpresa, transporte.transporte);
+                _conexion.ActualizarTransportes(transportes.IDTransportes, transportes.NombreEmpresa, transportes.Transporte);
                 return RedirectToAction("Index");
             }
             return View();
@@ -63,11 +63,11 @@ namespace DreamyReefs.Controllers
 
 
         [HttpPost]
-        public IActionResult Eliminar(Transporte transporte)
+        public IActionResult Eliminar(Transportes transportes)
         {
-            if (transporte.IDTransportes > 0)
+            if (transportes.IDTransportes > 0)
             {
-                _conexion.EliminarTransportes(transporte.IDTransportes);
+                _conexion.EliminarTransportes(transportes.IDTransportes);
                 return RedirectToAction("Index");
             }
             return View();

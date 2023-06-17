@@ -1,7 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Transportes";
     Layout = "_LayoutSitioGestion";
-    List<Transporte> listTransporte = Model;
+    List<Transportes> listTransporte = Model;
 }
 
 @if (Model == null || Model.Count == 0)
@@ -46,7 +46,7 @@ else
                             <div>
                                 <div>
                                     <label style="font-size: medium; font-weight: bold; display: inline-block;">Tipo de vehiculo:</label>
-                                    <h6 class="card-title" style="display: inline-block;">@transporte.transporte</h6>
+                                    <h6 class="card-title" style="display: inline-block;">@transporte.Transporte</h6>
                                 </div>
                             </div>
 

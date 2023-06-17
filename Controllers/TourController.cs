@@ -19,7 +19,8 @@ namespace DreamyReefs.Controllers
 
         public IActionResult Index2()
         {
-            return View();
+            var tours = _conexion.GetAllTours().ToList();
+            return View(tours);
         }
 
         public IActionResult Index()
@@ -78,6 +79,13 @@ namespace DreamyReefs.Controllers
             }
             return View();
         }
+
+        public IActionResult Detalle(int id)
+        {
+            var tours = _conexion.GetOneTour(id);
+            return View(tours);
+        }
+
 
         // public IActionResult GetCategorias()
         // {

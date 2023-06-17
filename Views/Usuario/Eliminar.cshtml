@@ -21,34 +21,34 @@
                                         <form asp-action="Eliminar" method="post">
                                     <div>
                                         <label asp-for="IDAccesoWeb" hidden></label>
-                                        <input asp-for="IDAccesoWeb" class="form-control" hidden readonly disabled />
+                                        <input asp-for="IDAccesoWeb" class="form-control" hidden />
                                     </div>
                                     <div>
                                         <label asp-for="Usuario"></label>
                                         <input asp-for="Usuario" class="form-control" readonly />
-                                        <span asp-validation-for="Usuario" class="text-danger" readonly disabled></span>
+                                        <span asp-validation-for="Usuario" class="text-danger" readonly></span>
                                     </div>
                                     <div>
                                         <label asp-for="Nombre" class="form-label" hidden>Nombre</label>
-                                        <input asp-for="Nombre" class="form-control" hidden readonly />
-                                        <span asp-validation-for="Nombre" class="text-danger" readonly disabled></span>
+                                        <input asp-for="Nombre" class="form-control" hidden readonl/>
+                                        <span asp-validation-for="Nombre" class="text-danger"></span>
                                     </div>
                                     <div>
                                         <label asp-for="Correo" class="form-label">Correo</label>
-                                        <input asp-for="Correo" class="form-control" readonly disabled />
-                                        <span asp-validation-for="Correo" class="text-danger" readonly disabled></span>
+                                        <input asp-for="Correo" class="form-control" readonly />
+                                        <span asp-validation-for="Correo" class="text-danger" readonly></span>
                                     </div>
                                     <div>
-                                        <label asp-for="Contrasena" class="form-label" hidden>Contraseña</label>
-                                        <input asp-for="Contrasena" class="form-control" hidden readonly disabled />
+                                        <label asp-for="Contrasena" class="form-label" hidden >Contraseña</label>
+                                        <input asp-for="Contrasena" class="form-control" hidden readonly />
                                         <span asp-validation-for="Contrasena" readonly class="text-danger"></span>
                                     </div>
                                     <div>
                                         <label asp-for="Estatus" class="form-label" hidden>Estatus</label>
-                                        <input asp-for="Estatus" class="form-control" hidden readonly disabled value="Activo" />
+                                        <input asp-for="Estatus" class="form-control" hidden readonly value="Activo" />
                                     </div>
                                     <div class="d-flex justify-content-center">
-                                        <input type="submit" value="Eliminar" class="btn btn-danger d-grid w-100" disabled />
+                                        <input type="submit" value="Eliminar" class="btn btn-danger d-grid w-100"  />
                                         <a asp-action="Index" class="btn btn-primary d-grid w-100">Volver al listado</a>
                                     </div>
                                 </form>

@@ -5,8 +5,6 @@ namespace DreamyReefs.Data
 {
     public class Conexion : DbContext
     {
-        public Conexion (string Conection) => Conection=Conection;
-        public string Conection {get;}
         public Conexion(DbContextOptions<Conexion> options) : base(options)
         {
 
@@ -22,7 +20,7 @@ namespace DreamyReefs.Data
         public DbSet<Reservacion> Reservaciones { get; set; }
         public DbSet<Review> Reviews { get; set; }
         public DbSet<Tours> Tours { get; set; }
-        public DbSet<Transporte> Transportes { get; set; }
+        public DbSet<Transportes> Transportes { get; set; }
 
         #region Tablas
         protected override void OnModelCreating(ModelBuilder builder)
@@ -108,11 +106,11 @@ namespace DreamyReefs.Data
             builder.Entity<Tours>().Property(u => u.PrecioAdulto).HasColumnName("PrecioAdulto");
             builder.Entity<Tours>().Property(u => u.PrecioInfantes).HasColumnName("PrecioInfantes");
 
-            builder.Entity<Transporte>().ToTable("Transportes");
-            builder.Entity<Transporte>().HasKey(u => u.IDTransportes);
-            builder.Entity<Transporte>().Property(u => u.IDTransportes).HasColumnName("IDTransportes");
-            builder.Entity<Transporte>().Property(u => u.NombreEmpresa).HasColumnName("NombreEmpresa");
-            builder.Entity<Transporte>().Property(u => u.transporte).HasColumnName("Transporte");
+            builder.Entity<Transportes>().ToTable("Transportes");
+            builder.Entity<Transportes>().HasKey(u => u.IDTransportes);
+            builder.Entity<Transportes>().Property(u => u.IDTransportes).HasColumnName("IDTransportes");
+            builder.Entity<Transportes>().Property(u => u.NombreEmpresa).HasColumnName("NombreEmpresa");
+            builder.Entity<Transportes>().Property(u => u.Transporte).HasColumnName("Transporte");
         }
 
         #endregion
@@ -142,6 +140,11 @@ namespace DreamyReefs.Data
         public void EliminarUsuario(int ID)
         {
             Database.ExecuteSqlRaw("EXEC [dbo].[EliminarUsuario] 'ACCESO', {0}", ID);
+        }
+
+        public void InicioSesion(string email, string pass)
+        {
+            Database.ExecuteSqlRaw("EXEC [dbo].[InicioDeSesion] {0}, {1}", email, pass);
         }
 
         #endregion
@@ -408,25 +411,25 @@ namespace DreamyReefs.Data
         #endregion
 
         #region Acciones de Transportes
-        public List<Transporte> GetAllTransportes()
+        public List<Transportes> GetAllTransportes()
         {
             return Transportes.FromSqlRaw("EXEC [dbo].[ObtenerUsuarios] 'TRANSPORTES'").ToList();
         }
 
-        public Transporte? GetOneTransportes(int id)
+        public Transportes? GetOneTransportes(int id)
         {
             var transportes = Transportes.FromSqlInterpolated($"EXEC [dbo].[ObtenerUsuarioPorID] 'TRANSPORTES', {id}").AsEnumerable().FirstOrDefault();
             return transportes;
         }
 
-        public void CrearTransportes(string nombreEmpresa, string transporte)
+        public void CrearTransportes(string nombreEmpresa, string tp)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[CrearUsuario] 'TRANSPORTES', {0}, {1}", nombreEmpresa, transporte);
+            Database.ExecuteSqlRaw("EXEC [dbo].[CrearUsuario] 'TRANSPORTES', {0}, {1}", nombreEmpresa, tp);
         }
 
-        public void ActualizarTransportes(int ID, string nombreEmpresa, string transporte)
+        public void ActualizarTransportes(int ID, string nombreEmpresa, string tp)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarUsuario] 'TRANSPORTES', {0}, {1}, {2}", ID, nombreEmpresa, transporte);
+            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarUsuario] 'TRANSPORTES', {0}, {1}, {2}", ID, nombreEmpresa, tp);
         }
 
         public void EliminarTransportes(int ID)

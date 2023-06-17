@@ -20,40 +20,40 @@
                                     <div>
                                         <form asp-action="Eliminar" method="post">
                                             <div>
-                                                <label asp-for="IDEmpresas" hidden readonly disabled></label>
+                                                <label asp-for="IDEmpresas" hidden  ></label>
                                                 <input asp-for="IDEmpresas"
-                                                    placeholder="IDEmpresas" class="form-control" hidden readonly disabled/>
-                                                <span asp-validation-for="IDEmpresas" class="text-danger" hidden readonly disabled></span>
+                                                    placeholder="IDEmpresas" class="form-control" hidden readonly />
+                                                <span asp-validation-for="IDEmpresas" class="text-danger" hidden readonly ></span>
                                             </div>
                                             <div>
                                                 <label asp-for="NombreEmpresa"></label>
                                                 <input asp-for="NombreEmpresa"
-                                                    placeholder="Nombre de la empresa" class="form-control" readonly disabled/>
-                                                <span asp-validation-for="NombreEmpresa" class="text-danger" readonly disabled/></span>
+                                                    placeholder="Nombre de la empresa" class="form-control" readonly />
+                                                <span asp-validation-for="NombreEmpresa" class="text-danger" readonly ></span>
                                             </div>
                                             <div>
                                                 <label asp-for="Correo" class="form-label"></label>
                                                 <input asp-for="Correo"
-                                                    placeholder="Correo" class="form-control" readonly disabled//>
-                                                <span asp-validation-for="Correo" class="text-danger" readonly disabled/></span>
+                                                    placeholder="Correo" class="form-control" readonly >
+                                                <span asp-validation-for="Correo" class="text-danger" readonly></span>
                                             </div>
                                             <div>
                                                 <label asp-for="Telefono" class="form-label"></label>
                                                 <input asp-for="Telefono"
-                                                    placeholder="Telefono" class="form-control" readonly disabled//>
-                                                <span asp-validation-for="Telefono" class="text-danger" readonly disabled/></span>
+                                                    placeholder="Telefono" class="form-control" readonly >
+                                                <span asp-validation-for="Telefono" class="text-danger" readonly></span>
                                             </div>
                                             <div>
                                                 <label asp-for="Direccion" class="form-label"></label>
                                                 <input asp-for="Direccion"
-                                                    placeholder="Direccion" class="form-control" readonly disabled//>
-                                                <span asp-validation-for="Direccion" class="text-danger" readonly disabled/></span>
+                                                    placeholder="Direccion" class="form-control" readonly>
+                                                <span asp-validation-for="Direccion" class="text-danger" readonly ></span>
                                             </div>
                                             <div>
                                                 <label asp-for="RFC" class="form-label"></label>
                                                 <input asp-for="RFC"
-                                                    placeholder="RFC" class="form-control readonly disabled/"/>
-                                                <span asp-validation-for="RFC" class="text-danger" readonly disabled/></span>
+                                                    placeholder="RFC" class="form-control readonly disabled/" readonly/>
+                                                <span asp-validation-for="RFC" class="text-danger" readonly ></span>
                                             </div>
                                             <div class="d-flex justify-content-center">
                                                 <input type="submit" value="Eliminar empresa" class="btn btn-danger d-grid w-100"/>

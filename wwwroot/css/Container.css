@@ -89,9 +89,9 @@ h1 {
 	font-size: 2.5rem;
 	margin: 1.5rem 0 2rem;
 	text-transform: uppercase;
+	padding-bottom: 0px;
 	color: #4facfe;
 }
-
  
 
 .blog-post_info p {
@@ -115,3 +115,51 @@ h1 {
 	.blog-post_cta:hover {
 		background-image: linear-gradient(to right, #00f2fe 0%, #4facfe 100%);
 	}
+
+.DetalleTour{
+	display: block;
+    width: 255%;
+    padding: 0.375rem 0.75rem;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: none !important;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.DescripcionesTour{
+	display: block;
+    width: 255%;
+	padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: none !important;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.InformacionExtra{
+	padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: none !important;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+textarea{
+	overflow: hidden !important;
+	resize: none !important;
+	height: 120px;
+}

@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@{
+    ViewData["Title"] = "Tours";
+    Layout = "_Layout";
+    List<Tours> listaTours = Model;
+}
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -36,7 +42,24 @@
           media="screen">
 </head>
 <body>
-    <div class="card_section layout_padding">
+@if (Model == null || Model.Count == 0)
+{
+    <div class="layout-page">
+        <br />
+        <br />
+        <div class="row justify-content-center">
+            
+            <div class="col-md-8 ">
+                <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">No hay Tours para mostrar</h1>                  
+            </div>
+        </div>
+    </div>
+}
+else
+{
+<div class="card_section layout_padding">
+    @foreach (var tours in Model)
+    {
         <div class="container">            
             <div class="row">
                 <article class="blog-post">
@@ -44,44 +67,17 @@
                         <img src="~/images/cielo_tour.jpg" alt="" style="height:800;width:1000px;" />
                     </div>
                     <div class="blog-post_info">
-                        <h2 class="blog-post_title">Cozumel El cielo Tour</h2>
-                        <p>Invidunt no et clita lorem elitr takimata sanctus eum clita ut sit ipsum zzril lorem ipsum accumsan accusam est tation nibh eleifend dolor at sed dolor mazim labore labore tation et ipsum nonumy eos at clita minim ipsum nulla sea elitr ipsum labore eos nobis sanctus liber labore nulla eos accusam justo stet gubergren dolores ut sit aliquip sed nulla adipiscing tempor sed ut amet dignissim consequat congue lorem sadipscing aliquip accusam sadipscing consequat dolor kasd et justo elitr accusam laoreet et laoreet sea facer aliquip invidunt duo eirmod diam ea rebum kasd lorem sea esse at lorem vero sit</p>
-                        <a asp-controller="Tour" asp-action="Detalle" class="blog-post_cta">Leer mas</a>
+                        <h2 class="blog-post_title">@tours.Nombre</h2>
+                        <p>@tours.Descripcion</p>
+                        <a asp-controller="Tour" asp-action="Detalle" class="blog-post_cta" asp-route-id="@tours.IDTours">Leer mas</a>
                     </div>
                 </article>
             </div>
         </div>
         <br />
-        <div class="container">            
-            <div class="row">
-                <article class="blog-post">
-                    <div class="blog-post_img">
-                        <img src="~/images/arrecife-paraiso.jpg" alt=""/>
-                    </div>
-                    <div class="blog-post_info">
-                        <h2 class="blog-post_title">Snorkel Cozumel</h2>
-                        <p>Invidunt no et clita lorem elitr takimata sanctus eum clita ut sit ipsum zzril lorem ipsum accumsan accusam est tation nibh eleifend dolor at sed dolor mazim labore labore tation et ipsum nonumy eos at clita minim ipsum nulla sea elitr ipsum labore eos nobis sanctus liber labore nulla eos accusam justo stet gubergren dolores ut sit aliquip sed nulla adipiscing tempor sed ut amet dignissim consequat congue lorem sadipscing aliquip accusam sadipscing consequat dolor kasd et justo elitr accusam laoreet et laoreet sea facer aliquip invidunt duo eirmod diam ea rebum kasd lorem sea esse at lorem vero sit</p>
-                        <a asp-controller="Tour" asp-action="Detalle" class="blog-post_cta">Leer mas</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-        <br />
-        <div class="container">
-            <div class="row">
-                <article class="blog-post">
-                    <div class="blog-post_img">
-                        <img src="~/images/club_playa.jpg" alt="" style="width:1200px;" />
-                    </div>
-                    <div class="blog-post_info">
-                        <h2 class="blog-post_title">Club de Playa Tour</h2>
-                        <p>Invidunt no et clita lorem elitr takimata sanctus eum clita ut sit ipsum zzril lorem ipsum accumsan accusam est tation nibh eleifend dolor at sed dolor mazim labore labore tation et ipsum nonumy eos at clita minim ipsum nulla sea elitr ipsum labore eos nobis sanctus liber labore nulla eos accusam justo stet gubergren dolores ut sit aliquip sed nulla adipiscing tempor sed ut amet dignissim consequat congue lorem sadipscing aliquip accusam sadipscing consequat dolor kasd et justo elitr accusam laoreet et laoreet sea facer aliquip invidunt duo eirmod diam ea rebum kasd lorem sea esse at lorem vero sit</p>
-                        <a asp-controller="Tour" asp-action="Detalle" class="blog-post_cta">Leer mas</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </div>
+    }
+</div>
+}
     <script src="~/js/jquery.min.js"></script>
     <script src="~/js/popper.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
