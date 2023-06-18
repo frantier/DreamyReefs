@@ -4,49 +4,53 @@
     Layout = "_LayoutSitioGestion";
 }
 
-    <div class="layout-page">
-        <br />
-        <br />
-        <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Actualizar Transportes</h1>
-        <div class="ms-4 me-4 mt-4 mb-4">
-            <div data-aos="fade-up" data-aos-duration="1000">
-                <div class="row row-cols-1 row-cols-md-2 justify-content-center">
-                    <div class="col">
-                        <div class="card m-2">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-center">
-                                        <h6 class="fw-medium" style="color: rgb(40, 180, 99);"></h6>
+<div class="layout-page">
+    <br />
+    <br />
+    <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Actualizar Transportes</h1>
+    <div class="ms-4 me-4 mt-4 mb-4">
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <div class="row row-cols-1 row-cols-md-2 justify-content-center">
+                <div class="col">
+                    <div class="card m-2">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center">
+                                <h6 class="fw-medium" style="color: rgb(40, 180, 99);"></h6>
+                            </div>
+                            <div>
+                                <form asp-action="Actualizar" method="post">
+                                    <div>
+                                        <label asp-for="IDTransportes" hidden></label>
+                                        <input asp-for="IDTransportes" placeholder="IDTransportes" class="form-control"
+                                            hidden />
+                                        <span asp-validation-for="IDTransportes" class="text-danger" hidden></span>
                                     </div>
                                     <div>
-                                        <form asp-action="Actualizar" method="post">
-                                            <div>
-                                                <label asp-for="IDTransportes" hidden></label>
-                                                <input asp-for="IDTransportes"
-                                                    placeholder="IDTransportes" class="form-control" hidden/>
-                                                <span asp-validation-for="IDTransportes" class="text-danger" hidden></span>
-                                            </div>
-                                            <div>
-                                                <label asp-for="NombreEmpresa"></label>
-                                                <input asp-for="NombreEmpresa"
-                                                    placeholder="Nombre de la empresa" class="form-control"/>
-                                                <span asp-validation-for="NombreEmpresa" class="text-danger"></span>
-                                            </div>
-                                            <div>
-                                                <label asp-for="Transporte" class="form-label">Transporte</label>
-                                                <input asp-for="Transporte"
-                                                    placeholder="Transporte de la empresa" class="form-control"/>
-                                                <span asp-validation-for="Transporte" class="text-danger"></span>
-                                            </div>
-                                            <div class="d-flex justify-content-center">
-                                                <input type="submit" value="Actualizar Transporte" class="btn btn-warning d-grid w-100"/>
-                                                <a asp-action="Index" class="btn btn-primary d-grid w-100">Volver al listado</a>
-                                            </div>
-                                        </form>
+                                        <label asp-for="NombreEmpresa"></label>
+                                        <input asp-for="NombreEmpresa" placeholder="Nombre de la empresa"
+                                            class="form-control" />
+                                        <span asp-validation-for="NombreEmpresa" class="text-danger"></span>
                                     </div>
-                                </div>
+                                    <div>
+                                        <label asp-for="Transporte" class="form-label">Transporte</label>
+                                        <input asp-for="Transporte" placeholder="Transporte de la empresa"
+                                            class="form-control" />
+                                        <span asp-validation-for="Transporte" class="text-danger"></span>
+                                    </div>
+                                    &ensp;
+                                    <div class="d-flex justify-content-end">
+                                        <input type="submit" value="Actualizar Transporte"
+                                            class="btn btn-warning btn-md" />
+                                            &ensp;
+                                        <a asp-action="Index" class="btn btn-primary btn-md">Volver al listado</a>
+                                    </div>
+                                </form>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
+

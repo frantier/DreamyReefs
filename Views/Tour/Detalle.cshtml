@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="~/css/Cards.css">
 
 </head>
+
 <body>
     <div class="card_section layout_padding">
         <div class="container">
@@ -37,64 +38,68 @@
                 <article class="blog-post">
                     <div class="blog-post_info">
                         <h2 class="blog-post_title">Nombre</h2>
-                        <input asp-for="Nombre" class="DetalleTour" disabled/>
-                        <br/>
+                        <input asp-for="Nombre" class="DetalleTour" disabled />
+                        <br />
                         <h3 class="blog-post_subtitle">Descripción</h3>
                         <textarea asp-for="Descripcion" class="DescripcionesTour" disabled></textarea>
-                        <br/>
+                        <br />
                         <h3 class="blog-post_subtitle">Itinerario</h3>
                         <textarea asp-for="Itinerario" class="DescripcionesTour" disabled></textarea>
                         <h3 class="blog-post_subtitle">Precios</h3>
                         <ul>
                             <li>
-                                <p>Precio  del Tour: $<input asp-for="Precio" class="InformacionExtra" disabled/></p>
+                                <p>Precio del Tour: $<input asp-for="Precio" class="InformacionExtra" disabled /></p>
                             </li>
                             <li>
-                                <p>Adultos: $<input asp-for="PrecioAdulto" class="InformacionExtra" disabled/></p>
+                                <p>Adultos: $<input asp-for="PrecioAdulto" class="InformacionExtra" disabled /></p>
                             </li>
                             <li>
-                                <p>Niños: $<input asp-for="PrecioInfantes" class="InformacionExtra" disabled/></p>
+                                <p>Niños: $<input asp-for="PrecioInfantes" class="InformacionExtra" disabled /></p>
                             </li>
                         </ul>
                         <h3 class="blog-post_subtitle">Detalles</h3>
-                        <p>Hora: <input asp-for="Disponibilidad" class="InformacionExtra" disabled/></p>
-                        <p>Idioma: <input asp-for="Idioma" class="InformacionExtra" disabled/></p>
+                        <p>Hora: <input asp-for="Disponibilidad" class="InformacionExtra" disabled /></p>
+                        <p>Idioma: <input asp-for="Idioma" class="InformacionExtra" disabled /></p>
                         <h3 class="blog-post_subtitle">Caracteristicas</h3>
                         <ul>
                             <li>
-                                <input asp-for="Caracteristica1" class="InformacionExtra" disabled/>
+                                <input asp-for="Caracteristica1" class="InformacionExtra" disabled />
                             </li>
                             <li>
-                                <input asp-for="Caracteristica2" class="InformacionExtra" disabled/>
+                                <input asp-for="Caracteristica2" class="InformacionExtra" disabled />
                             </li>
                             <li>
-                                <input asp-for="Caracteristica3" class="InformacionExtra" disabled/>
+                                <input asp-for="Caracteristica3" class="InformacionExtra" disabled />
                             </li>
                         </ul>
+
                         <h3 class="blog-post_subtitle">Categorias</h3>
                         <ul>
                             <li>
-                                <input asp-for="Categoria1" class="InformacionExtra" disabled/>
+                                <input asp-for="Categoria1" class="InformacionExtra" disabled />
                             </li>
                             <li>
-                                <input asp-for="Categoria2" class="InformacionExtra" disabled/>
+                                <input asp-for="Categoria2" class="InformacionExtra" disabled />
                             </li>
                             <li>
-                                <input asp-for="Categoria3" class="InformacionExtra" disabled/>
+                                <input asp-for="Categoria3" class="InformacionExtra" disabled />
                             </li>
                             <li>
-                                <input asp-for="Categoria4" class="InformacionExtra" disabled/>
+                                <input asp-for="Categoria4" class="InformacionExtra" disabled />
                             </li>
                         </ul>
                         <h5>Punto de encuentro</h5>
                         <div class="map-responsive">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d934.2179473235187!2d-86.95137662430523!3d20.511481451835845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e597c18e4fb19%3A0xb16db156c2af8610!2scooperativa%20eco%20turistica%20nautica%20isla%20cozumel!5e0!3m2!1ses-419!2smx!4v1686202384935!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        
-                        </div> 
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d934.2179473235187!2d-86.95137662430523!3d20.511481451835845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e597c18e4fb19%3A0xb16db156c2af8610!2scooperativa%20eco%20turistica%20nautica%20isla%20cozumel!5e0!3m2!1ses-419!2smx!4v1686202384935!5m2!1ses-419!2smx"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
                 </article>
             </div>
         </div>
-        <br/>
+        <br />
         <div class="container-fluid" style="align-content:center;">
             <div class="row">
                 <div class="col-md-4">
@@ -104,7 +109,8 @@
                         </div>
                         <div class="card-body">
                             <h5>Snorkel Cozumel</h5>
-                            <p>Invidunt no et clita lorem elitr takimata sanctus eum clita ut sit ipsum zzril lorem ipsum accumsan accusam est tation nibh eleifend dolor at sed dolor mazim</p>
+                            <p>Invidunt no et clita lorem elitr takimata sanctus eum clita ut sit ipsum zzril lorem
+                                ipsum accumsan accusam est tation nibh eleifend dolor at sed dolor mazim</p>
                         </div>
                     </div>
                 </div>
@@ -115,18 +121,20 @@
                         </div>
                         <div class="card-body">
                             <h5>Snorkel Cozumel</h5>
-                            <p>Invidunt no et clita lorem elitr takimata sanctus eum clita ut sit ipsum zzril lorem ipsum accumsan accusam est tation nibh eleifend dolor at sed dolor mazim</p>
+                            <p>Invidunt no et clita lorem elitr takimata sanctus eum clita ut sit ipsum zzril lorem
+                                ipsum accumsan accusam est tation nibh eleifend dolor at sed dolor mazim</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
                         <div class="card-header">
-                            <img src="~/images/arrecife-paraiso.jpg"/>
+                            <img src="~/images/arrecife-paraiso.jpg" />
                         </div>
                         <div class="card-body">
                             <h5>Snorkel Cozumel</h5>
-                            <p>Invidunt no et clita lorem elitr takimata sanctus eum clita ut sit ipsum zzril lorem ipsum accumsan accusam est tation nibh eleifend dolor at sed dolor mazim</p>
+                            <p>Invidunt no et clita lorem elitr takimata sanctus eum clita ut sit ipsum zzril lorem
+                                ipsum accumsan accusam est tation nibh eleifend dolor at sed dolor mazim</p>
                         </div>
                     </div>
                 </div>

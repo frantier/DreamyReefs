@@ -4,21 +4,21 @@
     Layout = "_LayoutSitioGestion";
 }
 
-    <div class="layout-page">
-        <br />
-        <br />
-        <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Eliminar Usuario</h1>
-        <div class="ms-4 me-4 mt-4 mb-4">
-            <div data-aos="fade-up" data-aos-duration="1000">
-                <div class="row row-cols-1 row-cols-md-2 justify-content-center">
-                    <div class="col">
-                        <div class="card m-2">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-center">
-                                        <h6 class="fw-medium" style="color: rgb(40, 180, 99);"></h6>
-                                    </div>
-                                    <div>
-                                        <form asp-action="Eliminar" method="post">
+<div class="layout-page">
+    <br />
+    <br />
+    <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Eliminar Usuario</h1>
+    <div class="ms-4 me-4 mt-4 mb-4">
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <div class="row row-cols-1 row-cols-md-2 justify-content-center">
+                <div class="col">
+                    <div class="card m-2">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center">
+                                <h6 class="fw-medium" style="color: rgb(40, 180, 99);"></h6>
+                            </div>
+                            <div>
+                                <form asp-action="Eliminar" method="post">
                                     <div>
                                         <label asp-for="IDAccesoWeb" hidden></label>
                                         <input asp-for="IDAccesoWeb" class="form-control" hidden />
@@ -30,7 +30,7 @@
                                     </div>
                                     <div>
                                         <label asp-for="Nombre" class="form-label" hidden>Nombre</label>
-                                        <input asp-for="Nombre" class="form-control" hidden readonl/>
+                                        <input asp-for="Nombre" class="form-control" hidden readonly />
                                         <span asp-validation-for="Nombre" class="text-danger"></span>
                                     </div>
                                     <div>
@@ -39,7 +39,7 @@
                                         <span asp-validation-for="Correo" class="text-danger" readonly></span>
                                     </div>
                                     <div>
-                                        <label asp-for="Contrasena" class="form-label" hidden >Contraseña</label>
+                                        <label asp-for="Contrasena" class="form-label" hidden>Contraseña</label>
                                         <input asp-for="Contrasena" class="form-control" hidden readonly />
                                         <span asp-validation-for="Contrasena" readonly class="text-danger"></span>
                                     </div>
@@ -47,16 +47,18 @@
                                         <label asp-for="Estatus" class="form-label" hidden>Estatus</label>
                                         <input asp-for="Estatus" class="form-control" hidden readonly value="Activo" />
                                     </div>
-                                    <div class="d-flex justify-content-center">
-                                        <input type="submit" value="Eliminar" class="btn btn-danger d-grid w-100"  />
-                                        <a asp-action="Index" class="btn btn-primary d-grid w-100">Volver al listado</a>
+                                    &ensp;
+                                    <div class="d-flex justify-content-end">
+                                        <input type="submit" value="Eliminar" class="btn btn-danger btn-md" />
+                                        &ensp;
+                                        <a asp-action="Index" class="btn btn-primary btn-md">Volver al listado</a>
                                     </div>
                                 </form>
-                                    </div>
-                                </div>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>

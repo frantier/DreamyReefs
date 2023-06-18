@@ -4,72 +4,76 @@
     Layout = "_LayoutSitioGestion";
 }
 
-    <div class="layout-page">
-        <br />
-        <br />
-        <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Actualizar reservacion</h1>
-        <div class="ms-4 me-4 mt-4 mb-4">
-            <div data-aos="fade-up" data-aos-duration="1000">
-                <div class="row row-cols-1 row-cols-md-2 justify-content-center">
-                    <div class="col">
-                        <div class="card m-2">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-center">
-                                        <h6 class="fw-medium" style="color: rgb(40, 180, 99);"></h6>
+<div class="layout-page">
+    <br />
+    <br />
+    <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Actualizar reservacion</h1>
+    <div class="ms-4 me-4 mt-4 mb-4">
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <div class="row row-cols-1 row-cols-md-2 justify-content-center">
+                <div class="col">
+                    <div class="card m-2">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center">
+                                <h6 class="fw-medium" style="color: rgb(40, 180, 99);"></h6>
+                            </div>
+                            <div>
+                                <form asp-action="Actualizar" method="post">
+                                    <div>
+                                        <label asp-for="IDReservaciones" hidden></label>
+                                        <input asp-for="IDReservaciones" placeholder="IDReservaciones"
+                                            class="form-control" hidden readonly />
+                                        <span asp-validation-for="IDReservaciones" class="text-danger" hidden
+                                            readonly></span>
                                     </div>
                                     <div>
-                                        <form asp-action="Actualizar" method="post">
-                                            <div>
-                                                <label asp-for="IDReservaciones" hidden></label>
-                                                <input asp-for="IDReservaciones"
-                                                    placeholder="IDReservaciones" class="form-control" hidden readonly/>
-                                                <span asp-validation-for="IDReservaciones" class="text-danger" hidden readonly></span>
-                                            </div>
-                                            <div>
-                                                <label asp-for="NombreCompleto"></label>
-                                                <input asp-for="NombreCompleto"
-                                                    placeholder="Nombre Completo" class="form-control" />
-                                                <span asp-validation-for="NombreCompleto" class="text-danger"></span>
-                                            </div>
-                                            <div>
-                                                <label asp-for="Telefono" class="form-label" hidden></label>
-                                                <input asp-for="Telefono"
-                                                    placeholder="Telefono" class="form-control" hidden readonly/>
-                                                <span asp-validation-for="Telefono" class="text-danger" hidden readonly></span>
-                                            </div>
-                                            <div>
-                                                <label asp-for="Email" class="form-label" hidden></label>
-                                                <input asp-for="Email"
-                                                    placeholder="Correo" class="form-control" hidden readonly/>
-                                                <span asp-validation-for="Email" class="text-danger" hidden readonly></span>
-                                            </div>
-                                            <div>
-                                                <label asp-for="Adultos" class="form-label" hidden></label>
-                                                <input asp-for="Adultos"
-                                                    placeholder="Numero de adultos" class="form-control" hidden readonly/>
-                                                <span asp-validation-for="Adultos" class="text-danger" hidden readonly></span>
-                                            </div>
-                                            <div>
-                                                <label asp-for="Infantes" class="form-label" hidden></label>
-                                                <input asp-for="Infantes"
-                                                    placeholder="Numero de niños" class="form-control" hidden readonly/>
-                                                <span asp-validation-for="Infantes" class="text-danger" hidden readonly></span>
-                                            </div>
-                                            <div>
-                                                <label asp-for="Estatus" class="form-label"></label>
-                                                <input asp-for="Estatus"
-                                                    placeholder="Estatus" value="Pendiente" class="form-control"/>
-                                            </div>
-                                            <div class="d-flex justify-content-center">
-                                                <input type="submit" value="Actualizar reservacion" class="btn btn-warning d-grid w-100"/>
-                                                <a asp-action="Index" class="btn btn-primary d-grid w-100">Volver al listado</a>
-                                            </div>
-                                        </form>
+                                        <label asp-for="NombreCompleto"></label>
+                                        <input asp-for="NombreCompleto" placeholder="Nombre Completo"
+                                            class="form-control" />
+                                        <span asp-validation-for="NombreCompleto" class="text-danger"></span>
                                     </div>
-                                </div>
+                                    <div>
+                                        <label asp-for="Telefono" class="form-label" hidden></label>
+                                        <input asp-for="Telefono" placeholder="Telefono" class="form-control" hidden
+                                            readonly />
+                                        <span asp-validation-for="Telefono" class="text-danger" hidden readonly></span>
+                                    </div>
+                                    <div>
+                                        <label asp-for="Email" class="form-label" hidden></label>
+                                        <input asp-for="Email" placeholder="Correo" class="form-control" hidden
+                                            readonly />
+                                        <span asp-validation-for="Email" class="text-danger" hidden readonly></span>
+                                    </div>
+                                    <div>
+                                        <label asp-for="Adultos" class="form-label" hidden></label>
+                                        <input asp-for="Adultos" placeholder="Numero de adultos" class="form-control"
+                                            hidden readonly />
+                                        <span asp-validation-for="Adultos" class="text-danger" hidden readonly></span>
+                                    </div>
+                                    <div>
+                                        <label asp-for="Infantes" class="form-label" hidden></label>
+                                        <input asp-for="Infantes" placeholder="Numero de niños" class="form-control"
+                                            hidden readonly />
+                                        <span asp-validation-for="Infantes" class="text-danger" hidden readonly></span>
+                                    </div>
+                                    <div>
+                                        <label asp-for="Estatus" class="form-label"></label>
+                                        <input asp-for="Estatus" placeholder="Estatus" value="Pendiente"
+                                            class="form-control" />
+                                    </div>
+                                    &ensp;
+                                    <div class="d-flex justify-content-end">
+                                        <input type="submit" value="Actualizar reservacion"
+                                            class="btn btn-warning btn-md" />
+                                            &ensp;
+                                        <a asp-action="Index" class="btn btn-primary btn-md">Volver al listado</a>
+                                    </div>
+                                </form>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
