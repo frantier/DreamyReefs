@@ -1,7 +1,6 @@
 ﻿using DreamyReefs.Data;
 using DreamyReefs.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
 
 namespace DreamyReefs.Controllers
 {
@@ -22,11 +21,32 @@ namespace DreamyReefs.Controllers
         [HttpPost]
         public IActionResult Login(AccesoWeb accesoWeb)
         {
-            if (accesoWeb.Correo is not null && accesoWeb.Contrasena is not null)
+            if (ModelState.IsValid)
             {
-                _conexion.InicioSesion(accesoWeb.Correo, accesoWeb.Contrasena);
-                return RedirectToAction("Index", "Dashboard");
+                var user = _conexion.InicioSesion(accesoWeb.Correo, accesoWeb.Contrasena);
+
+                if (user != null)
+                {
+                    HttpContext.Session.SetString("Usuario", user.Nombre);
+                    return RedirectToAction("Index", "Dashboard");
+                }
+                else
+                {
+                    // Usuario no existe o contraseña incorrecta
+                    var usuarioExistente = _conexion.ValidarUsuario(accesoWeb.Correo);
+
+                    if (usuarioExistente)
+                    {
+                        // Contraseña incorrecta
+                        ViewBag.Error = "Contraseña incorrecta.";
+                    }
+                    else
+                    {
+                        ViewBag.Error = "Usuario incorrecto.";
+                    }
+                }
             }
+
             return View();
         }
     }

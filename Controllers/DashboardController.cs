@@ -1,7 +1,10 @@
 ﻿using DreamyReefs.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-
+using DreamyReefs.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Http;
 
 namespace DreamyReefs.Controllers
 {
@@ -15,7 +18,24 @@ namespace DreamyReefs.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            var usuario = HttpContext.Session.GetString("Usuario");
+
+            var model = new DashboardViewModel
+            {
+                Usuario = usuario
+            };
+
+            return View(model);
         }
+
+        public IActionResult Salir()
+        {
+            // Eliminar los datos de la sesión del usuario
+            HttpContext.Session.Clear();
+
+            // Redirigir al login
+            return RedirectToAction("Login", "Login");
+        }
+
     }
 }

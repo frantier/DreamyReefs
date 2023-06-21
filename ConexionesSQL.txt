@@ -1,0 +1,5 @@
+Pedro: "Conexion": "Server=MSI\\SQLEXPRESS;Database=DreamyReefs;Trusted_Connection=True;TrustServerCertificate=true;"
+
+Brandon: "Conexion": "Server=REDRAGON-DESKTO\\SQLEXPRESS;Database=DreamyReefs;Trusted_Connection=True;TrustServerCertificate=true;"
+
+Javier: 
