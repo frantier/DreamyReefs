@@ -33,6 +33,7 @@ namespace DreamyReefs.Data
             builder.Entity<AccesoWeb>().Property(u => u.Nombre).HasColumnName("Nombre");
             builder.Entity<AccesoWeb>().Property(u => u.Correo).HasColumnName("Correo");
             builder.Entity<AccesoWeb>().Property(u => u.Contrasena).HasColumnName("Contrasena");
+            builder.Entity<AccesoWeb>().Property(u => u.RefreshToken).HasColumnName("RefreshToken");
             builder.Entity<AccesoWeb>().Property(u => u.Estatus).HasColumnName("Estatus");
 
             builder.Entity<Caracteristica>().ToTable("Caracteristicas");
@@ -144,10 +145,16 @@ namespace DreamyReefs.Data
 
         public AccesoWeb? InicioSesion(string email, string pass)
         {
-            var acceso = AccesoWeb.FirstOrDefault(a => a.Correo == email && a.Contrasena == pass && a.Estatus == "Activo");
+            var data = Guid.NewGuid().ToString();
+            Database.ExecuteSqlRaw("UPDATE AccesoWeb SET RefreshToken = {0} WHERE Correo = {1}", data, email);
+            var acceso = AccesoWeb.FirstOrDefault(a => a.RefreshToken == data && a.Correo == email && a.Contrasena == pass && a.Estatus == "Activo");            
             return acceso;
         }
-
+        public bool ObtenerToken(string tok)
+        {
+            var token = AccesoWeb.FirstOrDefault(a => a.RefreshToken == tok);
+            return token != null;
+        }
         public bool ValidarUsuario(string email)
         {
             // Realiza la validación en la base de datos para determinar si el usuario existe

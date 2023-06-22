@@ -2,10 +2,11 @@
 using DreamyReefs.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-
+//using DreamyReefs.Controllers;
 
 namespace DreamyReefs.Controllers
 {
+    
     public class EmpresaController : Controller
     {
         private readonly Conexion _conexion;
@@ -14,9 +15,15 @@ namespace DreamyReefs.Controllers
         {
             _conexion = con;
         }
-
-        public IActionResult Index()
-        {
+        
+        public IActionResult Index(AccesoWeb acceso)
+        {           
+            
+            var usuarioExistente = _conexion.ObtenerToken(acceso.RefreshToken);
+            if(usuarioExistente != null)
+            {
+                return RedirectToAction("Index", "Dashboard");
+            }
             var empresa = _conexion.GetAllEmpresas().ToList();
             return View(empresa);
         }

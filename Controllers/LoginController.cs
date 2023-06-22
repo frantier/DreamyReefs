@@ -1,6 +1,7 @@
 ﻿using DreamyReefs.Data;
 using DreamyReefs.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace DreamyReefs.Controllers
 {
@@ -23,11 +24,12 @@ namespace DreamyReefs.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = _conexion.InicioSesion(accesoWeb.Correo, accesoWeb.Contrasena);
-
+                var user = _conexion.InicioSesion(accesoWeb.Correo, accesoWeb.Contrasena);                
                 if (user != null)
                 {
+                    
                     HttpContext.Session.SetString("Usuario", user.Nombre);
+                    
                     return RedirectToAction("Index", "Dashboard");
                 }
                 else
@@ -46,7 +48,6 @@ namespace DreamyReefs.Controllers
                     }
                 }
             }
-
             return View();
         }
     }
