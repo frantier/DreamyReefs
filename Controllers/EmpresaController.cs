@@ -66,6 +66,7 @@ namespace DreamyReefs.Controllers
                 return RedirectToAction("Index");
             }
             return View();
+            
         }
 
         public IActionResult Actualizar(int id)
