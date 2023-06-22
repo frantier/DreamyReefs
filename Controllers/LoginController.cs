@@ -26,10 +26,9 @@ namespace DreamyReefs.Controllers
             {
                 var user = _conexion.InicioSesion(accesoWeb.Correo, accesoWeb.Contrasena);                
                 if (user != null)
-                {
-                    
+                {                    
                     HttpContext.Session.SetString("Usuario", user.Nombre);
-                    
+                    HttpContext.Session.SetString("Token", user.RefreshToken);                    
                     return RedirectToAction("Index", "Dashboard");
                 }
                 else

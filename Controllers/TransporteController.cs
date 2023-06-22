@@ -18,13 +18,39 @@ namespace DreamyReefs.Controllers
 
         public IActionResult Index()
         {
-            var transportes = _conexion.GetAllTransportes().ToList();
-            return View(transportes);
+            var storedToken = HttpContext.Session.GetString("Token");            
+            var model = new DashboardViewModel
+            {
+                Token = storedToken
+            };
+            if (model.Token != null && model.Token == storedToken)
+            {
+               var transportes = _conexion.GetAllTransportes().ToList();
+                return View(transportes);
+            }
+            else
+            {
+                return RedirectToAction("Login", "Login");
+            }
+            
         }
 
         public IActionResult Crear()
         {
-            return View();
+            var storedToken = HttpContext.Session.GetString("Token");            
+            var model = new DashboardViewModel
+            {
+                Token = storedToken
+            };
+            if (model.Token != null && model.Token == storedToken)
+            {
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Login", "Login");
+            }
+            
         }
 
         [HttpPost]
@@ -40,8 +66,21 @@ namespace DreamyReefs.Controllers
 
         public IActionResult Actualizar(int id)
         {
-            var transporte = _conexion.GetOneTransportes(id);
-            return View(transporte);
+            var storedToken = HttpContext.Session.GetString("Token");            
+            var model = new DashboardViewModel
+            {
+                Token = storedToken
+            };
+            if (model.Token != null && model.Token == storedToken)
+            {
+                var transporte = _conexion.GetOneTransportes(id);
+                return View(transporte);
+            }
+            else
+            {
+                return RedirectToAction("Login", "Login");
+            }
+            
         }
 
         [HttpPost]
@@ -57,8 +96,21 @@ namespace DreamyReefs.Controllers
 
         public IActionResult Eliminar(int id)
         {
-            var transporte = _conexion.GetOneTransportes(id);
-            return View(transporte);
+            var storedToken = HttpContext.Session.GetString("Token");            
+            var model = new DashboardViewModel
+            {
+                Token = storedToken
+            };
+            if (model.Token != null && model.Token == storedToken)
+            {
+                var transporte = _conexion.GetOneTransportes(id);
+                return View(transporte);
+            }
+            else
+            {
+                return RedirectToAction("Login", "Login");
+            }
+            
         }
 
 

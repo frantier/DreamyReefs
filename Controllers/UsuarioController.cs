@@ -24,7 +24,21 @@ namespace DreamyReefs.Controllers
 
         public IActionResult Crear()
         {
-            return View();
+            var storedToken = HttpContext.Session.GetString("Token");
+            
+            var model = new DashboardViewModel
+            {
+                Token = storedToken
+            };
+            if (model.Token != null && model.Token == storedToken)
+            {
+               return View();
+            }
+            else
+            {
+                return RedirectToAction("Login", "Login");
+            }
+            
         }
 
         [HttpPost]
@@ -40,8 +54,21 @@ namespace DreamyReefs.Controllers
 
         public IActionResult Actualizar(int id)
         {
-            var usuario = _conexion.GetOneUsuario(id);
-            return View(usuario);
+            var storedToken = HttpContext.Session.GetString("Token");            
+            var model = new DashboardViewModel
+            {
+                Token = storedToken
+            };
+            if (model.Token != null && model.Token == storedToken)
+            {
+               var usuario = _conexion.GetOneUsuario(id);
+                return View(usuario);
+            }
+            else
+            {
+                return RedirectToAction("Login", "Login");
+            }
+            
         }
 
         [HttpPost]
@@ -57,8 +84,21 @@ namespace DreamyReefs.Controllers
 
         public IActionResult Eliminar(int id)
         {
-            var usuario = _conexion.GetOneUsuario(id);
-            return View(usuario);
+            var storedToken = HttpContext.Session.GetString("Token");            
+            var model = new DashboardViewModel
+            {
+                Token = storedToken
+            };
+            if (model.Token != null && model.Token == storedToken)
+            {
+               var usuario = _conexion.GetOneUsuario(id);
+                return View(usuario);
+            }
+            else
+            {
+                return RedirectToAction("Login", "Login");
+            }
+            
         }
 
 

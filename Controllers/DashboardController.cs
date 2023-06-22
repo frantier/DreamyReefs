@@ -18,14 +18,29 @@ namespace DreamyReefs.Controllers
         }
         public IActionResult Index()
         {
+            
             var usuario = HttpContext.Session.GetString("Usuario");
-
-            var model = new DashboardViewModel
+            var storedToken = HttpContext.Session.GetString("Token");
+            
+            var Tok = new DashboardViewModel
             {
-                Usuario = usuario
+                Token = storedToken
             };
+            if (Tok.Token != null && Tok.Token == storedToken)
+            {
+                var model = new DashboardViewModel
+                {
+                    Usuario = usuario
+                    //Token = token
+                };
 
-            return View(model);
+                return View(model);
+            }
+            else
+            {
+                return RedirectToAction("Login", "Login");
+            }
+            
         }
 
         public IActionResult Salir()

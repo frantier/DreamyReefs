@@ -10,8 +10,6 @@ namespace DreamyReefs.Models
         public string? Correo { get; set; }
         public string? Contrasena { get; set; }
         public string? Estatus { get; set; }
-        /* public byte[] PasswordHash { get; set; }
-        public byte[] PasswordSalt { get; set; } */
         public string? RefreshToken { get; set; }
         [NotMapped]
         public bool sesion { get; set; }

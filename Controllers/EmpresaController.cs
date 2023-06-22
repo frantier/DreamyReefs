@@ -2,7 +2,8 @@
 using DreamyReefs.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-//using DreamyReefs.Controllers;
+using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Http;
 
 namespace DreamyReefs.Controllers
 {
@@ -16,21 +17,44 @@ namespace DreamyReefs.Controllers
             _conexion = con;
         }
         
-        public IActionResult Index(AccesoWeb acceso)
+        public IActionResult Index()
         {           
+            var storedToken = HttpContext.Session.GetString("Token");
             
-            var usuarioExistente = _conexion.ObtenerToken(acceso.RefreshToken);
-            if(usuarioExistente != null)
+            var model = new DashboardViewModel
             {
-                return RedirectToAction("Index", "Dashboard");
+                Token = storedToken
+            };
+            if (model.Token != null && model.Token == storedToken)
+            {
+                var empresa = _conexion.GetAllEmpresas().ToList();
+                return View(empresa);
             }
-            var empresa = _conexion.GetAllEmpresas().ToList();
-            return View(empresa);
+            else
+            {
+                return RedirectToAction("Login", "Login");
+            }            
+            /* var empresa = _conexion.GetAllEmpresas().ToList();
+            return View(empresa); */
         }
 
         public IActionResult Crear()
         {
-            return View();
+            var storedToken = HttpContext.Session.GetString("Token");
+            
+            var model = new DashboardViewModel
+            {
+                Token = storedToken
+            };
+            if (model.Token != null && model.Token == storedToken)
+            {
+                 return View();
+            }
+            else
+            {
+                return RedirectToAction("Login", "Login");
+            }   
+           
         }
 
         [HttpPost]
@@ -46,8 +70,22 @@ namespace DreamyReefs.Controllers
 
         public IActionResult Actualizar(int id)
         {
-            var empresa = _conexion.GetOneEmpresas(id);
-            return View(empresa);
+            var storedToken = HttpContext.Session.GetString("Token");
+            
+            var model = new DashboardViewModel
+            {
+                Token = storedToken
+            };
+            if (model.Token != null && model.Token == storedToken)
+            {
+                var empresa = _conexion.GetOneEmpresas(id);
+                return View(empresa);
+            }
+            else
+            {
+                return RedirectToAction("Login", "Login");
+            }   
+            
         }
 
         [HttpPost]
@@ -63,8 +101,21 @@ namespace DreamyReefs.Controllers
 
         public IActionResult Eliminar(int id)
         {
-            var empresa = _conexion.GetOneEmpresas(id);
-            return View(empresa);
+            var storedToken = HttpContext.Session.GetString("Token");
+            
+            var model = new DashboardViewModel
+            {
+                Token = storedToken
+            };
+            if (model.Token != null && model.Token == storedToken)
+            {
+                var empresa = _conexion.GetOneEmpresas(id);
+                return View(empresa);
+            }
+            else
+            {
+                return RedirectToAction("Login", "Login");
+            }            
         }
 
 

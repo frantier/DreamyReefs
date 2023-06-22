@@ -143,6 +143,11 @@ namespace DreamyReefs.Data
             Database.ExecuteSqlRaw("EXEC [dbo].[EliminarUsuario] 'ACCESO', {0}", ID);
         }
 
+        /* public AccesoWeb? InicioSesion(string email, string pass)
+        {
+            var acceso = AccesoWeb.FirstOrDefault(a => a.Correo == email && a.Contrasena == pass && a.Estatus == "Activo");
+            return acceso;
+        } */
         public AccesoWeb? InicioSesion(string email, string pass)
         {
             var data = Guid.NewGuid().ToString();
