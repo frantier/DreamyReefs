@@ -130,12 +130,12 @@ namespace DreamyReefs.Data
 
         public void CrearUsuario(string user, string name, string email, string pass, string status)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[CrearUsuario] 'ACCESO', {0}, {1}, {2}, {3}, {4}", user, name, email, pass, status);
+            Database.ExecuteSqlRaw("EXEC [dbo].[CrearUsuario] {0}, {1}, {2}, {3}, {4}", user, name, email, pass, status);
         }
 
         public void ActualizarUsuario(int ID, string user, string name, string email, string pass, string status)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarUsuario] 'ACCESO', {0}, {1}, {2}, {3}, {4}, {5}", ID, user, name, email, pass, status);
+            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarUsuario] {0}, {1}, {2}, {3}, {4}, {5}", ID, user, name, email, pass, status);
         }
 
         public void EliminarUsuario(int ID)
@@ -183,12 +183,12 @@ namespace DreamyReefs.Data
 
         public void CrearTour(string name, string itinerario, int precio, string descripcion, string disponibilidad, string idioma, string categoria1, string categoria2, string categoria3, string categoria4, string caracteristica1, string caracteristica2, string caracteristica3, string estatus, int precioAdulto, int precioInfantes)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[CrearUsuario] 'TOURS', {0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}, {10}, {11}, {12}, {13}, {14}, {15}", name, itinerario, precio, descripcion, disponibilidad, idioma, categoria1, categoria2, categoria3, categoria4, caracteristica1, caracteristica2, caracteristica3, estatus, precioAdulto, precioInfantes);
+            Database.ExecuteSqlRaw("EXEC [dbo].[CrearTours] {0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}, {10}, {11}, {12}, {13}, {14}, {15}", name, itinerario, precio, descripcion, disponibilidad, idioma, categoria1, categoria2, categoria3, categoria4, caracteristica1, caracteristica2, caracteristica3, estatus, precioAdulto, precioInfantes);
         }
 
         public void ActualizarTour(int ID, string name, string itinerario, int precio, string descripcion, string disponibilidad, string idioma, string categoria1, string categoria2, string categoria3, string categoria4, string caracteristica1, string caracteristica2, string caracteristica3, string estatus, int precioAdulto, int precioInfantes)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarUsuario] 'TOURS', {0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}, {10}, {11}, {12}, {13}, {14}, {15}", ID, name, itinerario, precio, descripcion, disponibilidad, idioma, categoria1, categoria2, categoria3, categoria4, caracteristica1, caracteristica2, caracteristica3, estatus, precioAdulto, precioInfantes);
+            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarTours] {0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}, {10}, {11}, {12}, {13}, {14}, {15}, {16}", ID, name, itinerario, precio, descripcion, disponibilidad, idioma, categoria1, categoria2, categoria3, categoria4, caracteristica1, caracteristica2, caracteristica3, estatus, precioAdulto, precioInfantes);
         }
 
         public void EliminarTour(int ID)
@@ -212,12 +212,12 @@ namespace DreamyReefs.Data
 
         public void CrearCaracteristicas(string name)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[CrearUsuario] 'CARACTERISTICAS', {0}", name);
+            Database.ExecuteSqlRaw("EXEC [dbo].[CrearCaracteristicas] {0}", name);
         }
 
         public void ActualizarCaracteristicas(int ID, string name)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarUsuario] 'CARACTERISTICAS', {0}, {1}", ID, name);
+            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarCaracteristicas] {0}, {1}", ID, name);
         }
 
         public void EliminarCaracteristicas(int ID)
@@ -241,12 +241,12 @@ namespace DreamyReefs.Data
 
         public void CrearCategoria(string name)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[CrearUsuario] 'CATEGORIAS', {0}", name);
+            Database.ExecuteSqlRaw("EXEC [dbo].[CrearCategorias] {0}", name);
         }
 
         public void ActualizarCategoria(int ID, string name)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarUsuario] 'CATEGORIAS', {0}, {1}", ID, name);
+            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarCategorias] {0}, {1}", ID, name);
         }
 
         public void EliminarCategoria(int ID)
@@ -270,12 +270,12 @@ namespace DreamyReefs.Data
 
         public void CrearDisponible(string name)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[CrearUsuario] 'DISPONIBLE', {0}", name);
+            Database.ExecuteSqlRaw("EXEC [dbo].[CrearDisponibilidad] {0}", name);
         }
 
         public void ActualizarDisponible(int ID, string name)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarUsuario] 'DISPONIBLE', {0}, {1}", ID, name);
+            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarDisponibilidad] {0}, {1}", ID, name);
         }
 
         public void EliminarDisponible(int ID)
@@ -299,12 +299,12 @@ namespace DreamyReefs.Data
 
         public void CrearEmpresas(string name, string correo, string telefono, string direccion, string rfc)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[CrearUsuario] 'EMPRESAS', {0}, {1}, {2}, {3}, {4}", name, correo, telefono, direccion, rfc);
+            Database.ExecuteSqlRaw("EXEC [dbo].[CrearEmpresas] {0}, {1}, {2}, {3}, {4}", name, correo, telefono, direccion, rfc);
         }
 
         public void ActualizarEmpresas(int ID, string name, string correo, string telefono, string direccion, string rfc)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarUsuario] 'EMPRESAS', {0}, {1}, {2}, {3}, {4}, {5}", ID, name, correo, telefono, direccion, rfc);
+            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarEmpresas] {0}, {1}, {2}, {3}, {4}, {5}", ID, name, correo, telefono, direccion, rfc);
         }
 
         public void EliminarEmpresas(int ID)
@@ -328,12 +328,12 @@ namespace DreamyReefs.Data
 
         public void CrearEstatus(string name)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[CrearUsuario] 'ESTATUS', {0}", name);
+            Database.ExecuteSqlRaw("EXEC [dbo].[CrearEstatus] {0}", name);
         }
 
         public void ActualizarEstatus(int ID, string name)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarUsuario] 'ESTATUS', {0}, {1}", ID, name);
+            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarEstatus] {0}, {1}", ID, name);
         }
 
         public void EliminarEstatus(int ID)
@@ -357,12 +357,12 @@ namespace DreamyReefs.Data
 
         public void CrearImagenes(string imagen, int idtour)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[CrearUsuario] 'IMAGENES', {0}, {1}", imagen, idtour);
+            Database.ExecuteSqlRaw("EXEC [dbo].[CrearImagenes] {0}, {1}", imagen, idtour);
         }
 
         public void ActualizarImagenes(int ID, string imagen, int idtour)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarUsuario] 'IMAGENES', {0}, {1}, {2}", ID, imagen, idtour);
+            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarImagenes] {0}, {1}, {2}", ID, imagen, idtour);
         }
 
         public void EliminarImagenes(int ID)
@@ -386,12 +386,12 @@ namespace DreamyReefs.Data
 
         public void CrearReservaciones(string name, string telefono, string email, int adultos, int infantes, string estatus)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[CrearUsuario] 'RESERVACIONES', {0}, {1}, {2}, {3}, {4}", name, telefono, email, adultos, infantes, estatus);
+            Database.ExecuteSqlRaw("EXEC [dbo].[CrearReservaciones] {0}, {1}, {2}, {3}, {4}", name, telefono, email, adultos, infantes, estatus);
         }
 
         public void ActualizarReservaciones(int ID, string name, string telefono, string email, int adultos, int infantes, string estatus)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarUsuario] 'RESERVACIONES', {0}, {1}, {2}, {3}, {4}, {5}, {6}", ID, name, telefono, email, adultos, infantes, estatus);
+            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarReservaciones] {0}, {1}, {2}, {3}, {4}, {5}, {6}", ID, name, telefono, email, adultos, infantes, estatus);
         }
 
         public void EliminarReservaciones(int ID)
@@ -415,12 +415,12 @@ namespace DreamyReefs.Data
 
         public void CrearReviews(int idtour, string comentario)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[CrearUsuario] 'REVIEWS', {0}, {1}", idtour, comentario);
+            Database.ExecuteSqlRaw("EXEC [dbo].[CrearReviews] {0}, {1}", idtour, comentario);
         }
 
         public void ActualizarReviews(int ID, int idtour, string comentario)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarUsuario] 'REVIEWS', {0}, {1}, {2}", ID, idtour, comentario);
+            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarReviews] {0}, {1}, {2}", ID, idtour, comentario);
         }
 
         public void EliminarReviews(int ID)
@@ -444,12 +444,12 @@ namespace DreamyReefs.Data
 
         public void CrearTransportes(string nombreEmpresa, string tp)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[CrearUsuario] 'TRANSPORTES', {0}, {1}", nombreEmpresa, tp);
+            Database.ExecuteSqlRaw("EXEC [dbo].[CrearTransportes] {0}, {1}", nombreEmpresa, tp);
         }
 
         public void ActualizarTransportes(int ID, string nombreEmpresa, string tp)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarUsuario] 'TRANSPORTES', {0}, {1}, {2}", ID, nombreEmpresa, tp);
+            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarTransportes] {0}, {1}, {2}", ID, nombreEmpresa, tp);
         }
 
         public void EliminarTransportes(int ID)
