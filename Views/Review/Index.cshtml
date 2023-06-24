@@ -34,13 +34,13 @@ else
                     <div class="card-body">
                         <div>
                             <div>
-                                <label style="font-size: medium; font-weight: bold; display: inline-block;">TourID:</label>
-                                <h6 class="card-title" style="display: inline-block;">@reviews.IDReviews</h6>
+                                <label style="font-size: medium; font-weight: bold; display: inline-block;" hidden>TourID:</label>
+                                <h6 class="card-title" style="display: inline-block;" hidden>@reviews.IDReviews</h6>
                             </div>
 
                             <div>
                                 <label style="font-size: medium; font-weight: bold; display: inline-block;">Nombre del Tours:</label>
-                                <h6 class="card-title" style="display: inline-block;">@reviews.TourID</h6>
+                                <h6 class="card-title" style="display: inline-block;">@ViewBag.Tours[reviews.TourID]</h6>
                             </div>
 
                             <div>
@@ -51,9 +51,9 @@ else
                         </div>
 
                         <div class="d-flex justify-content-end">
-                            <a type="button" class="btn btn-primary text-white btn-modify" asp-action="Actualizar" asp-route-id="@reviews.IDReviews">Modificar</a>
+                            <a type="button" class="btn btn-warning text-white btn-modify" asp-action="Actualizar" asp-route-id="@reviews.IDReviews">Modificar</a>
                                 &nbsp;
-                            <a type="button" class="btn btn-secondary text-white btn-delete" asp-action="Eliminar" asp-route-id="@reviews.IDReviews">Eliminar</a>
+                            <a type="button" class="btn btn-danger text-white btn-delete" asp-action="Eliminar" asp-route-id="@reviews.IDReviews">Eliminar</a>
                         </div>
                     </div>
                 </div>

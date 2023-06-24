@@ -26,7 +26,7 @@ else
     <br />
     <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Empresas</h1>
     <div class="d-flex justify-content-center">
-        <a class="col col-2 btn btn-primary d-grid" asp-action="Crear">Agregar</a>
+        <a class="col col-2 btn btn-success d-grid" asp-action="Crear">Agregar</a>
     </div>
     <div class="ms-4 me-4 mt-4 mb-4">
         <div>
@@ -47,9 +47,9 @@ else
                             </div>
 
                             <div class="d-flex justify-content-end">
-                                <a type="button" class="btn btn-primary text-white btn-modify" asp-action="Actualizar" asp-route-id="@empresas.IDEmpresas">Modificar</a>
+                                <a type="button" class="btn btn-warning text-white btn-modify" asp-action="Actualizar" asp-route-id="@empresas.IDEmpresas">Modificar</a>
                                 &nbsp;
-                            <a type="button" class="btn btn-secondary text-white btn-delete" asp-action="Eliminar" asp-route-id="@empresas.IDEmpresas">Eliminar</a>
+                            <a type="button" class="btn btn-danger text-white btn-delete" asp-action="Eliminar" asp-route-id="@empresas.IDEmpresas">Eliminar</a>
                             </div>
                         </div>
                     </div>

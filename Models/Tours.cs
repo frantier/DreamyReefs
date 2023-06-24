@@ -29,13 +29,16 @@ namespace DreamyReefs.Models
         public ICollection<Caracteristica> Caracteristicas { get; set; }
 
         // Propiedades de navegación para las características
-        public ICollection<Estatus> Estatuses { get; set; }
+        public ICollection<Imagen> Imagenes { get; set; }
+
+        public ICollection<Review> Reviews { get; set; }
 
         public Tours()
         {
             Categorias = new List<Categoria>();
             Caracteristicas = new List<Caracteristica>();
-            Estatuses = new List<Estatus>();
+            Imagenes = new List<Imagen>();
+            Reviews = new List<Review>();
         }
     }
 }

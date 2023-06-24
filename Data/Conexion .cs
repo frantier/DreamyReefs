@@ -196,6 +196,12 @@ namespace DreamyReefs.Data
             Database.ExecuteSqlRaw("EXEC [dbo].[EliminarUsuario] 'TOURS', {0}", ID);
         }
 
+        public Tours? GetOneTourName(int id)
+        {
+            var tours = Tours.FromSqlInterpolated($"EXEC [dbo].[ObtenerUsuarioPorID] 'TOURSNAME', {id}").AsEnumerable().FirstOrDefault();
+            return tours;
+        }
+
         #endregion
 
         #region Acciones de Caracteristicas

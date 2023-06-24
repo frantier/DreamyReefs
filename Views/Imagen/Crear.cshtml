@@ -1,0 +1,52 @@
+@model DreamyReefs.Models.Imagen
+@{
+    ViewData["Title"] = "Imagenes";
+    Layout = "_LayoutSitioGestion";
+}
+
+<div class="layout-page">
+    <br />
+    <br />
+    <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Subir Imagen</h1>
+    <div class="ms-4 me-4 mt-4 mb-4">
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <div class="row row-cols-1 row-cols-md-2 justify-content-center">
+                <div class="col">
+                    <div class="card m-2">
+                        <div class="card-body">
+                            <div>
+                                <form asp-action="Crear" method="post" enctype="multipart/form-data">
+                                    <div>
+                                        <label asp-for="TourID" class="form-label">Tours</label>
+                                        <select asp-for="TourID" class="form-control">
+                                            <option value="">Seleccione un tour</option>
+                                            @foreach (var tours in ViewBag.Tours)
+                                            {
+                                                <option value="@tours.IDTours">
+                                                    @tours.Nombre</option>
+                                            }
+                                        </select>
+                                        <span asp-validation-for="TourID" class="text-danger"></span>
+                                    </div>
+                                    &ensp;
+                                    <div>
+                                        <label asp-for="ImagenBase64">Archivo</label>
+                                        <input type="file" name="ImagenBase64" placeholder="Seleccione un archivo"
+                                            class="form-control-file" accept="image/*">
+                                        
+                                    </div>
+                                    &ensp;
+                                    <div class="d-flex justify-content-end">
+                                        <input type="submit" value="Subir imagen" class="btn btn-success btn-md" />
+                                        &ensp;
+                                        <a asp-action="Index" class="btn btn-primary btn-md">Volver al listado</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

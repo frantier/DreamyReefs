@@ -1,0 +1,65 @@
+@{
+    ViewData["Title"] = "Imagenes";
+    Layout = "_LayoutSitioGestion";
+    List<Imagen> listImagen = Model;
+}
+
+@if (Model == null || Model.Count == 0)
+{
+    <div class="layout-page">
+        <br />
+        <br />
+        <div class="row justify-content-center">
+
+            <div class="col-md-8 ">
+                <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">No hay imagenes para mostrar</h1>
+                &nbsp;
+                <div class="d-flex justify-content-center">
+                    <a class="col col-2 btn btn-primary d-grid" asp-action="Crear">Agregar imagenes</a>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <div class="layout-page">
+        <br />
+        <br />
+        <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Imagenes</h1>
+        <div class="d-flex justify-content-center">
+            <a class="col col-2 btn btn-success d-grid" asp-action="Crear">Agregar imagenes</a>
+        </div>
+        <div class="ms-4 me-4 mt-4 mb-4">
+            <div>
+                <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+                    @foreach (var Imagenes in Model)
+                    {
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <img src="data:image;base64,@Imagenes.ImagenBase64" alt="" />
+                                </div>
+                                <div class="card-body">
+                                    <div>
+                                        <label style="font-size: medium; font-weight: bold; display: inline-block;">Tour:</label>
+                                        <h3 class="card-title" style="display: inline-block;">@ViewBag.Tours[Imagenes.TourID]</h3>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <a type="button" class="btn btn-warning text-white btn-modify" asp-action="Actualizar"
+                                           asp-route-id="@Imagenes.IDImagenes">Modificar</a>
+                                        &nbsp;
+                                        <a type="button" class="btn btn-danger text-white btn-delete" asp-action="Eliminar"
+                                           asp-route-id="@Imagenes.IDImagenes">Eliminar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+                &nbsp;
+            </div>
+        </div>
+    </div>
+
+}

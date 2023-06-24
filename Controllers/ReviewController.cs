@@ -17,8 +17,17 @@ namespace DreamyReefs.Controllers
 
         public IActionResult Index()
         {
-            var review = _conexion.GetAllReviews().ToList();
-            return View(review);
+            var reviews = _conexion.GetAllReviews().ToList();
+            ViewBag.Tours = new Dictionary<int, string>();
+
+            foreach (var review in reviews)
+            {
+                var tourID = review.TourID;
+                var tour = _conexion.GetOneTour(tourID);
+                ViewBag.Tours[tourID] = tour.Nombre;
+            }
+
+            return View(reviews);
         }
 
         public IActionResult Crear()
