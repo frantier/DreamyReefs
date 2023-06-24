@@ -386,7 +386,7 @@ namespace DreamyReefs.Data
 
         public void CrearReservaciones(string name, string telefono, string email, int adultos, int infantes, string estatus)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[CrearReservaciones] {0}, {1}, {2}, {3}, {4}", name, telefono, email, adultos, infantes, estatus);
+            Database.ExecuteSqlRaw("EXEC [dbo].[CrearReservaciones] {0}, {1}, {2}, {3}, {4}, {5}", name, telefono, email, adultos, infantes, estatus);
         }
 
         public void ActualizarReservaciones(int ID, string name, string telefono, string email, int adultos, int infantes, string estatus)

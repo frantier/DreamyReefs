@@ -54,38 +54,80 @@
                                         <span asp-validation-for="Idioma" class="text-danger"></span>
                                     </div>
                                     <div>
-                                        <label asp-for="Categoria1" class="form-label"></label>
-                                        <input asp-for="Categoria1" class="form-control" />
+                                        <label asp-for="Categoria1" class="form-label">Categoría 1</label>
+                                        <select asp-for="Categoria1" class="form-control">
+                                            <option value="">Seleccione una categoría</option>
+                                            @foreach (var categoria in ViewBag.Categorias)
+                                            {
+                                                <option value="@categoria.IDCategorias">@categoria.NombreCategoria</option>
+                                            }
+                                        </select>
                                         <span asp-validation-for="Categoria1" class="text-danger"></span>
                                     </div>
                                     <div>
-                                        <label asp-for="Categoria2" class="form-label"></label>
-                                        <input asp-for="Categoria2" class="form-control" />
+                                        <label asp-for="Categoria2" class="form-label">Categoría 2</label>
+                                        <select asp-for="Categoria2" class="form-control">
+                                            <option value="">Seleccione una categoría</option>
+                                            @foreach (var categoria in ViewBag.Categorias)
+                                            {
+                                                <option value="@categoria.IDCategorias">@categoria.NombreCategoria</option>
+                                            }
+                                        </select>
                                         <span asp-validation-for="Categoria2" class="text-danger"></span>
                                     </div>
                                     <div>
-                                        <label asp-for="Categoria3" class="form-label"></label>
-                                        <input asp-for="Categoria3" class="form-control" />
+                                        <label asp-for="Categoria3" class="form-label">Categoría 3</label>
+                                        <select asp-for="Categoria3" class="form-control">
+                                            <option value="">Seleccione una categoría</option>
+                                            @foreach (var categoria in ViewBag.Categorias)
+                                            {
+                                                <option value="@categoria.IDCategorias">@categoria.NombreCategoria</option>
+                                            }
+                                        </select>
                                         <span asp-validation-for="Categoria3" class="text-danger"></span>
                                     </div>
                                     <div>
-                                        <label asp-for="Categoria4" class="form-label"></label>
-                                        <input asp-for="Categoria4" class="form-control" />
+                                        <label asp-for="Categoria4" class="form-label">Categoría 4</label>
+                                        <select asp-for="Categoria4" class="form-control">
+                                            <option value="">Seleccione una categoría</option>
+                                            @foreach (var categoria in ViewBag.Categorias)
+                                            {
+                                                <option value="@categoria.IDCategorias">@categoria.NombreCategoria</option>
+                                            }
+                                        </select>
                                         <span asp-validation-for="Categoria4" class="text-danger"></span>
                                     </div>
                                     <div>
-                                        <label asp-for="Caracteristica1" class="form-label"></label>
-                                        <input asp-for="Caracteristica1" class="form-control" />
+                                        <label asp-for="Caracteristica1" class="form-label">Característica 1</label>
+                                        <select asp-for="Caracteristica1" class="form-control">
+                                            <option value="">Seleccione una característica</option>
+                                            @foreach (var caracteristica in ViewBag.Caracteristicas)
+                                            {
+                                                <option value="@caracteristica.IDCaracteristicas">@caracteristica.NombreCaracteristica</option>
+                                            }
+                                        </select>
                                         <span asp-validation-for="Caracteristica1" class="text-danger"></span>
                                     </div>
                                     <div>
-                                        <label asp-for="Caracteristica2" class="form-label"></label>
-                                        <input asp-for="Caracteristica2" class="form-control" />
+                                        <label asp-for="Caracteristica2" class="form-label">Característica 2</label>
+                                        <select asp-for="Caracteristica2" class="form-control">
+                                            <option value="">Seleccione una característica</option>
+                                            @foreach (var caracteristica in ViewBag.Caracteristicas)
+                                            {
+                                                <option value="@caracteristica.IDCaracteristicas">@caracteristica.NombreCaracteristica</option>
+                                            }
+                                        </select>
                                         <span asp-validation-for="Caracteristica2" class="text-danger"></span>
                                     </div>
                                     <div>
-                                        <label asp-for="Caracteristica3" class="form-label"></label>
-                                        <input asp-for="Caracteristica3" class="form-control" />
+                                        <label asp-for="Caracteristica3" class="form-label">Característica 3</label>
+                                        <select asp-for="Caracteristica3" class="form-control">
+                                            <option value="">Seleccione una característica</option>
+                                            @foreach (var caracteristica in ViewBag.Caracteristicas)
+                                            {
+                                                <option value="@caracteristica.IDCaracteristicas">@caracteristica.NombreCaracteristica</option>
+                                            }
+                                        </select>
                                         <span asp-validation-for="Caracteristica3" class="text-danger"></span>
                                     </div>
                                     <div>

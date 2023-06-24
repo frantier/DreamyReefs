@@ -45,10 +45,12 @@
                                         <span asp-validation-for="Contrasena" class="text-danger"></span>
                                     </div>
                                     <div>
-                                        <label asp-for="Estatus" class="form-label" >Estatus</label>
-                                        <input asp-for="Estatus" placeholder="Estatus"
-                                            class="form-control" />
-                                            <span asp-validation-for="Estatus" class="text-danger"></span>
+                                        <label asp-for="Estatus" class="form-label">Estatus</label>
+                                        <select asp-for="Estatus" class="form-control">
+                                            <option >Activo</option>
+                                            <option >Inactivo</option>
+                                        </select>
+                                        <span asp-validation-for="Estatus" class="text-danger"></span>
                                     </div>
                                     &ensp;
                                     <div class="d-flex justify-content-end">

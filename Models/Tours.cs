@@ -21,8 +21,21 @@ namespace DreamyReefs.Models
         public string? Estatus { get; set; }
         public int PrecioAdulto { get; set; }
         public int PrecioInfantes { get; set; }
-        // public int IDCategorias { get; set; }
-        // public Categoria? categoria { get; set; }
-        // public List<Categoria>? ListaCategorias { get; set; }
+
+        // Propiedades de navegación para las categorías
+        public ICollection<Categoria> Categorias { get; set; }
+
+        // Propiedades de navegación para las características
+        public ICollection<Caracteristica> Caracteristicas { get; set; }
+
+        // Propiedades de navegación para las características
+        public ICollection<Estatus> Estatuses { get; set; }
+
+        public Tours()
+        {
+            Categorias = new List<Categoria>();
+            Caracteristicas = new List<Caracteristica>();
+            Estatuses = new List<Estatus>();
+        }
     }
 }

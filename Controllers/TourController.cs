@@ -25,7 +25,7 @@ namespace DreamyReefs.Controllers
 
         public IActionResult Index()
         {
-            var storedToken = HttpContext.Session.GetString("Token");            
+            var storedToken = HttpContext.Session.GetString("Token");
             var model = new DashboardViewModel
             {
                 Token = storedToken
@@ -39,25 +39,30 @@ namespace DreamyReefs.Controllers
             {
                 return RedirectToAction("Login", "Login");
             }
-            
+
         }
 
         public IActionResult Crear()
         {
-            var storedToken = HttpContext.Session.GetString("Token");            
+            var storedToken = HttpContext.Session.GetString("Token");
             var model = new DashboardViewModel
             {
                 Token = storedToken
             };
             if (model.Token != null && model.Token == storedToken)
             {
+                var categorias = _conexion.GetAllCategorias();
+                var caracteristicas = _conexion.GetAllCaracteristicas();
+
+                ViewBag.Categorias = categorias;
+                ViewBag.Caracteristicas = caracteristicas;
+
                 return View();
             }
             else
             {
                 return RedirectToAction("Login", "Login");
             }
-            
         }
 
         [HttpPost]
@@ -73,13 +78,19 @@ namespace DreamyReefs.Controllers
 
         public IActionResult Actualizar(int id)
         {
-            var storedToken = HttpContext.Session.GetString("Token");            
+            var storedToken = HttpContext.Session.GetString("Token");
             var model = new DashboardViewModel
             {
                 Token = storedToken
             };
             if (model.Token != null && model.Token == storedToken)
             {
+                var categorias = _conexion.GetAllCategorias();
+                var caracteristicas = _conexion.GetAllCaracteristicas();
+
+                ViewBag.Categorias = categorias;
+                ViewBag.Caracteristicas = caracteristicas;
+                
                 var tours = _conexion.GetOneTour(id);
                 return View(tours);
             }
@@ -87,7 +98,7 @@ namespace DreamyReefs.Controllers
             {
                 return RedirectToAction("Login", "Login");
             }
-            
+
         }
 
         [HttpPost]
@@ -103,13 +114,18 @@ namespace DreamyReefs.Controllers
 
         public IActionResult Eliminar(int id)
         {
-            var storedToken = HttpContext.Session.GetString("Token");            
+            var storedToken = HttpContext.Session.GetString("Token");
             var model = new DashboardViewModel
             {
                 Token = storedToken
             };
             if (model.Token != null && model.Token == storedToken)
             {
+                var categorias = _conexion.GetAllCategorias();
+                var caracteristicas = _conexion.GetAllCaracteristicas();
+
+                ViewBag.Categorias = categorias;
+                ViewBag.Caracteristicas = caracteristicas;
                 var tours = _conexion.GetOneTour(id);
                 return View(tours);
             }
@@ -117,7 +133,7 @@ namespace DreamyReefs.Controllers
             {
                 return RedirectToAction("Login", "Login");
             }
-            
+
         }
 
 
@@ -137,18 +153,5 @@ namespace DreamyReefs.Controllers
             var tours = _conexion.GetOneTour(id);
             return View(tours);
         }
-
-
-        // public IActionResult GetCategorias()
-        // {
-        //     // Obtener la lista de categorías desde la tabla correspondiente
-        //     var listaCategorias = _conexion.GetAllCategorias(); // Reemplaza "_tuRepositorio.ObtenerListaCategorias()" con el método o la lógica adecuada para obtener la lista de categorías
-
-        //     var model = new Tours();
-        //     model.ListaCategorias = listaCategorias; // Agregar la lista de categorías al modelo
-
-        //     return View(model);
-        // }
-
     }
 }

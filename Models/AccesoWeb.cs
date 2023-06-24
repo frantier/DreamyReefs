@@ -13,5 +13,12 @@ namespace DreamyReefs.Models
         public string? RefreshToken { get; set; }
         [NotMapped]
         public bool sesion { get; set; }
+
+        public ICollection<Estatus> Estatuses { get; set; }
+
+        public AccesoWeb()
+        {
+            Estatuses = new List<Estatus>();
+        }
     }
 }
