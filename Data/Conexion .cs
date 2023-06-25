@@ -152,7 +152,7 @@ namespace DreamyReefs.Data
         {
             var data = Guid.NewGuid().ToString();
             Database.ExecuteSqlRaw("UPDATE AccesoWeb SET RefreshToken = {0} WHERE Correo = {1}", data, email);
-            var acceso = AccesoWeb.FirstOrDefault(a => a.RefreshToken == data && a.Correo == email && a.Contrasena == pass && a.Estatus == "Activo");            
+            var acceso = AccesoWeb.FirstOrDefault(a => a.RefreshToken == data && a.Correo == email && a.Contrasena == pass && a.Estatus == "Activo");
             return acceso;
         }
         public bool ObtenerToken(string tok)
@@ -194,12 +194,6 @@ namespace DreamyReefs.Data
         public void EliminarTour(int ID)
         {
             Database.ExecuteSqlRaw("EXEC [dbo].[EliminarUsuario] 'TOURS', {0}", ID);
-        }
-
-        public Tours? GetOneTourName(int id)
-        {
-            var tours = Tours.FromSqlInterpolated($"EXEC [dbo].[ObtenerUsuarioPorID] 'TOURSNAME', {id}").AsEnumerable().FirstOrDefault();
-            return tours;
         }
 
         #endregion
@@ -374,6 +368,12 @@ namespace DreamyReefs.Data
         public void EliminarImagenes(int ID)
         {
             Database.ExecuteSqlRaw("EXEC [dbo].[EliminarUsuario] 'IMAGENES', {0}", ID);
+        }
+
+        public Imagen? GetOneImagenesTour(int id)
+        {
+            var imagenes = Imagenes.FromSqlInterpolated($"EXEC [dbo].[ObtenerUsuarioPorID] 'TOURSIMAGEN', {id}").AsEnumerable().FirstOrDefault();
+            return imagenes;
         }
 
         #endregion

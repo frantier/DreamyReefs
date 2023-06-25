@@ -1,9 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.Net.NetworkInformation;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace DreamyReefs.Models
 {
-    public class Tours
+    public class TourConImagen
     {
         public int IDTours { get; set; }
         public string? Nombre { get; set; }
@@ -22,27 +24,6 @@ namespace DreamyReefs.Models
         public string? Estatus { get; set; }
         public int PrecioAdulto { get; set; }
         public int PrecioInfantes { get; set; }
-
-        [NotMapped]
         public string? ImagenTour { get; set; }
-
-        // Propiedades de navegación para las categorías
-        public ICollection<Categoria> Categorias { get; set; }
-
-        // Propiedades de navegación para las características
-        public ICollection<Caracteristica> Caracteristicas { get; set; }
-
-        // Propiedades de navegación para las características
-        public ICollection<Imagen> Imagenes { get; set; }
-
-        public ICollection<Review> Reviews { get; set; }
-
-        public Tours()
-        {
-            Categorias = new List<Categoria>();
-            Caracteristicas = new List<Caracteristica>();
-            Imagenes = new List<Imagen>();
-            Reviews = new List<Review>();
-        }
     }
 }

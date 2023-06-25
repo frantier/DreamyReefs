@@ -11,6 +11,7 @@ namespace DreamyReefs.Models
         public string? Contrasena { get; set; }
         public string? Estatus { get; set; }
         public string? RefreshToken { get; set; }
+        
         [NotMapped]
         public bool sesion { get; set; }
 

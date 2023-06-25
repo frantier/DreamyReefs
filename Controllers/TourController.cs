@@ -20,6 +20,14 @@ namespace DreamyReefs.Controllers
         public IActionResult Index2()
         {
             var tours = _conexion.GetAllTours().ToList();
+            ViewBag.Imagen = new Dictionary<int, string>();
+
+            foreach (var tour in tours)
+            {
+                var imagenID = tour.IDTours;
+                var img = _conexion.GetOneImagenesTour(imagenID);
+                ViewBag.Imagen[imagenID] = img.ImagenBase64;
+            }
             return View(tours);
         }
 
@@ -33,6 +41,14 @@ namespace DreamyReefs.Controllers
             if (model.Token != null && model.Token == storedToken)
             {
                 var tours = _conexion.GetAllTours().ToList();
+                ViewBag.Imagen = new Dictionary<int, string>();
+
+                foreach (var tour in tours)
+                {
+                    var imagenID = tour.IDTours;
+                    var img = _conexion.GetOneImagenesTour(imagenID);
+                    ViewBag.Imagen[imagenID] = img.ImagenBase64;
+                }
                 return View(tours);
             }
             else
@@ -90,7 +106,7 @@ namespace DreamyReefs.Controllers
 
                 ViewBag.Categorias = categorias;
                 ViewBag.Caracteristicas = caracteristicas;
-                
+
                 var tours = _conexion.GetOneTour(id);
                 return View(tours);
             }
