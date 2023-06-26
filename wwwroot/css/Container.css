@@ -5,9 +5,9 @@
 }
 
 h1 {
-	font-size: 50px !important;
+	font-size: 30px !important;
 	font-weight: bold !important;
-	color: white !important;
+	color: #111111 !important;
 	margin: 0;
 }
 .h11 {
@@ -116,51 +116,36 @@ h1 {
 		background-image: linear-gradient(to right, #00f2fe 0%, #4facfe 100%);
 	}
 
-.DetalleTour{
-	display: block;
-    width: 255%;
-    padding: 0px;
-    font-size: 2rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: none !important;
-    border-radius: 0.25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-.DescripcionesTour{
-	text-align: justify;
-	display: block;
-    width: 255%;
+.InformacionExtra {
+	display: inline-block; /* Mostrar los elementos en línea */
+	vertical-align: top; /* Alinear los elementos en la parte superior */
+	margin-left: 10px; /* Agregar un margen a la izquierda para separar los elementos */
 	padding-top: 0px;
-    padding-bottom: 0px;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: none !important;
-    border-radius: 0.25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	padding-bottom: 0px;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: none !important;
+	border-radius: 0.25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-.InformacionExtra{
-	padding-top: 0px;
-    padding-bottom: 0px;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: none !important;
-    border-radius: 0.25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+.lista-estilizada {
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
-textarea{
-	overflow: hidden !important;
-	resize: none !important;
-	height: 120px;
-}
+	.lista-estilizada li {
+		margin-bottom: 10px;
+	}
+
+		.lista-estilizada li::before {
+			content: "\25A0"; /* Utiliza el código unicode para un cuadrado */
+			color: deepskyblue; /* Cambia el color del marcador de lista aquí */
+			font-size: 12px;
+			margin-right: 5px;
+		}
+

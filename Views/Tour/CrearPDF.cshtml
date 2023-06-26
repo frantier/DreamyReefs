@@ -1,0 +1,210 @@
+﻿@model DreamyReefs.Models.ViewModels.ViewModelTour
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Reservacion</title>
+    <style>
+        .contenedor {
+            width: 900px !important;
+            height: 842px !important;
+            margin: auto;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        p.title {
+            font-weight: bold;
+        }
+
+        p.title2 {
+            font-weight: bold;
+            color: #03A99F;
+            font-size: 20px;
+        }
+
+        p.text {
+            font-size: 15px;
+            font-weight: 100;
+            color: #858585;
+        }
+
+        p {
+            margin: 0px
+        }
+
+        .tbth {
+            text-align: left;
+        }
+
+        table.tbproductos {
+            border-collapse: separate;
+            border-spacing: 4px;
+        }
+
+            table.tbproductos thead tr th {
+                background-color: #03A99F;
+                padding: 10px;
+                font-size: 15px;
+                color: white;
+            }
+
+            table.tbproductos tbody tr td {
+                padding: 10px;
+            }
+
+        .item {
+            font-size: 15px;
+            font-weight: 100;
+            color: #757575;
+        }
+
+        .item-2 {
+            font-size: 15px;
+            font-weight: bold;
+            color: #757575;
+        }
+
+        .item-3 {
+            font-size: 15px;
+            font-weight: bold;
+            background-color: #03A99F;
+            color: white;
+        }
+
+        .td-item {
+            border-bottom: 2px solid #E8E8E8 !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <img src="~/images/DreamyReefs.png" style="width: 250px;" />
+                </td>
+                <td style="text-align:right">
+                    <table style="margin-right:0;margin-left:auto">
+                        <tr><td><p class="title2">PRE-RESERVACION</p></td></tr>
+                        <tr><td>Nº @Model.IDTourReservado</td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <p class="title">DATOS DEL CLIENTE</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p class="text">Nombre: @Model.NombrePersona</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="text">Email: @Model.EmailPersona</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="text">Telefono: @Model.TelefonoPersona</p>
+                            </td>
+                        </tr>
+                        @*<tr>
+                        <td>
+                        <p class="text">Nº de Adultos: @Model.AdultosPersona</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                        <p class="text">Nº de Niños: @Model.InfantesPersona</p>
+                        </td>
+                        </tr>*@
+                    </table>
+                </td>
+                <td style="text-align:right">
+                    <table style="margin-right:0;margin-left:auto">
+                        <tr>
+                            <td><p class="title">DETALLES DEL TOUR</p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="text">Nombre: @Model.NombreTour</p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="text">Idioma: @Model.IdiomaTour</p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="text">Horario: @Model.Horario</p></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+
+        <table class="tbproductos" style="width:100%">
+            <thead>
+                <tr>
+                    <th class="tbth">Tour</th>
+                    <th class="tbth" style="width:130px">Adultos</th>
+                    <th class="tbth" style="width:130px">Infantes</th>
+                    <th class="tbth" style="width:130px">Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td-item"><p class="item">@Model.NombreTour</p></td>
+                    <td class="td-item"><p class="item">@Model.AdultosPersona</p></td>
+                    <td class="td-item"><p class="item">@Model.InfantesPersona</p></td>
+                    <td class="item-3"><p>Desglose</p></td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="3">
+                    </td>
+                    <td class="td-item">
+                        <p class="item-2">Precio Adulto</p>
+                    </td>
+                    <td class="item-3">
+                        <p>@Model.AdultoPrecio</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-item">
+                        <p class="item-2">Precio Infantes</p>
+                    </td>
+                    <td class="item-3">
+                        <p>@Model.InfantePrecio</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item-3">
+                        <p>Total</p>
+                    </td>
+                    <td class="item-3">
+                        <p>@Model.Total</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+</html>

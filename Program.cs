@@ -1,3 +1,4 @@
+using DreamyReefs.Controllers;
 using DreamyReefs.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -6,6 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<Conexion>(option => option.UseSqlServer(builder.Configuration.GetConnectionString("conexion")));
+
+builder.Services.AddScoped<ReservacionController>();
 
 // Configure session management
 builder.Services.AddSession(options =>
@@ -37,6 +40,9 @@ app.UseSession();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+IWebHostEnvironment env = app.Environment;
+Rotativa.AspNetCore.RotativaConfiguration.Setup(env.WebRootPath, "../Rotativa/Windows");
 
 app.Run();
     

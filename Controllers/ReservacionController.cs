@@ -1,6 +1,9 @@
 ﻿using DreamyReefs.Data;
 using DreamyReefs.Models;
+using DreamyReefs.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Rotativa.AspNetCore;
 using System.Diagnostics;
 
 
@@ -23,17 +26,6 @@ namespace DreamyReefs.Controllers
 
             public IActionResult Crear()
             {
-                return View();
-            }
-
-            [HttpPost]
-            public IActionResult Crear(Reservacion reservacion)
-            {
-                if (ModelState.IsValid && reservacion.NombreCompleto is not null && reservacion.Telefono is not null && reservacion.Email is not null && reservacion.Adultos > 0 && reservacion.Infantes > 0 && reservacion.Estatus is not null)
-                {
-                    _conexion.CrearReservaciones(reservacion.NombreCompleto, reservacion.Telefono, reservacion.Email, reservacion.Adultos, reservacion.Infantes, reservacion.Estatus);
-                    return RedirectToAction("Index");
-                }
                 return View();
             }
 
@@ -70,6 +62,8 @@ namespace DreamyReefs.Controllers
                     return RedirectToAction("Index");
                 }
                 return View();
-            }     
+            }
+
+        
     }
 }
