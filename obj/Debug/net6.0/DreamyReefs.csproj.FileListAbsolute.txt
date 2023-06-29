@@ -1208,3 +1208,4 @@ C:\Users\Usuario\Desktop\Tareas\Word\9°B\Desarrollo web integral\DreamyReefs\bi
 C:\Users\Usuario\Desktop\Tareas\Word\9°B\Desarrollo web integral\DreamyReefs\bin\Debug\net6.0\zh-Hant\Humanizer.resources.dll
 C:\Users\Usuario\Desktop\Tareas\Word\9°B\Desarrollo web integral\DreamyReefs\bin\Debug\net6.0\Rotativa\Windows\wkhtmltoimage.exe
 C:\Users\Usuario\Desktop\Tareas\Word\9°B\Desarrollo web integral\DreamyReefs\bin\Debug\net6.0\Rotativa\Windows\wkhtmltopdf.exe
+C:\Users\Usuario\Desktop\Tareas\Word\9°B\Desarrollo web integral\DreamyReefs\bin\Debug\net6.0\zxing.dll

@@ -63,6 +63,7 @@ namespace DreamyReefs.Controllers
             if (ModelState.IsValid && empresa.NombreEmpresa is not null && empresa.Correo is not null && empresa.Telefono is not null && empresa.Direccion is not null && empresa.RFC is not null)
             {
                 _conexion.CrearEmpresas(empresa.NombreEmpresa, empresa.Correo, empresa.Telefono, empresa.Direccion, empresa.RFC);
+                TempData["SuccessMessage"] = "Empresa agregada exitosamente.";
                 return RedirectToAction("Index");
             }
             return View();
@@ -95,40 +96,53 @@ namespace DreamyReefs.Controllers
             if (ModelState.IsValid && empresa.IDEmpresas > 0 && empresa.NombreEmpresa is not null && empresa.Correo is not null && empresa.Telefono is not null && empresa.Direccion is not null && empresa.RFC is not null)
             {
                 _conexion.ActualizarEmpresas(empresa.IDEmpresas, empresa.NombreEmpresa, empresa.Correo, empresa.Telefono, empresa.Direccion, empresa.RFC);
+                TempData["SuccessMessage"] = "Empresa actualizada exitosamente.";
                 return RedirectToAction("Index");
             }
             return View();
         }
 
-        public IActionResult Eliminar(int id)
-        {
-            var storedToken = HttpContext.Session.GetString("Token");
-            
-            var model = new DashboardViewModel
-            {
-                Token = storedToken
-            };
-            if (model.Token != null && model.Token == storedToken)
-            {
-                var empresa = _conexion.GetOneEmpresas(id);
-                return View(empresa);
-            }
-            else
-            {
-                return RedirectToAction("Login", "Login");
-            }            
-        }
+        //public IActionResult Eliminar(int id)
+        //{
+        //    var storedToken = HttpContext.Session.GetString("Token");
 
+        //    var model = new DashboardViewModel
+        //    {
+        //        Token = storedToken
+        //    };
+        //    if (model.Token != null && model.Token == storedToken)
+        //    {
+        //        var empresa = _conexion.GetOneEmpresas(id);
+        //        return View(empresa);
+        //    }
+        //    else
+        //    {
+        //        return RedirectToAction("Login", "Login");
+        //    }            
+        //}
+
+
+        //[HttpPost]
+        //public IActionResult Eliminar(Empresa empresa)
+        //{
+        //    if (empresa.IDEmpresas > 0)
+        //    {
+        //        _conexion.EliminarEmpresas(empresa.IDEmpresas);
+        //        return RedirectToAction("Index");
+        //    }
+        //    return View();
+        //}
 
         [HttpPost]
-        public IActionResult Eliminar(Empresa empresa)
+        public IActionResult Eliminar(int id)
         {
-            if (empresa.IDEmpresas > 0)
+            if (id > 0)
             {
-                _conexion.EliminarEmpresas(empresa.IDEmpresas);
-                return RedirectToAction("Index");
+                _conexion.EliminarEmpresas(id);
+                return Ok(); // Devuelve una respuesta exitosa al AJAX
             }
-            return View();
+
+            return BadRequest(); // Otra respuesta de error si el id no es válido
         }
     }
 }

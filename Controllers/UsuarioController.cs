@@ -47,6 +47,7 @@ namespace DreamyReefs.Controllers
             if (ModelState.IsValid && accesoWeb.Nombre is not null && accesoWeb.Usuario is not null && accesoWeb.Correo is not null && accesoWeb.Contrasena is not null && accesoWeb.Estatus is not null)
             {
                 _conexion.CrearUsuario(accesoWeb.Usuario, accesoWeb.Nombre, accesoWeb.Correo, accesoWeb.Contrasena, accesoWeb.Estatus);
+                TempData["SuccessMessage"] = "El usuario se ha creado exitosamente.";
                 return RedirectToAction("Index");
             }
             return View();
@@ -77,40 +78,43 @@ namespace DreamyReefs.Controllers
             if (ModelState.IsValid && accesoWeb.Nombre is not null && accesoWeb.Usuario is not null && accesoWeb.Correo is not null && accesoWeb.Contrasena is not null && accesoWeb.Estatus is not null && accesoWeb.IDAccesoWeb > 0)
             {
                 _conexion.ActualizarUsuario(accesoWeb.IDAccesoWeb, accesoWeb.Usuario, accesoWeb.Nombre, accesoWeb.Correo, accesoWeb.Contrasena, accesoWeb.Estatus);
+                TempData["SuccessMessage"] = "El usuario se ha actualizado exitosamente.";
                 return RedirectToAction("Index");
             }
             return View();
         }
 
-        public IActionResult Eliminar(int id)
-        {
-            var storedToken = HttpContext.Session.GetString("Token");            
-            var model = new DashboardViewModel
-            {
-                Token = storedToken
-            };
-            if (model.Token != null && model.Token == storedToken)
-            {
-               var usuario = _conexion.GetOneUsuario(id);
-                return View(usuario);
-            }
-            else
-            {
-                return RedirectToAction("Login", "Login");
-            }
+        //public IActionResult Eliminar(int id)
+        //{
+        //    var storedToken = HttpContext.Session.GetString("Token");            
+        //    var model = new DashboardViewModel
+        //    {
+        //        Token = storedToken
+        //    };
+        //    if (model.Token != null && model.Token == storedToken)
+        //    {
+        //       var usuario = _conexion.GetOneUsuario(id);
+        //        return View(usuario);
+        //    }
+        //    else
+        //    {
+        //        return RedirectToAction("Login", "Login");
+        //    }
             
-        }
+        //}
 
 
         [HttpPost]
-        public IActionResult Eliminar(AccesoWeb accesoWeb)
+        public IActionResult Eliminar(int id)
         {
-            if (accesoWeb.IDAccesoWeb > 0)
+            if (id > 0)
             {
-                _conexion.EliminarUsuario(accesoWeb.IDAccesoWeb);
-                return RedirectToAction("Index");
+                _conexion.EliminarUsuario(id);
+                return Ok(); // Devuelve una respuesta exitosa al AJAX
             }
-            return View();
+
+            return BadRequest(); // Otra respuesta de error si el id no es válido
         }
+
     }
 }

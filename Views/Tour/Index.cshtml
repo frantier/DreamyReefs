@@ -103,8 +103,7 @@ else
                                     <a type="button" class="btn btn-warning text-white btn-modify" asp-action="Actualizar"
                                         asp-route-id="@tours.IDTours">Modificar</a>
                                     &nbsp;
-                                    <a type="button" class="btn btn-danger text-white btn-delete" asp-action="Eliminar"
-                                        asp-route-id="@tours.IDTours">Eliminar</a>
+                                    <button type="button" class="btn btn-danger text-white btn-delete" onclick="eliminarTours(@tours.IDTours)">Eliminar</button>
                                 </div>
                             </div>
                         </div>

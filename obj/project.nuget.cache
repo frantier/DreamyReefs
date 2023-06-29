@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "EQFxoXNGykESXq82C1NbC7ZqZofoQCQh43fvbLqiOPHGOUdEOJp/cZZ0+pKX2YFznr+AL1RvZyznLek04iEzeA==",
+  "dgSpecHash": "gWGjrbP85WaikYozB4YapTu95a5r6WJd71SjQi6RHSaVsu+hz70L6VJTCF3x3X0bgrRoaE5m9g3igz5vEfmVGA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\DreamyReefs.csproj",
   "expectedPackageFiles": [
@@ -294,7 +294,8 @@
     "C:\\Users\\Usuario\\.nuget\\packages\\system.threading.timer\\4.3.0\\system.threading.timer.4.3.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512"
+    "C:\\Users\\Usuario\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\zxing.net\\0.16.9\\zxing.net.0.16.9.nupkg.sha512"
   ],
   "logs": []
 }

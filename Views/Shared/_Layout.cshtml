@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="~/DreamyReefs.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/Container.css" asp-append-version="true">
     <link rel="stylesheet" href="~/css/Cards.css" asp-append-version="true">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -52,12 +53,16 @@
                         </div>
                         <div class="menu_main justify-content-center">
                             <ul class="navbar-nav">
-                                <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Home"
-                                        asp-action="Index">Inicio</a></li>
-                                <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Tour"
-                                        asp-action="Index2">Tours</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Tour" asp-action="Index2">Tours</a>
+                                </li>
                                 <li class="nav-item"><a class="nav-link" href="#">Acerca de</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Comentarios</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-area="" asp-controller="Review" asp-action="Index2">Comentarios</a>
+                                </li>
                             </ul>
                         </div>
                     </nav>
@@ -101,6 +106,14 @@
             </p>
         </div>
     </div>
+
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Cargando...</div>
+        </div>
+    </div>
+
     <!-- copyright section end -->
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -123,9 +136,43 @@
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+    <script>
+        window.addEventListener('load', function () {
+            var loader = document.getElementById('loader');
+            loader.style.display = 'flex';
+
+            // Establecer la duración del loader en milisegundos (por ejemplo, 2000ms = 2 segundos)
+            var duracionLoader = 1000;
+
+            setTimeout(function () {
+                loader.style.display = 'none';
+            }, duracionLoader);
+        });
+
+        function registrosCreados() {
+            var successMessage = '@TempData["SuccessMessage"]';
+            if (successMessage) {
+                swal.fire({
+                    title: "Éxito",
+                    text: successMessage,
+                    icon: "success",
+                    showConfirmButton: false,
+                    timer: 2000,
+                    timerProgressBar: true,
+                    didOpen: () => {
+                        Swal.showLoading();
+                    }
+                });
+            }
+        }
+
+        window.onload = registrosCreados;
+    </script>
 </body>
 
 </html>

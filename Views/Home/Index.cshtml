@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@{
+    ViewData["Title"] = "Inicio";
+    Layout = "_Layout";
+    List<Review> listaReview = Model;
+}
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -40,131 +46,169 @@
 </head>
 
 <body>
-   <!-- header section end -->
-   <!-- services section start -->
+    @if (Model == null || Model.Count == 0)
+    {
+        <div class="layout-page">
+            <br />
+            <br />
+            <div class="row justify-content-center">
 
-   <div class="slider">
-      <ul>
-         <li>
-            <img src="images/cozumel-excursions-social-media-image.png">
-         </li>
-         <li>
-            <img src="images/Top-4-tours-in-Cozumel.jpg">
-         </li>
-         <li>
-            <img src="images/tours-en-cozumel1.jpg">
-         </li>
-         <li>
-            <img src="images/3-Reefs-min-1-1Mx450.jpg">
-         </li>
-      </ul>
-   </div>
+                <div class="col-md-8 ">
+                    <div class="card">
+                        <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">No hay Reviews para mostrar</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="slider">
+            <ul>
+                <li>
+                    <img src="images/cozumel-excursions-social-media-image.png">
+                </li>
+                <li>
+                    <img src="images/Top-4-tours-in-Cozumel.jpg">
+                </li>
+                <li>
+                    <img src="images/tours-en-cozumel1.jpg">
+                </li>
+                <li>
+                    <img src="images/3-Reefs-min-1-1Mx450.jpg">
+                </li>
+            </ul>
+        </div>
 
 
-   <div class="services_section layout_padding">
-      <div class="container3">
-         <h1 class="h11">Categorías de Tours</h1>
-         <p class="services_text"> En DreamyReef nuestro objetivo es brindar a nuestros clientes experiencias
-            inolvidables en algunos de los destinos más fascinantes de Cozumel.
-            Con el snorkeling, podrás sumergirte en aguas cristalinas y explorar los vibrantes arrecifes de coral,
-            mientras nadas entre una variedad de coloridos peces tropicales.
-            Si prefieres una aventura más profunda, el buceo te permitirá descender a las profundidades del océano y
-            descubrir un mundo submarino lleno de belleza y misterio.
-            Además, ofrecemos emocionantes tours de exploración de ruinas, donde podrás sumergirte en la historia y
-            explorar antiguas estructuras.
-            DreamyReef tiene el tour perfecto para ti.</p>
-         <div class="services_section_2">
-            <div class="row">
-               <div class="col-md-4">
-                  <div><img src="images/arrecife-paraiso.jpg" class="services_img"></div>
-                  <div class="btn_main"><a href="#">Snorkeling</a></div>
-               </div>
-               <div class="col-md-4">
-                  <div><img src="images/cozumel-diving-naw.jpg" class="services_img"></div>
-                  <div class="btn_main"><a href="#">Buceo</a></div>
-               </div>
-               <div class="col-md-4">
-                  <div><img src="images/20220809_za_sangervasio_head.jpeg" class="services_img"></div>
-                  <div class="btn_main"><a href="#">Exploración</a></div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- services section end -->
-   <!-- about section start -->
-   <div class="about_section layout_padding">
-      <div class="container-fluid">
-         <div class="row">
-            <div class="col-md-6">
-               <div class="about_taital_main">
-                  <h1 class="h11">Acerca de</h1>
-                  <p class="about_text">
-                     ¡Bienvenidos a DreamyReef! En esta ocasión, nos embarcaremos en un viaje hacia la deslumbrante isla
-                     de Cozumel,
-                     un auténtico paraíso caribeño que ofrece una mezcla perfecta de bellezas naturales, actividades
-                     emocionantes, historia y cultura maya,
-                     y una hospitalidad inigualable. Únete para descubrir las razones por las cuales Cozumel es un
-                     destino que no puedes dejar de visitar.
-                  </p>
-                  <div class="readmore_bt"><a href="#">Leer más</a></div>
-               </div>
-            </div>
-            <div class="col-md-6">
-               <div><img src="images/PM_20_3COL_BYN_MIRADOR-750x406.jpeg" class="about_img"></div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- about section end -->
-   <!-- client section start -->
-   <div class="client_section layout_padding">
-      <div class="container3">
-         <h1 class="h12">Comentarios</h1>
-         <div class="client_section_2">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-               <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-               </ol>
-               <div class="carousel-inner">
-                  <div class="carousel-item active">
-                     <div class="client_main">
-                        <div class="box_center">
-                           <p class="lorem_text">Fue una experiencia increíble que superó todas mis expectativas. Desde
-                              el momento en que subimos al barco hasta el final, todo estuvo bien organizado. El equipo
-                              de guías fue amable, lo que hizo que el recorrido fuera muy informativo. Disfruté de cada
-                              parada que hicimos, especialmente del snorkeling.</p>
+        <div class="services_section layout_padding">
+            <div class="container3">
+                <h1 class="h11">Categorías de Tours</h1>
+                <p class="services_text">
+                    En DreamyReef nuestro objetivo es brindar a nuestros clientes experiencias
+                    inolvidables en algunos de los destinos más fascinantes de Cozumel.
+                    Con el snorkeling, podrás sumergirte en aguas cristalinas y explorar los vibrantes arrecifes de coral,
+                    mientras nadas entre una variedad de coloridos peces tropicales.
+                    Si prefieres una aventura más profunda, el buceo te permitirá descender a las profundidades del océano y
+                    descubrir un mundo submarino lleno de belleza y misterio.
+                    Además, ofrecemos emocionantes tours de exploración de ruinas, donde podrás sumergirte en la historia y
+                    explorar antiguas estructuras.
+                    DreamyReef tiene el tour perfecto para ti.
+                </p>
+                <div class="services_section_2">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div><img src="images/arrecife-paraiso.jpg" class="services_img"></div>
+                            <div class="btn_main"><a href="#">Snorkeling</a></div>
                         </div>
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                     <div class="client_main">
-                        <div class="box_center">
-                           <p class="lorem_text">La atención al detalle y el nivel de servicio que recibimos durante
-                              todo el recorrido fueron impecables. Además, quiero mencionar lo bien que se adaptaron a
-                              nuestras necesidades y preferencias individuales. Sin duda alguna, volvería a elegir este
-                              tour en mi próxima visita a Cozumel.</p>
+                        <div class="col-md-4">
+                            <div><img src="images/cozumel-diving-naw.jpg" class="services_img"></div>
+                            <div class="btn_main"><a href="#">Buceo</a></div>
                         </div>
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                     <div class="client_main">
-                        <div class="box_center">
-                           <p class="lorem_text">El tour en Cozumel fue simplemente excepcional, y no puedo agradecer lo
-                              suficiente a todo el equipo por brindarnos una experiencia inolvidable. Además, el
-                              almuerzo que se nos proporcionó fue delicioso, y las vistas panorámicas desde el barco
-                              fueron impresionantes.</p>
+                        <div class="col-md-4">
+                            <div><img src="images/20220809_za_sangervasio_head.jpeg" class="services_img"></div>
+                            <div class="btn_main"><a href="#">Exploración</a></div>
                         </div>
-                     </div>
-                  </div>
-               </div>
+                    </div>
+                </div>
             </div>
-         </div>
+        </div>
+        <!-- services section end -->
+        <!-- about section start -->
+        <div class="about_section layout_padding">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="about_taital_main">
+                            <h1 class="h11">Acerca de</h1>
+                            <p class="about_text">
+                                ¡Bienvenidos a DreamyReef! En esta ocasión, nos embarcaremos en un viaje hacia la deslumbrante isla
+                                de Cozumel,
+                                un auténtico paraíso caribeño que ofrece una mezcla perfecta de bellezas naturales, actividades
+                                emocionantes, historia y cultura maya,
+                                y una hospitalidad inigualable. Únete para descubrir las razones por las cuales Cozumel es un
+                                destino que no puedes dejar de visitar.
+                            </p>
+                            <div class="readmore_bt"><a href="#">Leer más</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div><img src="images/PM_20_3COL_BYN_MIRADOR-750x406.jpeg" class="about_img"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- about section end -->
+        <!-- client section start -->
+        <div class="client_section layout_padding">
+            <div class="container3">
+                <h1 class="h12">Comentarios</h1>
+                <div class="client_section_2">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            @*@foreach (var reviews2 in Model)
+                            {
+                                <li data-target="#carouselExampleIndicators" data-slide-to="@reviews2.IDReviews"></li>
+                            }*@
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            @*@foreach (var reviews in Model)
+                            {
+                                <div class="carousel-item active"
+                                    <div class="client_main">
+                                        <div class="box_center">
+                                            <h6  style="text-align: justify;">@reviews.Comentario</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            }*@
+                            <div class="carousel-item active">
+                                <div class="client_main">
+                                    <div class="box_center">
+                                        <p class="lorem_text">
+                                            Fue una experiencia increíble que superó todas mis expectativas. Desde
+                                            el momento en que subimos al barco hasta el final, todo estuvo bien organizado. El equipo
+                                            de guías fue amable, lo que hizo que el recorrido fuera muy informativo. Disfruté de cada
+                                            parada que hicimos, especialmente del snorkeling.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="client_main">
+                                    <div class="box_center">
+                                        <p class="lorem_text">
+                                            La atención al detalle y el nivel de servicio que recibimos durante
+                                            todo el recorrido fueron impecables. Además, quiero mencionar lo bien que se adaptaron a
+                                            nuestras necesidades y preferencias individuales. Sin duda alguna, volvería a elegir este
+                                            tour en mi próxima visita a Cozumel.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="client_main">
+                                    <div class="box_center">
+                                        <p class="lorem_text">
+                                            El tour en Cozumel fue simplemente excepcional, y no puedo agradecer lo
+                                            suficiente a todo el equipo por brindarnos una experiencia inolvidable. Además, el
+                                            almuerzo que se nos proporcionó fue delicioso, y las vistas panorámicas desde el barco
+                                            fueron impresionantes.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-      </div>
-   </div>
+            </div>
+        </div>
+    }
+    
    <!-- client section start -->
    <!-- Javascript files-->
    <script src="js/jquery.min.js"></script>

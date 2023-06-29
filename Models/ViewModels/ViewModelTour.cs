@@ -27,5 +27,7 @@
             TotalInfantes = InfantesPersona * InfantePrecio;
             Total = TotalAdultos + TotalInfantes;
         }
+
+        public string RutaImagenQR { get; set; }
     }
 }

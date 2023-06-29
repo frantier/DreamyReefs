@@ -59,6 +59,7 @@ namespace DreamyReefs.Controllers
                 }
 
                 _conexion.CrearImagenes(imagen.ImagenBase64, imagen.TourID);
+                TempData["SuccessMessage"] = "Imagen agregada exitosamente.";
                 return RedirectToAction("Index");
             }
 
@@ -96,6 +97,7 @@ namespace DreamyReefs.Controllers
 
                     // Guardar los cambios en la base de datos
                     _conexion.ActualizarImagenes(imagen.IDImagenes, imagen.ImagenBase64, imagen.TourID);
+                    TempData["SuccessMessage"] = "Imagen actualizada exitosamente.";
 
                     return RedirectToAction("Index");
                 }
@@ -113,25 +115,37 @@ namespace DreamyReefs.Controllers
         }
 
 
-        public IActionResult Eliminar(int id)
-        {
-            var tours = _conexion.GetAllTours();
+        //public IActionResult Eliminar(int id)
+        //{
+        //    var tours = _conexion.GetAllTours();
 
-            ViewBag.Tours = tours;
-            var imagenes = _conexion.GetOneImagenes(id);
-            return View(imagenes);
-        }
+        //    ViewBag.Tours = tours;
+        //    var imagenes = _conexion.GetOneImagenes(id);
+        //    return View(imagenes);
+        //}
 
+
+        //[HttpPost]
+        //public IActionResult Eliminar(Imagen imagen)
+        //{
+        //    if (imagen.IDImagenes > 0)
+        //    {
+        //        _conexion.EliminarImagenes(imagen.IDImagenes);
+        //        return RedirectToAction("Index");
+        //    }
+        //    return View();
+        //}
 
         [HttpPost]
-        public IActionResult Eliminar(Imagen imagen)
+        public IActionResult Eliminar(int id)
         {
-            if (imagen.IDImagenes > 0)
+            if (id > 0)
             {
-                _conexion.EliminarImagenes(imagen.IDImagenes);
-                return RedirectToAction("Index");
+                _conexion.EliminarImagenes(id);
+                return Ok(); // Devuelve una respuesta exitosa al AJAX
             }
-            return View();
+
+            return BadRequest(); // Otra respuesta de error si el id no es válido
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

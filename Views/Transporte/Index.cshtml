@@ -53,7 +53,7 @@ else
                             <div class="d-flex justify-content-end">
                                 <a type="button" class="btn btn-warning text-white btn-modify" asp-action="Actualizar" asp-route-id="@transporte.IDTransportes">Modificar</a>
                                 &nbsp;
-                                <a type="button" class="btn btn-danger text-white btn-delete" asp-action="Eliminar" asp-route-id="@transporte.IDTransportes">Eliminar</a>
+                                <button type="button" class="btn btn-danger text-white btn-delete" onclick="eliminarTransportes(@transporte.IDTransportes)">Eliminar</button>
                             </div>
                         </div>
                     </div>

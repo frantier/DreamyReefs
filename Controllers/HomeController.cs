@@ -1,4 +1,5 @@
-﻿using DreamyReefs.Models;
+﻿using DreamyReefs.Data;
+using DreamyReefs.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -6,16 +7,18 @@ namespace DreamyReefs.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly Conexion _conexion;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(Conexion con)
         {
-            _logger = logger;
+            _conexion = con;
         }
 
         public IActionResult Index()
         {
-            return View();
+
+            var reviews = _conexion.GetAllReviews().ToList();
+            return View(reviews);
         }
 
         public IActionResult Privacy()

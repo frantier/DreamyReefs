@@ -59,6 +59,7 @@ namespace DreamyReefs.Controllers
             if (ModelState.IsValid && transportes.NombreEmpresa is not null && transportes.Transporte is not null)
             {
                 _conexion.CrearTransportes(transportes.NombreEmpresa, transportes.Transporte);
+                TempData["SuccessMessage"] = "Transporte registrado exitosamente.";
                 return RedirectToAction("Index");
             }
             return View();
@@ -89,40 +90,53 @@ namespace DreamyReefs.Controllers
             if (ModelState.IsValid && transportes.IDTransportes > 0 && transportes.NombreEmpresa is not null && transportes.Transporte is not null)
             {
                 _conexion.ActualizarTransportes(transportes.IDTransportes, transportes.NombreEmpresa, transportes.Transporte);
+                TempData["SuccessMessage"] = "Transporte actualizado exitosamente.";
                 return RedirectToAction("Index");
             }
             return View();
         }
 
-        public IActionResult Eliminar(int id)
-        {
-            var storedToken = HttpContext.Session.GetString("Token");            
-            var model = new DashboardViewModel
-            {
-                Token = storedToken
-            };
-            if (model.Token != null && model.Token == storedToken)
-            {
-                var transporte = _conexion.GetOneTransportes(id);
-                return View(transporte);
-            }
-            else
-            {
-                return RedirectToAction("Login", "Login");
-            }
-            
-        }
+        //public IActionResult Eliminar(int id)
+        //{
+        //    var storedToken = HttpContext.Session.GetString("Token");            
+        //    var model = new DashboardViewModel
+        //    {
+        //        Token = storedToken
+        //    };
+        //    if (model.Token != null && model.Token == storedToken)
+        //    {
+        //        var transporte = _conexion.GetOneTransportes(id);
+        //        return View(transporte);
+        //    }
+        //    else
+        //    {
+        //        return RedirectToAction("Login", "Login");
+        //    }
 
+        //}
+
+
+        //[HttpPost]
+        //public IActionResult Eliminar(Transportes transportes)
+        //{
+        //    if (transportes.IDTransportes > 0)
+        //    {
+        //        _conexion.EliminarTransportes(transportes.IDTransportes);
+        //        return RedirectToAction("Index");
+        //    }
+        //    return View();
+        //}
 
         [HttpPost]
-        public IActionResult Eliminar(Transportes transportes)
+        public IActionResult Eliminar(int id)
         {
-            if (transportes.IDTransportes > 0)
+            if (id > 0)
             {
-                _conexion.EliminarTransportes(transportes.IDTransportes);
-                return RedirectToAction("Index");
+                _conexion.EliminarTransportes(id);
+                return Ok(); // Devuelve una respuesta exitosa al AJAX
             }
-            return View();
+
+            return BadRequest(); // Otra respuesta de error si el id no es válido
         }
     }
 }

@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="~/css/demo.css" />
     <link rel="stylesheet" href="~/css/Cards.css" />
     <link rel="stylesheet" type="text/css" href="~/css/style.css">
+    
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="~/lib/perfect-scrollbar/perfect-scrollbar.css" />
@@ -38,6 +39,8 @@
     <!-- Helpers -->
     <script src="~/js/helpers.js"></script>
     <script src="~/js/config.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
@@ -108,9 +111,9 @@
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a asp-controller="Dashboard" asp-action="Salir" class="menu-link">
+                    <a href="#" onclick="cerrarSesion()" class="menu-link">
                         <i class="menu-icon tf-icons bx bx-collection"></i>
-                        <div data-i18n="Basic">Cerrar sesion</div>
+                        <div data-i18n="Basic">Cerrar sesión</div>
                     </a>
                 </li>
             </ul>
@@ -123,6 +126,13 @@
     <!-- Overlay -->
     <div class="layout-overlay layout-menu-toggle"></div>
 </div>
+
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Cargando...</div>
+        </div>
+    </div>
 
 <script>
     var menuToggle = document.querySelector('.menu-toggle');
@@ -143,6 +153,332 @@
             link.parentElement.classList.remove('active');
         }
     });
+
+        window.addEventListener('load', function () {
+            var loader = document.getElementById('loader');
+            loader.style.display = 'flex';
+
+            // Establecer la duración del loader en milisegundos (por ejemplo, 2000ms = 2 segundos)
+            var duracionLoader = 1000;
+
+            setTimeout(function () {
+                loader.style.display = 'none';
+            }, duracionLoader);
+        });
+
+        function registrosCreados() {
+            var successMessage = '@TempData["SuccessMessage"]';
+            if (successMessage) {
+                swal.fire({
+                    title: "Éxito",
+                    text: successMessage,
+                    icon: "success",
+                    showConfirmButton: false,
+                    timer: 2600,
+                    timerProgressBar: true,
+                    didOpen: () => {
+                        Swal.showLoading();
+                    }
+                });
+            }
+        }
+
+
+        // Llama a la función registrosCreados cuando se cargue la página
+        window.onload = registrosCreados;
+
+        function eliminarUsuario(id) {
+            swal.fire({
+                title: "¿Estás seguro?",
+                text: "Una vez eliminado, no podrás recuperar este registro.",
+                icon: "warning",
+                buttons: ["Cancelar", "Eliminar"],
+                dangerMode: true,
+            })
+                .then((eliminar) => {
+                    if (eliminar) {
+                        // Realiza una solicitud AJAX para eliminar el registro
+                        $.ajax({
+                            url: '@Url.Action("Eliminar", "Usuario")', // Reemplaza "TuControlador" con el nombre de tu controlador
+                            type: 'POST',
+                            data: { id: id },
+                            success: function () {
+                                swal.fire({
+                                    title: "Éxito",
+                                    text: "El registro se ha eliminado correctamente.",
+                                    icon: "success",
+                                    showConfirmButton: false,
+                                    timer: 1500,
+                                    timerProgressBar: true,
+                                    didOpen: () => {
+                                        Swal.showLoading();
+                                    }
+                                }).then(function () {
+                                        location.reload(); // Actualiza la página después de eliminar el registro
+                                });
+                            },
+                            error: function () {
+                                swal.fire("Error", "Ha ocurrido un error al eliminar el registro.", "error");
+                            }
+                        });
+                    }
+                });
+        }
+
+        function eliminarTransportes(id) {
+            swal.fire({
+                title: "¿Estás seguro?",
+                text: "Una vez eliminado, no podrás recuperar este registro.",
+                icon: "warning",
+                buttons: ["Cancelar", "Eliminar"],
+                dangerMode: true,
+            })
+                .then((eliminar) => {
+                    if (eliminar) {
+                        // Realiza una solicitud AJAX para eliminar el registro
+                        $.ajax({
+                            url: '@Url.Action("Eliminar", "Transporte")', // Reemplaza "TuControlador" con el nombre de tu controlador
+                            type: 'POST',
+                            data: { id: id },
+                            success: function () {
+                                swal.fire({
+                                    title: "Éxito",
+                                    text: "El registro se ha eliminado correctamente.",
+                                    icon: "success",
+                                    showConfirmButton: false,
+                                    timer: 1500,
+                                    timerProgressBar: true,
+                                    didOpen: () => {
+                                        Swal.showLoading();
+                                    }
+                                }).then(function () {
+                                    location.reload(); // Actualiza la página después de eliminar el registro
+                                });
+                            },
+                            error: function () {
+                                swal.fire("Error", "Ha ocurrido un error al eliminar el registro.", "error");
+                            }
+                        });
+                    }
+                });
+        }
+
+        function eliminarTours(id) {
+            swal.fire({
+                title: "¿Estás seguro?",
+                text: "Una vez eliminado, no podrás recuperar este registro.",
+                icon: "warning",
+                buttons: ["Cancelar", "Eliminar"],
+                dangerMode: true,
+            })
+                .then((eliminar) => {
+                    if (eliminar) {
+                        // Realiza una solicitud AJAX para eliminar el registro
+                        $.ajax({
+                            url: '@Url.Action("Eliminar", "Tour")', // Reemplaza "TuControlador" con el nombre de tu controlador
+                            type: 'POST',
+                            data: { id: id },
+                            success: function () {
+                                swal.fire({
+                                    title: "Éxito",
+                                    text: "El registro se ha eliminado correctamente.",
+                                    icon: "success",
+                                    showConfirmButton: false,
+                                    timer: 1500,
+                                    timerProgressBar: true,
+                                    didOpen: () => {
+                                        Swal.showLoading();
+                                    }
+                                }).then(function () {
+                                    location.reload(); // Actualiza la página después de eliminar el registro
+                                });
+                            },
+                            error: function () {
+                                swal.fire("Error", "Ha ocurrido un error al eliminar el registro.", "error");
+                            }
+                        });
+                    }
+                });
+        }
+
+        function eliminarReviews(id) {
+            swal.fire({
+                title: "¿Estás seguro?",
+                text: "Una vez eliminado, no podrás recuperar este registro.",
+                icon: "warning",
+                buttons: ["Cancelar", "Eliminar"],
+                dangerMode: true,
+            })
+                .then((eliminar) => {
+                    if (eliminar) {
+                        // Realiza una solicitud AJAX para eliminar el registro
+                        $.ajax({
+                            url: '@Url.Action("Eliminar", "Review")', // Reemplaza "TuControlador" con el nombre de tu controlador
+                            type: 'POST',
+                            data: { id: id },
+                            success: function () {
+                                swal.fire({
+                                    title: "Éxito",
+                                    text: "El registro se ha eliminado correctamente.",
+                                    icon: "success",
+                                    showConfirmButton: false,
+                                    timer: 1500,
+                                    timerProgressBar: true,
+                                    didOpen: () => {
+                                        Swal.showLoading();
+                                    }
+                                }).then(function () {
+                                        location.reload(); // Actualiza la página después de eliminar el registro
+                                });
+                            },
+                            error: function () {
+                                swal.fire("Error", "Ha ocurrido un error al eliminar el registro.", "error");
+                            }
+                        });
+                    }
+                });
+        }
+
+        function eliminarReservaciones(id) {
+            swal.fire({
+                title: "¿Estás seguro?",
+                text: "Una vez eliminado, no podrás recuperar este registro.",
+                icon: "warning",
+                buttons: ["Cancelar", "Eliminar"],
+                dangerMode: true,
+            })
+                .then((eliminar) => {
+                    if (eliminar) {
+                        // Realiza una solicitud AJAX para eliminar el registro
+                        $.ajax({
+                            url: '@Url.Action("Eliminar", "Reservacion")', // Reemplaza "TuControlador" con el nombre de tu controlador
+                            type: 'POST',
+                            data: { id: id },
+                            success: function () {
+                                swal.fire({
+                                    title: "Éxito",
+                                    text: "El registro se ha eliminado correctamente.",
+                                    icon: "success",
+                                    showConfirmButton: false,
+                                    timer: 1500,
+                                    timerProgressBar: true,
+                                    didOpen: () => {
+                                        Swal.showLoading();
+                                    }
+                                }).then(function () {
+                                        location.reload(); // Actualiza la página después de eliminar el registro
+                                });
+                            },
+                            error: function () {
+                                swal.fire("Error", "Ha ocurrido un error al eliminar el registro.", "error");
+                            }
+                        });
+                    }
+                });
+        }
+
+        function eliminarImagenes(id) {
+            swal.fire({
+                title: "¿Estás seguro?",
+                text: "Una vez eliminado, no podrás recuperar este registro.",
+                icon: "warning",
+                buttons: ["Cancelar", "Eliminar"],
+                dangerMode: true,
+            })
+                .then((eliminar) => {
+                    if (eliminar) {
+                        // Realiza una solicitud AJAX para eliminar el registro
+                        $.ajax({
+                            url: '@Url.Action("Eliminar", "Imagen")', // Reemplaza "TuControlador" con el nombre de tu controlador
+                            type: 'POST',
+                            data: { id: id },
+                            success: function () {
+                                swal.fire({
+                                    title: "Éxito",
+                                    text: "El registro se ha eliminado correctamente.",
+                                    icon: "success",
+                                    showConfirmButton: false,
+                                    timer: 1500,
+                                    timerProgressBar: true,
+                                    didOpen: () => {
+                                        Swal.showLoading();
+                                    }
+                                }).then(function () {
+                                    location.reload(); // Actualiza la página después de eliminar el registro
+                                });
+                            },
+                            error: function () {
+                                swal.fire("Error", "Ha ocurrido un error al eliminar el registro.", "error");
+                            }
+                        });
+                    }
+                });
+        }
+
+        function eliminarEmpresas(id) {
+            swal.fire({
+                title: "¿Estás seguro?",
+                text: "Una vez eliminado, no podrás recuperar este registro.",
+                icon: "warning",
+                buttons: ["Cancelar", "Eliminar"],
+                dangerMode: true,
+            })
+                .then((eliminar) => {
+                    if (eliminar) {
+                        // Realiza una solicitud AJAX para eliminar el registro
+                        $.ajax({
+                            url: '@Url.Action("Eliminar", "Empresa")', // Reemplaza "TuControlador" con el nombre de tu controlador
+                            type: 'POST',
+                            data: { id: id },
+                            success: function () {
+                                swal.fire({
+                                    title: "Éxito",
+                                    text: "El registro se ha eliminado correctamente.",
+                                    icon: "success",
+                                    showConfirmButton: false,
+                                    timer: 1500,
+                                    timerProgressBar: true,
+                                    didOpen: () => {
+                                        Swal.showLoading();
+                                    }
+                                }).then(function () {
+                                    location.reload(); // Actualiza la página después de eliminar el registro
+                                });
+                            },
+                            error: function () {
+                                swal.fire("Error", "Ha ocurrido un error al eliminar el registro.", "error");
+                            }
+                        });
+                    }
+                });
+        }
+
+        function cerrarSesion() {
+            Swal.fire({
+                title: 'Cerrando sesión',
+                html: 'Un momento por favor...',
+                timer: 2000,
+                timerProgressBar: true,
+                didOpen: () => {
+                    Swal.showLoading();
+
+                    // Realizar la solicitud AJAX para cerrar sesión
+                    $.ajax({
+                        url: '@Url.Action("Salir", "Dashboard")',
+                        type: 'POST',
+                        error: function () {
+                            // Mostrar un mensaje de error si ocurrió un problema durante el cierre de sesión
+                            Swal.fire('Error', 'Ocurrió un error al cerrar sesión', 'error');
+                        }
+                    });
+                },
+                willClose: () => {
+                    window.location.href = '/Login/Login'; // Redireccionar después de cerrar sesión una vez que el temporizador de Swal haya terminado
+                }
+            });
+        }
+
+
 </script>
 
 
@@ -159,6 +495,7 @@
     <!-- endbuild -->
     <!-- Vendors JS -->
     <script src="~/lib/apex-charts/apexcharts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Main JS -->
     <script src="~/js/main.js"></script>

@@ -164,6 +164,34 @@
                             </div>
                         </div>
                     </div>
+                    &ensp;
+                    <div class="card">
+                        <div class="card-body">
+                            <div>
+                                <form asp-controller="Tour" asp-action="CrearOpinion" method="post">
+                                    <center><h4 class="InformacionExtra" style="text-align: center; color: deepskyblue">Cuentanos tu experiencia!</h4></center>
+                                    &ensp;
+                                    <div>
+                                        <input class="form-control" type="hidden" name="IDTour" value="@Model.IDTours" />
+                                        @* <span asp-validation-for="Nombre"
+                                        class="text-danger"></span> *@
+                                    </div>
+                                    <div>
+                                        <label for="Comentario" class="form-label">Opinion</label>
+                                        <textarea name="Comentario"
+                                               placeholder="Escribe tu opinion"
+                                               class="form-control"></textarea>
+                                        @* <span asp-validation-for="Comentario"
+                                        class="text-danger"></span> *@
+                                    </div>
+                                    &ensp;
+                                    <div class="d-flex justify-content-center">
+                                        <input type="submit" value="Hacer reservacion" class="btn btn-success btn-md"/>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -220,7 +248,7 @@
     </div>
 
     <!-- Javascript files-->
-    <script src="~/js/jquery.min.js"></script>
+    @* <script src="~/js/jquery.min.js"></script>
     <script src="~/js/popper.min.js"></script>
     <script src="~/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/jquery-3.0.0.min.js"></script>
@@ -238,7 +266,7 @@
     <script src="~/js/scrollreveal.min.js"></script>
     <script src="~/js/jquery-confirm.min.js"></script>
     <script src="~/js/bootstrap.min.js"></script>
-    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script> *@
 
 </body>
 
