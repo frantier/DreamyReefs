@@ -4,6 +4,8 @@
     Layout = "_LayoutSitioGestion";
 }
 
+<link rel="stylesheet" href="~/css/Cards.css" />
+
 <div class="layout-page">
     <br />
     <br />
@@ -31,8 +33,8 @@
                                     </div>
                                     <div>
                                         <label asp-for="Comentario" class="form-label">Comentario</label>
-                                        <textarea asp-for="Comentario" placeholder="Comentario"
-                                            class="form-control"></textarea>
+                                        <textarea asp-for="Comentario" placeholder="Comentario" class="form-control"
+                                            id="comentarioTextarea"></textarea>
                                         <span asp-validation-for="Comentario" class="text-danger"></span>
                                     </div>
                                     &ensp;
@@ -50,3 +52,16 @@
         </div>
     </div>
 </div>
+
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        const textarea = document.getElementById('comentarioTextarea');
+        textarea.style.height = 'auto';
+        textarea.style.height = textarea.scrollHeight + 'px';
+    });
+
+    document.getElementById('comentarioTextarea').addEventListener('input', function () {
+        this.style.height = 'auto';
+        this.style.height = this.scrollHeight + 'px';
+    });
+</script>

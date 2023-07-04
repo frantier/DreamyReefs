@@ -1,0 +1,16 @@
+﻿.container-bg {
+    background-image: url(../images/IMG_1184.jpeg); /* Reemplaza 'ruta_de_la_imagen' por la ruta de tu imagen de fondo */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container {
+    width: 100%;
+    max-width: 400px;
+}

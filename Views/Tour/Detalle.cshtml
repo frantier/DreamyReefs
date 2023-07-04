@@ -37,7 +37,7 @@
     <br />
     <br />
     <div class="card_section layout_padding">
-        <div class="container">
+        <div class="container4">
             <div class="row">
                 <div class="col-md-8">
                     <article class="blog-post">
@@ -53,13 +53,16 @@
                             <h3 class="blog-post_subtitle">Precios</h3>
                             <ul>
                                 <li>
-                                    <h3 class="card-title" style="text-align: justify;">Precio del Tour: $@Model.Precio</h3>
+                                    <h3 class="card-title" style="text-align: justify;">Precio del Tour: $@Model.Precio
+                                    </h3>
                                 </li>
                                 <li>
-                                    <h3 class="card-title" style="text-align: justify;">Adultos: $@Model.PrecioAdulto</h3>
+                                    <h3 class="card-title" style="text-align: justify;">Adultos: $@Model.PrecioAdulto
+                                    </h3>
                                 </li>
                                 <li>
-                                    <h3 class="card-title" style="text-align: justify;">Niños: $@Model.PrecioInfantes</h3>
+                                    <h3 class="card-title" style="text-align: justify;">Niños: $@Model.PrecioInfantes
+                                    </h3>
                                 </li>
                             </ul>
                             <h3 class="blog-post_subtitle">Detalles</h3>
@@ -74,13 +77,16 @@
                             <h3 class="blog-post_subtitle">Caracteristicas</h3>
                             <ul class="lista-estilizada">
                                 <li>
-                                    <h3 class="InformacionExtra" style="text-align: justify;">@ViewBag.Caracteristica1</h3>
+                                    <h3 class="InformacionExtra" style="text-align: justify;">@ViewBag.Caracteristica1
+                                    </h3>
                                 </li>
                                 <li>
-                                    <h3 class="InformacionExtra" style="text-align: justify;">@ViewBag.Caracteristica2</h3>
+                                    <h3 class="InformacionExtra" style="text-align: justify;">@ViewBag.Caracteristica2
+                                    </h3>
                                 </li>
                                 <li>
-                                    <h3 class="InformacionExtra" style="text-align: justify;">@ViewBag.Caracteristica3</h3>
+                                    <h3 class="InformacionExtra" style="text-align: justify;">@ViewBag.Caracteristica3
+                                    </h3>
                                 </li>
                             </ul>
 
@@ -102,9 +108,10 @@
 
                             <h3 class="blog-post_subtitle">Punto de encuentro</h3>
                             <div class="map-responsive">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d934.2179473235187!2d-86.95137662430523!3d20.511481451835845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e597c18e4fb19%3A0xb16db156c2af8610!2scooperativa%20eco%20turistica%20nautica%20isla%20cozumel!5e0!3m2!1ses-419!2smx!4v1686202384935!5m2!1ses-419!2smx"
-                                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d934.2179473235187!2d-86.95137662430523!3d20.511481451835845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e597c18e4fb19%3A0xb16db156c2af8610!2scooperativa%20eco%20turistica%20nautica%20isla%20cozumel!5e0!3m2!1ses-419!2smx!4v1686202384935!5m2!1ses-419!2smx"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                     </article>
@@ -114,51 +121,47 @@
                         <div class="card-body">
                             <div>
                                 <form asp-controller="Tour" asp-action="CrearPDF" method="post">
-                                    <center><h4 class="InformacionExtra" style="text-align: center; color: deepskyblue">Hacer una reservacion</h4></center>
+                                    <center>
+                                        <h4 class="InformacionExtra" style="text-align: center; color: deepskyblue">
+                                            Hacer una reservacion</h4>
+                                    </center>
                                     &ensp;
                                     <div>
                                         <label for="NombreCompleto">Nombre</label>
                                         <input name="NombreCompleto" placeholder="Nombre Completo"
-                                               class="form-control" />
+                                            class="form-control" />
                                         @*<span asp-validation-for="Usuario"
                                         class="text-danger"></span>*@
                                     </div>
                                     <div>
                                         <label for="Telefono" class="form-label">Telefono</label>
-                                        <input name="Telefono"
-                                               placeholder="Telefono"
-                                               class="form-control" />
+                                        <input name="Telefono" placeholder="Telefono" class="form-control" />
                                         @*<span asp-validation-for="Nombre"
                                         class="text-danger"></span>*@
                                     </div>
                                     <div>
                                         <label for="Email" class="form-label">Correo</label>
-                                        <input name="Email"
-                                               placeholder="Correo electrónico"
-                                               class="form-control" />
+                                        <input name="Email" placeholder="Correo electrónico" class="form-control" />
                                         @*<span asp-validation-for="Correo"
                                         class="text-danger"></span>*@
                                     </div>
                                     <div>
                                         <label for="Adultos" class="form-label">N° de adultos</label>
-                                        <input name="Adultos"
-                                               placeholder="Numero de Adultos"
-                                               class="form-control" />
+                                        <input name="Adultos" placeholder="Numero de Adultos" class="form-control" />
                                         @*<span asp-validation-for="Contrasena"
                                         class="text-danger"></span>*@
                                     </div>
                                     <div>
                                         <label for="Niños" class="form-label">N° de niños</label>
-                                        <input name="Ninos"
-                                               placeholder="Numero de Niños"
-                                               class="form-control" />
+                                        <input name="Ninos" placeholder="Numero de Niños" class="form-control" />
                                         @*<span asp-validation-for="Contrasena"
                                         class="text-danger"></span>*@
                                     </div>
-                                    <input type="hidden" name="ID" value="@Model.IDTours" /> <!-- Agregar el campo oculto para la ID -->
+                                    <input type="hidden" name="ID" value="@Model.IDTours" />
+                                    <!-- Agregar el campo oculto para la ID -->
                                     &ensp;
                                     <div class="d-flex justify-content-center">
-                                        <input type="submit" value="Hacer reservacion" class="btn btn-success btn-md"/>
+                                        <input type="submit" value="Hacer reservacion" class="btn btn-success btn-md" />
                                     </div>
                                 </form>
                             </div>
@@ -169,82 +172,41 @@
                         <div class="card-body">
                             <div>
                                 <form asp-controller="Tour" asp-action="CrearOpinion" method="post">
-                                    <center><h4 class="InformacionExtra" style="text-align: center; color: deepskyblue">Cuentanos tu experiencia!</h4></center>
+                                    <center>
+                                        <h4 class="InformacionExtra" style="text-align: center; color: deepskyblue">
+                                            Cuentanos tu experiencia!</h4>
+                                    </center>
                                     &ensp;
                                     <div>
-                                        <input class="form-control" type="hidden" name="IDTour" value="@Model.IDTours" />
+                                        <input class="form-control" type="hidden" name="IDTour"
+                                            value="@Model.IDTours" />
                                         @* <span asp-validation-for="Nombre"
                                         class="text-danger"></span> *@
                                     </div>
                                     <div>
                                         <label for="Comentario" class="form-label">Opinion</label>
-                                        <textarea name="Comentario"
-                                               placeholder="Escribe tu opinion"
-                                               class="form-control"></textarea>
+                                        <textarea name="Comentario" placeholder="Escribe tu opinion"
+                                            class="form-control"></textarea>
                                         @* <span asp-validation-for="Comentario"
                                         class="text-danger"></span> *@
                                     </div>
                                     &ensp;
                                     <div class="d-flex justify-content-center">
-                                        <input type="submit" value="Hacer reservacion" class="btn btn-success btn-md"/>
+                                        <input type="submit" value="Hacer reservacion" class="btn btn-success btn-md" />
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
+                    &ensp;
+                    <div class="d-flex justify-content-center">
+                        <a asp-action="Index2" class="btn btn-primary btn-md">Volver al listado</a>
+                    </div>
                 </div>
             </div>
         </div>
         <br />
-        <div class="d-flex justify-content-center">
-            <a asp-action="Index2" class="btn btn-primary btn-md">Volver al listado</a>
-        </div>
-        <div class="container-fluid" style="align-content:center;">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <img src="~/images/arrecife-paraiso.jpg" alt="" />
-                        </div>
-                        <div class="card-body">
-                            <h5>Snorkel Cozumel</h5>
-                            <p>
-                                Invidunt no et clita lorem elitr takimata sanctus eum clita ut sit ipsum zzril lorem
-                                ipsum accumsan accusam est tation nibh eleifend dolor at sed dolor mazim
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <img src="~/images/arrecife-paraiso.jpg" alt="" />
-                        </div>
-                        <div class="card-body">
-                            <h5>Snorkel Cozumel</h5>
-                            <p>
-                                Invidunt no et clita lorem elitr takimata sanctus eum clita ut sit ipsum zzril lorem
-                                ipsum accumsan accusam est tation nibh eleifend dolor at sed dolor mazim
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <img src="~/images/arrecife-paraiso.jpg" />
-                        </div>
-                        <div class="card-body">
-                            <h5>Snorkel Cozumel</h5>
-                            <p>
-                                Invidunt no et clita lorem elitr takimata sanctus eum clita ut sit ipsum zzril lorem
-                                ipsum accumsan accusam est tation nibh eleifend dolor at sed dolor mazim
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </div>
 
     <!-- Javascript files-->

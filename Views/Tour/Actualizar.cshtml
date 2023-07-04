@@ -31,7 +31,7 @@
                                     <div>
                                         <label asp-for="Itinerario" class="form-label"></label>
                                         <textarea asp-for="Itinerario" placeholder="Itinerario del tour"
-                                            class="form-control"></textarea>
+                                            class="form-control" id="ItinerarioTextarea"></textarea>
                                         <span asp-validation-for="Itinerario" class="text-danger"></span>
                                     </div>
                                     <div>
@@ -42,7 +42,7 @@
                                     <div>
                                         <label asp-for="Descripcion" class="form-label"></label>
                                         <textarea asp-for="Descripcion" placeholder="Descripcion del tour"
-                                            class="form-control"></textarea>
+                                            class="form-control" id="comentarioTextarea"></textarea>
                                         <span asp-validation-for="Descripcion" class="text-danger"></span>
                                     </div>
                                     <div>
@@ -164,3 +164,30 @@
         </div>
     </div>
 </div>
+
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        const textarea = document.getElementById('ItinerarioTextarea');
+        textarea.style.height = 'auto';
+        textarea.style.height = textarea.scrollHeight + 'px';
+    });
+
+    document.getElementById('ItinerarioTextarea').addEventListener('input', function () {
+        this.style.height = 'auto';
+        this.style.height = this.scrollHeight + 'px';
+    });
+</script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        const textarea = document.getElementById('comentarioTextarea');
+        textarea.style.height = 'auto';
+        textarea.style.height = textarea.scrollHeight + 'px';
+    });
+
+    document.getElementById('comentarioTextarea').addEventListener('input', function () {
+        this.style.height = 'auto';
+        this.style.height = this.scrollHeight + 'px';
+    });
+</script>
+

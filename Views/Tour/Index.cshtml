@@ -22,94 +22,76 @@
 }
 else
 {
-    <div class="layout-page">
-        <br />
-        <br />
-        <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Tours</h1>
-        <div class="d-flex justify-content-center">
-            <a class="col col-2 btn btn-success d-grid" asp-action="Crear">Agregar</a>
-        </div>
-        <div class="ms-2 me-2 mt-2 mb-2">
-            <div class="row d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">
-                <div class="col col-lg-10">
-                    @foreach (var tours in Model)
-                    {
-                        <div class="card m-2">
-                            <div class="card-body">
-                                <div class="d-flex">
+<div class="layout-page">
+    <br />
+    <br />
+    <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Tours</h1>
+    <div class="d-flex justify-content-center">
+        <a class="col col-2 btn btn-success d-grid" asp-action="Crear">Agregar</a>
+    </div>
+    <div class="ms-2 me-2 mt-2 mb-2">
+        <div class="row d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-lg-10">
+                @foreach (var tours in Model)
+                {
+                    <div class="card m-2">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
                                     <div class="image-container">
-                                        <img src="data:image;base64,@ViewBag.Imagen[tours.IDTours]" alt="Imagen del tour" class="tour-image">
+                                        <img src="data:image;base64,@ViewBag.Imagen[tours.IDTours]" alt="Imagen del tour" class="tour-image img-fluid">
                                     </div>
+                                </div>
+                                <div class="col-md-6">
                                     <div class="tour-details">
                                         <div class="d-flex justify-content-center">
                                             @if (tours.Estatus == "Activo")
                                             {
-                                                <h6 class="fw-medium" style="color: rgb(40, 180, 99);">@tours.Estatus</h6>
+                                                <h6 class="fw-medium text-success">@tours.Estatus</h6>
                                             }
                                             else if (tours.Estatus == "Inactivo")
                                             {
-                                                <h6 class="fw-medium" style="color: rgb(180, 40, 40, 0.793);">@tours.Estatus</h6>
+                                                <h6 class="fw-medium text-danger">@tours.Estatus</h6>
                                             }
                                         </div>
-
                                         <div>
-                                            <label style="font-size: medium; font-weight: bold; display: inline-block;">Nombre
-                                                del
-                                                Tours:</label>
+                                            <label style="font-size: medium; font-weight: bold; display: inline-block;">Nombre del Tours:</label>
                                             <h6 class="card-title">@tours.Nombre</h6>
                                         </div>
-
                                         <div>
-                                            <label
-                                                style="font-size: medium; font-weight: bold; display: inline-block;">Itinerario:</label>
-                                            <h6 class="card-title" style="text-align: justify;">@tours.Itinerario</h6>
+                                            <label style="font-size: medium; font-weight: bold; display: inline-block;">Itinerario:</label>
+                                            <h6 class="card-title">@tours.Itinerario</h6>
                                         </div>
-
                                         <div>
-                                            <label
-                                                style="font-size: medium; font-weight: bold; display: inline-block;">Descripción:</label>
-                                            <h6 class="card-title" style="text-align: justify;">@tours.Descripcion</h6>
+                                            <label style="font-size: medium; font-weight: bold; display: inline-block;">Descripción:</label>
+                                            <h6 class="card-title">@tours.Descripcion</h6>
                                         </div>
-
                                         <div>
-                                            <label style="font-size: medium; font-weight: bold; display: inline-block;">Precio
-                                                de
-                                                Adulto:</label>
-                                            <h6 class="fw-normal" style="display: inline-block;">$@tours.PrecioAdulto</h6>
-
-                                            &ensp;
-
-                                            <label style="font-size: medium; font-weight: bold; display: inline-block;">Precio
-                                                de
-                                                Niño:</label>
-                                            <h6 class="fw-normal" style="display: inline-block;">$@tours.PrecioInfantes</h6>
+                                            <label style="font-size: medium; font-weight: bold; display: inline-block;">Precio de Adulto:</label>
+                                            <h6 class="fw-normal">$@tours.PrecioAdulto</h6>
+                                            <label style="font-size: medium; font-weight: bold; display: inline-block;">Precio de Niño:</label>
+                                            <h6 class="fw-normal">$@tours.PrecioInfantes</h6>
                                         </div>
-
                                         <div>
-                                            <label
-                                                style="font-size: medium; font-weight: bold; display: inline-block;">Horario:</label>
-                                            <h6 class="fw-normal" style="display: inline-block;">@tours.Disponibilidad</h6>
-
-                                            &ensp;
-
-                                            <label
-                                                style="font-size: medium; font-weight: bold; display: inline-block;">Idioma:</label>
-                                            <h6 class="fw-normal" style="display: inline-block;">@tours.Idioma</h6>
+                                            <label style="font-size: medium; font-weight: bold; display: inline-block;">Horario:</label>
+                                            <h6 class="fw-normal">@tours.Disponibilidad</h6>
+                                            <label style="font-size: medium; font-weight: bold; display: inline-block;">Idioma:</label>
+                                            <h6 class="fw-normal">@tours.Idioma</h6>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="d-flex justify-content-end">
-                                    <a type="button" class="btn btn-warning text-white btn-modify" asp-action="Actualizar"
-                                        asp-route-id="@tours.IDTours">Modificar</a>
-                                    &nbsp;
-                                    <button type="button" class="btn btn-danger text-white btn-delete" onclick="eliminarTours(@tours.IDTours)">Eliminar</button>
-                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <a type="button" class="btn btn-warning text-white btn-modify" asp-action="Actualizar" asp-route-id="@tours.IDTours">Modificar</a>
+                                &nbsp;
+                                <button type="button" class="btn btn-danger text-white btn-delete" onclick="eliminarTours(@tours.IDTours)">Eliminar</button>
                             </div>
                         </div>
-                    }
-                </div>
+                    </div>
+                }
             </div>
         </div>
     </div>
+</div>
+
 }

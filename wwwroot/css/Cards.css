@@ -69,6 +69,7 @@
 .blog-post_info p {
     margin-bottom: 3rem;
     color: rgba(0, 0, 0, 0.7);
+    text-align: justify;
 }
 
 
@@ -209,6 +210,7 @@
     flex: 0 0 200px;
     /* Ancho fijo de la imagen */
 }
+
 
 .tour-image {
     max-width: 100%;

@@ -3,7 +3,12 @@
 	margin-right: auto;
 	margin-left: auto;
 }
-
+.container4 {
+	width: 100% !important;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 30px;
+}
 h1 {
 	font-size: 30px !important;
 	font-weight: bold !important;

@@ -261,7 +261,8 @@ namespace DreamyReefs.Controllers
             CrearReservacion(reservacion);
 
             string qrCodeData = "https://wa.me/524495168427"; // URL especial de WhatsApp
-            string rutaImagenQR = "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\wwwroot\\images\\Temporal.png";
+            string rutaImagenQR = Directory.GetCurrentDirectory() + "\\wwwroot\\images\\" + "Temporal.png";
+            
 
 
             // Configuración del código QR
