@@ -7,6 +7,7 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
     <!-- basic -->
     <meta charset="utf-8">
@@ -39,8 +40,9 @@
     <link rel="stylesheet" href="~/css/owl.carousel.min.css">
     <link rel="stylesheet" href="~/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
-          media="screen">
+        media="screen">
 </head>
+
 <body>
     @if (Model == null || Model.Count == 0)
     {
@@ -48,10 +50,10 @@
             <br />
             <br />
             <div class="row justify-content-center">
-
                 <div class="col-md-8 ">
                     <div class="card">
-                        <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">No hay Reviews para mostrar</h1>
+                        <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">No hay Reviews para
+                            mostrar</h1>
                     </div>
                 </div>
             </div>
@@ -59,39 +61,48 @@
     }
     else
     {
-        <div class="layout-page">
-            <br />
-            <br />
-            <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Reviews</h1>
-            <div class="ms-4 me-4 mt-4 mb-4">
+        <div class="layout_padding">
+            <div class="ms-5 me-5 mt-5 mb-5">
                 <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="container">
-                        <div class="col">
+                    <div class="container-fluid" style="align-content:center;">
+                        <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Reviews</h1>
+                        <div class="row">
                             @foreach (var reviews in Model)
                             {
-                                <div class="col-sm-10 col-md-8 col-lg-12">
-                                    <div class="card m-2">
+                                <div class="col-md-4">
+                                    <div class="card2 m-2"
+                                        style="background-color: whitesmoke;border: 2px solid rgb(0 63 124);">
+                                        <div class="col-md-12">
+                                            <div class="image-container">
+                                                <img src="https://cdn.forbes.com.mx/2023/04/francesco-ungaro-MJ1Q7hHeGlA-unsplash-scaled.jpg" alt="Imagen del tour"
+                                                    class="tour-image img-fluid" style="border-radius: 15px;">
+                                            </div>
+                                        </div>
                                         <div class="card-body">
                                             <div>
                                                 <div>
-                                                    <label style="font-size: medium; font-weight: bold; display: inline-block;" hidden>TourID:</label>
-                                                    <h6 class="card-title" style="display: inline-block;" hidden>@reviews.IDReviews</h6>
+                                                    <label style="font-size: medium; font-weight: bold; display: inline-block;"
+                                                        hidden>TourID:</label>
+                                                    <h6 class="card-title" style="display: inline-block;" hidden>
+                                                        @reviews.IDReviews</h6>
                                                 </div>
 
                                                 <div>
-                                                    <h6 class="card-title" style="display: inline-block;">Tour: @ViewBag.Tours[reviews.TourID]</h6>
+                                                    <h5 class="card-title"
+                                                        style="display: inline-block;justify;font-weight: normal !important;">
+                                                        <strong>Tour:</strong> @ViewBag.Tours[reviews.TourID]</h5>
                                                 </div>
 
                                                 <div>
-                                                    <h6 class="card-title" style="text-align: justify;">Comentario: @reviews.Comentario</h6>
+                                                    <h6 class="card-title"
+                                                        style="text-align: justify;font-weight: normal !important;">Comentario:
+                                                        @reviews.Comentario</h6>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
                                     &ensp;
                                 </div>
-                                
                             }
                         </div>
                     </div>
@@ -100,4 +111,5 @@
         </div>
     }
 </body>
+
 </html>

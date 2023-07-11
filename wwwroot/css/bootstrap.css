@@ -2358,7 +2358,7 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #007bff;
+  background-color: #3333a1;
   border-color: #007bff;
 }
 
@@ -2426,7 +2426,7 @@ fieldset:disabled a.btn {
 
 .btn-success {
   color: #fff;
-  background-color: #28a745;
+  background-color: #228b3a;
   border-color: #28a745;
 }
 
@@ -3938,7 +3938,7 @@ input[type="button"].btn-block {
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: end;
 }
 
 .navbar-brand {
@@ -4336,7 +4336,7 @@ input[type="button"].btn-block {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 20px;
 }
 
 .card > hr {
@@ -6076,7 +6076,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  background: linear-gradient(to bottom, rgba(102, 204, 255, 0.3), rgba(0, 51, 102, 0.8)) !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,

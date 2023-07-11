@@ -79,7 +79,8 @@ namespace DreamyReefs.Controllers
 
         public IActionResult EliminarArchivosEnCarpeta()
         {
-            string carpeta = "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\PDFs\\"; // Especifica la ruta de la carpeta que deseas limpiar
+            // string carpeta = "C:\\Users\\Usuario\\Desktop\\Tareas\\Word\\9°B\\Desarrollo web integral\\DreamyReefs\\PDFs\\";
+            string carpeta = Directory.GetCurrentDirectory() + "\\PDFs\\"; // Especifica la ruta de la carpeta que deseas limpiar
 
             string[] archivos = Directory.GetFiles(carpeta);
 

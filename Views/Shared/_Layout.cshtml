@@ -18,62 +18,31 @@
         <!-- header section start -->
         <div class="header_section">
             <div class="header_main">
-                <div class="mobile_menu">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <div class="logo_mobile">
-                            <a asp-area="" asp-controller="Login" asp-action="Login">DreamyReefs</a>
-                        </div>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Tour" asp-action="Index2">Tours</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Acerca de</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Comentarios</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
                 <div class="container-fluid">
-                    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-                        <div class="container-fluid">
-                            <a class="navbar-brand" asp-area="" asp-controller="Login"
-                                asp-action="Login">DreamyReefs</a>
-                        </div>
-                        <div class="menu_main justify-content-center">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Tour" asp-action="Index2">Tours</a>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href="#">Acerca de</a></li>
-                                <li class="nav-item">
-                                    <a class="nav-link" asp-area="" asp-controller="Review" asp-action="Index2">Comentarios</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+                    <div class="logo"><a asp-area="" asp-controller="Login" asp-action="Login">
+                            <img src="/images/Logo.png" alt="Logo" class="navbar-logo">
+                        </a></div>
+                    <div class="menu_main">
+                        <ul>
+                            <li class="active"><a asp-area="" asp-controller="Home" asp-action="Index">Inicio</a></li>
+                            <li><a asp-area="" asp-controller="Tour" asp-action="Index2">Tours</a></li>
+                            <li><a href="#">Acerca de</a></li>
+                            <li class="active"><a asp-area="" asp-controller="Review"
+                                    asp-action="Index2">Comentarios</a></li>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" style="border-radius: 12px; border: 2px solid #ced4da;">
+                                <button class="btn btn-outline-success" type="submit" style="color: black; border: 2px solid #ced4da;">Buscar</button>
+                            </form>
+                        </ul>
+                    </div>
+                    &ensp;
                 </div>
             </div>
-        </div>
-        <div>
-            <a href="https://wa.me/524495168427" class="btn-wsp" target="_blank">
-                <i class="fa fa-whatsapp icono"></i>
-            </a>
-        </div>
+            <div>
+                <a href="https://wa.me/524495168427" class="btn-wsp" target="_blank">
+                    <i class="fa fa-whatsapp icono"></i>
+                </a>
+            </div>
 
 
     </header>
@@ -82,9 +51,8 @@
             @RenderBody()
         </main>
     </div>
-
-    <!-- footer section start -->
-    <div class="footer_section layout_padding">
+    <!-- copyright section start -->
+    <div class="copyright_section">
         <div class="container">
             <div class="social_icon">
                 <ul>
@@ -95,12 +63,6 @@
                     <li><a href="https://wa.me/524495168427" target="_blank"><img src="~/images/Whats2.png"></a></li>
                 </ul>
             </div>
-        </div>
-    </div>
-    <!-- footer section end -->
-    <!-- copyright section start -->
-    <div class="copyright_section">
-        <div class="container">
             <p class="copyright_text">
                 2023 Todos los derechos reservados por DreamyReef.
             </p>

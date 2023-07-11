@@ -288,7 +288,7 @@
         display: none;
     }
     .header_section {
-        background-image: url(../images/mobile-bg.png);
+        background: blue;
         background-size: cover;
         padding: 0px;
     }
@@ -487,7 +487,7 @@
         display: none;
     }
     .header_section {
-        background-image: url(../images/mobile-bg.png);
+        background: blue;
         background-size: cover;
         padding: 0px; 
     }

@@ -27,19 +27,19 @@ else
     <br />
     <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Tours</h1>
     <div class="d-flex justify-content-center">
-        <a class="col col-2 btn btn-success d-grid" asp-action="Crear">Agregar</a>
+        <a class="col col-2 btn btn-primary d-grid" asp-action="Crear">Agregar</a>
     </div>
     <div class="ms-2 me-2 mt-2 mb-2">
         <div class="row d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">
             <div class="col-lg-10">
                 @foreach (var tours in Model)
                 {
-                    <div class="card m-2">
+                    <div class="card m-2" style="background-color: whitesmoke;border: 2px solid rgb(0 63 124);">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="image-container">
-                                        <img src="data:image;base64,@ViewBag.Imagen[tours.IDTours]" alt="Imagen del tour" class="tour-image img-fluid">
+                                        <img src="data:image;base64,@ViewBag.Imagen[tours.IDTours]" alt="Imagen del tour" class="tour-image img-fluid" style="border-radius: 20px;">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -60,11 +60,11 @@ else
                                         </div>
                                         <div>
                                             <label style="font-size: medium; font-weight: bold; display: inline-block;">Itinerario:</label>
-                                            <h6 class="card-title">@tours.Itinerario</h6>
+                                            <h6 class="fw-normal" style="text-align: justify;">@tours.Itinerario</h6>
                                         </div>
                                         <div>
                                             <label style="font-size: medium; font-weight: bold; display: inline-block;">Descripción:</label>
-                                            <h6 class="card-title">@tours.Descripcion</h6>
+                                            <h6 class="fw-normal" style="text-align: justify;">@tours.Descripcion</h6>
                                         </div>
                                         <div>
                                             <label style="font-size: medium; font-weight: bold; display: inline-block;">Precio de Adulto:</label>
@@ -88,6 +88,7 @@ else
                             </div>
                         </div>
                     </div>
+                    <br>
                 }
             </div>
         </div>

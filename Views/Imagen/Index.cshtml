@@ -28,7 +28,7 @@ else
         <br />
         <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Imagenes</h1>
         <div class="d-flex justify-content-center">
-            <a class="col col-2 btn btn-success d-grid" asp-action="Crear">Agregar imagenes</a>
+            <a class="col col-2 btn btn-primary d-grid" asp-action="Crear">Agregar imagenes</a>
         </div>
         <div class="ms-4 me-4 mt-4 mb-4">
             <div>
@@ -36,14 +36,14 @@ else
                     @foreach (var Imagenes in Model)
                     {
                         <div class="col-md-4">
-                            <div class="card">
+                            <div class="card" style="background-color: whitesmoke;border: 2px solid rgb(0 63 124);">
                                 <div class="card-header">
-                                    <img src="data:image;base64,@Imagenes.ImagenBase64" alt="" />
+                                    <img src="data:image;base64,@Imagenes.ImagenBase64" alt="" style="border-radius: 20px;"/>
                                 </div>
                                 <div class="card-body">
                                     <div>
                                         <label style="font-size: medium; font-weight: bold; display: inline-block;">Tour:</label>
-                                        <h3 class="card-title" style="display: inline-block;">@ViewBag.Tours[Imagenes.TourID]</h3>
+                                        <h3 class="fw-normal" style="display: inline-block;">@ViewBag.Tours[Imagenes.TourID]</h3>
                                     </div>
                                     <div class="d-flex justify-content-end">
                                         <a type="button" class="btn btn-warning text-white btn-modify" asp-action="Actualizar"

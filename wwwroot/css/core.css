@@ -3372,7 +3372,7 @@ textarea.form-control-lg {
   display: flex;
   flex-wrap: inherit;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
 }
 .navbar-brand {
   padding-top: 0.4521875rem;
@@ -3841,7 +3841,7 @@ textarea.form-control-lg {
   background-color: #fff;
   background-clip: border-box;
   border: 0 solid #d9dee3;
-  border-radius: 0.5rem;
+  border-radius: 20px;
 }
 .card > hr {
   margin-right: 0;
@@ -6536,13 +6536,12 @@ label.btn {
 
 .btn-warning {
   color: #fff;
-  background-color: #ffab00;
+  background-color: #202124c9;
   border-color: #ffab00;
-  box-shadow: 0 0.125rem 0.25rem 0 rgba(255, 171, 0, 0.4);
 }
 .btn-warning:hover {
   color: #fff;
-  background-color: #e69a00;
+  background-color: #ffab00;
   border-color: #e69a00;
   transform: translateY(-1px);
 }
@@ -6614,13 +6613,12 @@ label.btn {
 
 .btn-danger {
   color: #fff;
-  background-color: #ff3e1d;
+  background-color: #202124c9;
   border-color: #ff3e1d;
-  box-shadow: 0 0.125rem 0.25rem 0 rgba(255, 62, 29, 0.4);
 }
 .btn-danger:hover {
   color: #fff;
-  background-color: #e6381a;
+  background-color: #d2270a;
   border-color: #e6381a;
   transform: translateY(-1px);
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AOuQPjBuy7dkwC10HGkvsN/C5+mYmNlggQfd5jQT5xw=",
+  "Hash": "G3pkU4wvIL4sIgcKrFpoIcC0gHLOhfzTv4wKNqpGwyI=",
   "Source": "DreamyReefs",
   "BasePath": "_content/DreamyReefs",
   "Mode": "Default",
@@ -833,6 +833,23 @@
       "OriginalItemSpec": "wwwroot\\fonts\\boxicons\\boxicons.woff2"
     },
     {
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\154119248_4619967884757545_8983751579742422639_n.jpg",
+      "SourceId": "DreamyReefs",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
+      "BasePath": "_content/DreamyReefs",
+      "RelativePath": "images/154119248_4619967884757545_8983751579742422639_n.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\154119248_4619967884757545_8983751579742422639_n.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\20220809_za_sangervasio_head.jpeg",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
@@ -1190,6 +1207,23 @@
       "OriginalItemSpec": "wwwroot\\images\\instagram-icon.png"
     },
     {
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\Logo.png",
+      "SourceId": "DreamyReefs",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
+      "BasePath": "_content/DreamyReefs",
+      "RelativePath": "images/Logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Logo.png"
+    },
+    {
       "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\Logo.svg",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
@@ -1241,6 +1275,23 @@
       "OriginalItemSpec": "wwwroot\\images\\map-icon.png"
     },
     {
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\maxresdefault.jpg",
+      "SourceId": "DreamyReefs",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
+      "BasePath": "_content/DreamyReefs",
+      "RelativePath": "images/maxresdefault.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\maxresdefault.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\mobile-bg.png",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
@@ -1273,6 +1324,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\PM_20_3COL_BYN_MIRADOR-750x406.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\scuba-diving-with-scuba-tony-cozumel.jpg",
+      "SourceId": "DreamyReefs",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
+      "BasePath": "_content/DreamyReefs",
+      "RelativePath": "images/scuba-diving-with-scuba-tony-cozumel.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\scuba-diving-with-scuba-tony-cozumel.jpg"
     },
     {
       "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\Top-4-tours-in-Cozumel.jpg",
@@ -1324,6 +1392,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Whats2.png"
+    },
+    {
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\where-to-stay-in-cozumel.jpg",
+      "SourceId": "DreamyReefs",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
+      "BasePath": "_content/DreamyReefs",
+      "RelativePath": "images/where-to-stay-in-cozumel.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\where-to-stay-in-cozumel.jpg"
     },
     {
       "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\.DS_Store",

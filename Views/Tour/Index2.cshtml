@@ -45,8 +45,6 @@
 @if (Model == null || Model.Count == 0)
 {
     <div class="layout-page">
-        <br />
-        <br />
         <div class="row justify-content-center">
             
             <div class="col-md-8 ">
@@ -57,10 +55,6 @@
 }
 else
 {
-<br />
-<br />
-<br />
-<br />
 <div class="card_section layout_padding">
     @foreach (var tours in Model)
     {
@@ -68,7 +62,7 @@ else
             <div class="row">
                 <article class="blog-post">
                     <div class="blog-post_img">
-                        <img src="data:image;base64,@ViewBag.Imagen[tours.IDTours]" alt="" style="height:800;width:1000px;" />
+                        <img src="data:image;base64,@ViewBag.Imagen[tours.IDTours]" alt="" style="height:800;width:1000px;"/>
                     </div>
                     <div class="blog-post_info">
                         <h2 class="blog-post_title">@tours.Nombre</h2>

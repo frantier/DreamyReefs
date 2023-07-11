@@ -26,7 +26,7 @@ else
     <br />
     <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Empresas</h1>
     <div class="d-flex justify-content-center">
-        <a class="col col-2 btn btn-success d-grid" asp-action="Crear">Agregar</a>
+        <a class="col col-2 btn btn-primary d-grid" asp-action="Crear">Agregar</a>
     </div>
     <div class="ms-4 me-4 mt-4 mb-4">
         <div>
@@ -34,16 +34,16 @@ else
                 @foreach (var empresas in Model)
                 {
                 <div class="col-sm-6 col-md-4">
-                    <div class="card m-2">
+                    <div class="card m-2" style="background-color: whitesmoke;border: 2px solid rgb(0 63 124);">
                         <div class="card-body">
                             @* <div class="d-flex justify-content-center">
                                 <h6 class="fw-medium" style="color: rgb(40, 180, 99);">Activo</h6>
                             </div> *@
                             <div>
-                                <h5 class="card-title">@empresas.NombreEmpresa</h5>
-                                <h6 class="fw-normal">@empresas.RFC</h6>
-                                <h6 class="fw-normal" style="font-size: 14px;">@empresas.Correo</h6>
-                                <h6 class="fw-normal" style="font-size: 14px;">@empresas.Direccion</h6>
+                                <h5 class="card-title" >@empresas.NombreEmpresa</h5>
+                                <h6 class="fw-normal" >@empresas.RFC</h6>
+                                <h6 class="fw-normal" >@empresas.Correo</h6>
+                                <h6 class="fw-normal" >@empresas.Direccion</h6>
                             </div>
 
                             <div class="d-flex justify-content-end">

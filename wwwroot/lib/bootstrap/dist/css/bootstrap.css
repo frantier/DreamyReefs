@@ -3980,7 +3980,7 @@ textarea.form-control-lg {
   display: flex;
   flex-wrap: inherit;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
 }
 .navbar-brand {
   padding-top: 0.3125rem;
@@ -4450,7 +4450,7 @@ textarea.form-control-lg {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 20px;
 }
 .card > hr {
   margin-right: 0;

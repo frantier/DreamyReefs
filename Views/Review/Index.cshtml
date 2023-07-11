@@ -30,7 +30,7 @@ else
             @foreach (var reviews in Model)
             {
             <div class="col-sm-10 col-md-8 col-lg-6">
-                <div class="card m-2">
+                <div class="card m-2" style="background-color: whitesmoke;border: 2px solid rgb(0 63 124);">
                     <div class="card-body">
                         <div>
                             <div>
@@ -45,7 +45,7 @@ else
 
                             <div>
                                 <label style="font-size: medium; font-weight: bold; display: inline-block;">Comentario:</label>
-                                <h6 class="card-title" style="text-align: justify;">@reviews.Comentario</h6>
+                                <h6 class="fw-normal" style="text-align: justify;">@reviews.Comentario</h6>
                             </div>
 
                         </div>

@@ -190,10 +190,11 @@ namespace DreamyReefs.Controllers
         public IActionResult Detalle(int id)
         {
             var tours = _conexion.GetOneTour(id);
-
+            
             #region //Datos de categorias y caracteristicas
             // Obtener el nombre de la categoría basado en el ID
 
+            var imagenID = tours.IDTours;
             int categoria1Int = int.Parse(tours.Categoria1);
             int categoria2Int = int.Parse(tours.Categoria2);
             int categoria3Int = int.Parse(tours.Categoria3);
@@ -203,6 +204,7 @@ namespace DreamyReefs.Controllers
             int Caracteristica3Int = int.Parse(tours.Caracteristica3);
 
             //Buscamos el nombre
+            var img = _conexion.GetOneImagenesTour(imagenID);
             var categoria1 = _conexion.GetOneCategoria(categoria1Int);
             var categoria2 = _conexion.GetOneCategoria(categoria2Int);
             var categoria3 = _conexion.GetOneCategoria(categoria3Int);
@@ -212,6 +214,7 @@ namespace DreamyReefs.Controllers
             var Caracteristica3 = _conexion.GetOneCaracteristicas(Caracteristica3Int);
 
             // Asignar el nombre de la categoría al ViewBag
+            ViewBag.img = img.ImagenBase64;
             ViewBag.categoria1 = categoria1.NombreCategoria;
             ViewBag.categoria2 = categoria2.NombreCategoria;
             ViewBag.categoria3 = categoria3.NombreCategoria;

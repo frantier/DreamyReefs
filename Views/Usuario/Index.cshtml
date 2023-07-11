@@ -26,7 +26,7 @@ else
         <br />
         <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Usuarios</h1>
         <div class="d-flex justify-content-center">
-            <a class="col col-2 btn btn-success d-grid" asp-action="Crear">Agregar</a>
+            <a class="col col-2 btn btn-primary d-grid" asp-action="Crear">Agregar</a>
         </div>
         <div class="ms-4 me-4 mt-4 mb-4">
             <div data-aos="fade-up" data-aos-duration="1000">
@@ -34,7 +34,7 @@ else
                     <div class="col">
                         @foreach (var accesosweb in Model)
                         {
-                            <div class="card m-2">
+                            <div class="card m-2" style="background-color: whitesmoke;border: 2px solid rgb(0 63 124);">
                                 <div class="card-body">
                                     <div class="d-flex justify-content-center">
                                         @if (accesosweb.Estatus == "Activo")
@@ -50,17 +50,17 @@ else
                                     <div>
                                         <div>
                                             <label style="font-size: medium; font-weight: bold; display: inline-block;">Usuario:</label>
-                                            <h3 class="card-title" style="display: inline-block;">@accesosweb.Usuario</h3>
+                                            <h3 class="fw-normal" style="display: inline-block;">@accesosweb.Usuario</h3>
                                         </div>
 
                                         <div>
                                             <label style="font-size: medium; font-weight: bold; display: inline-block;">Correo:</label>
-                                            <h3 class="card-title" style="display: inline-block;">@accesosweb.Correo</h3>
+                                            <h3 class="fw-normal" style="display: inline-block;">@accesosweb.Correo</h3>
                                         </div>
 
                                         <div>
                                             <label style="font-size: medium; font-weight: bold; display: inline-block;">Contraseña:</label>
-                                            <h3 class="card-title" style="display: inline-block;">@accesosweb.Contrasena</h3>
+                                            <h3 class="fw-normal" style="display: inline-block;">@accesosweb.Contrasena</h3>
                                         </div>
                                     </div>
 
