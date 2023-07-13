@@ -69,43 +69,43 @@
                 <li class="menu-header small text-uppercase"><span class="menu-header-text">Módulos</span></li>
                 <!-- Cards -->
                 <li class="menu-item">
-                    <a asp-controller="Reservacion" asp-action="Index" class="menu-link">
+                    <a id="reservaciones" asp-controller="Reservacion" asp-action="Index" class="menu-link">
                         <i class="menu-icon tf-icons bx bx-collection"></i>
                         <div data-i18n="Basic">Reservaciones</div>
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a asp-controller="Transporte" asp-action="Index" class="menu-link">
+                    <a id="transportes" asp-controller="Transporte" asp-action="Index" class="menu-link">
                         <i class="menu-icon tf-icons bx bx-collection"></i>
                         <div data-i18n="Basic">Transportes</div>
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a asp-controller="Empresa" asp-action="Index" class="menu-link">
+                    <a id="empresas" asp-controller="Empresa" asp-action="Index" class="menu-link">
                         <i class="menu-icon tf-icons bx bx-collection"></i>
                         <div data-i18n="Basic">Empresas</div>
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a asp-controller="Review" asp-action="Index" class="menu-link">
+                    <a id="reviews" asp-controller="Review" asp-action="Index" class="menu-link">
                         <i class="menu-icon tf-icons bx bx-collection"></i>
                         <div data-i18n="Basic">Reviews</div>
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a asp-controller="Tour" asp-action="Index" class="menu-link">
+                    <a id="tours" asp-controller="Tour" asp-action="Index" class="menu-link">
                         <i class="menu-icon tf-icons bx bx-collection"></i>
                         <div data-i18n="Basic">Tours</div>
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a asp-controller="Imagen" asp-action="Index" class="menu-link">
+                    <a id="imagenes" asp-controller="Imagen" asp-action="Index" class="menu-link">
                         <i class="menu-icon tf-icons bx bx-collection"></i>
                         <div data-i18n="Basic">Imagenes</div>
                     </a>
                 </li>
                 <li class="menu-item">
-                    <a asp-controller="Usuario" asp-action="Index" class="menu-link">
+                    <a id="usuario" asp-controller="Usuario" asp-action="Index" class="menu-link">
                         <i class="menu-icon tf-icons bx bx-collection"></i>
                         <div data-i18n="Basic">Usuarios</div>
                     </a>
@@ -127,10 +127,11 @@
     <div class="layout-overlay layout-menu-toggle"></div>
 </div>
 
-    <div id="loader">
+    <div id="loader" style="display: none;">
         <div class="loader-content">
-            <div class="loader-spinner"></div>
-            <div class="loader-text">Cargando...</div>
+            <div class="loader-spinner">
+                <img src="~/images/DreamyReefs.gif" alt="Spinner GIF">
+            </div>
         </div>
     </div>
 
@@ -154,16 +155,186 @@
         }
     });
 
-        window.addEventListener('load', function () {
+        document.getElementById('reservaciones').addEventListener('click', function () {
+            event.preventDefault();
+
             var loader = document.getElementById('loader');
             loader.style.display = 'flex';
+            loader.classList.add('fade-in');
 
-            // Establecer la duración del loader en milisegundos (por ejemplo, 2000ms = 2 segundos)
-            var duracionLoader = 1000;
+            var duracionLoader = 4000;
 
+            // Cargar la página después de que el loader haya aparecido
             setTimeout(function () {
-                loader.style.display = 'none';
+                window.location.href = '/Reservacion';
             }, duracionLoader);
+
+            // Ocultar el loader después de que la página se haya cargado completamente
+            window.addEventListener('load', function () {
+                loader.classList.remove('fade-in');
+                loader.classList.add('fade-out');
+
+                setTimeout(function () {
+                    loader.style.display = 'none';
+                    loader.classList.remove('fade-out');
+                }, 300); // Ajusta la duración de la animación de salida aquí
+            });
+        });
+
+        document.getElementById('transportes').addEventListener('click', function () {
+            event.preventDefault();
+
+            var loader = document.getElementById('loader');
+            loader.style.display = 'flex';
+            loader.classList.add('fade-in');
+
+            var duracionLoader = 4000;
+
+            // Cargar la página después de que el loader haya aparecido
+            setTimeout(function () {
+                window.location.href = '/Transporte';
+            }, duracionLoader);
+
+            // Ocultar el loader después de que la página se haya cargado completamente
+            window.addEventListener('load', function () {
+                loader.classList.remove('fade-in');
+                loader.classList.add('fade-out');
+
+                setTimeout(function () {
+                    loader.style.display = 'none';
+                    loader.classList.remove('fade-out');
+                }, 300); // Ajusta la duración de la animación de salida aquí
+            });
+        });
+
+        document.getElementById('empresas').addEventListener('click', function () {
+            event.preventDefault();
+
+            var loader = document.getElementById('loader');
+            loader.style.display = 'flex';
+            loader.classList.add('fade-in');
+
+            var duracionLoader = 4000;
+
+            // Cargar la página después de que el loader haya aparecido
+            setTimeout(function () {
+                window.location.href = '/Empresa';
+            }, duracionLoader);
+
+            // Ocultar el loader después de que la página se haya cargado completamente
+            window.addEventListener('load', function () {
+                loader.classList.remove('fade-in');
+                loader.classList.add('fade-out');
+
+                setTimeout(function () {
+                    loader.style.display = 'none';
+                    loader.classList.remove('fade-out');
+                }, 300); // Ajusta la duración de la animación de salida aquí
+            });
+        });
+
+        document.getElementById('reviews').addEventListener('click', function () {
+            event.preventDefault();
+
+            var loader = document.getElementById('loader');
+            loader.style.display = 'flex';
+            loader.classList.add('fade-in');
+
+            var duracionLoader = 4000;
+
+            // Cargar la página después de que el loader haya aparecido
+            setTimeout(function () {
+                window.location.href = '/Review';
+            }, duracionLoader);
+
+            // Ocultar el loader después de que la página se haya cargado completamente
+            window.addEventListener('load', function () {
+                loader.classList.remove('fade-in');
+                loader.classList.add('fade-out');
+
+                setTimeout(function () {
+                    loader.style.display = 'none';
+                    loader.classList.remove('fade-out');
+                }, 300); // Ajusta la duración de la animación de salida aquí
+            });
+        });
+
+        document.getElementById('tours').addEventListener('click', function () {
+            event.preventDefault();
+
+            var loader = document.getElementById('loader');
+            loader.style.display = 'flex';
+            loader.classList.add('fade-in');
+
+            var duracionLoader = 4000;
+
+            // Cargar la página después de que el loader haya aparecido
+            setTimeout(function () {
+                window.location.href = '/Tour';
+            }, duracionLoader);
+
+            // Ocultar el loader después de que la página se haya cargado completamente
+            window.addEventListener('load', function () {
+                loader.classList.remove('fade-in');
+                loader.classList.add('fade-out');
+
+                setTimeout(function () {
+                    loader.style.display = 'none';
+                    loader.classList.remove('fade-out');
+                }, 300); // Ajusta la duración de la animación de salida aquí
+            });
+        });
+
+        document.getElementById('imagenes').addEventListener('click', function () {
+            event.preventDefault();
+
+            var loader = document.getElementById('loader');
+            loader.style.display = 'flex';
+            loader.classList.add('fade-in');
+
+            var duracionLoader = 4000;
+
+            // Cargar la página después de que el loader haya aparecido
+            setTimeout(function () {
+                window.location.href = '/Imagen';
+            }, duracionLoader);
+
+            // Ocultar el loader después de que la página se haya cargado completamente
+            window.addEventListener('load', function () {
+                loader.classList.remove('fade-in');
+                loader.classList.add('fade-out');
+
+                setTimeout(function () {
+                    loader.style.display = 'none';
+                    loader.classList.remove('fade-out');
+                }, 300); // Ajusta la duración de la animación de salida aquí
+            });
+        });
+
+        document.getElementById('usuario').addEventListener('click', function () {
+            event.preventDefault();
+
+            var loader = document.getElementById('loader');
+            loader.style.display = 'flex';
+            loader.classList.add('fade-in');
+
+            var duracionLoader = 4000;
+
+            // Cargar la página después de que el loader haya aparecido
+            setTimeout(function () {
+                window.location.href = '/Usuario';
+            }, duracionLoader);
+
+            // Ocultar el loader después de que la página se haya cargado completamente
+            window.addEventListener('load', function () {
+                loader.classList.remove('fade-in');
+                loader.classList.add('fade-out');
+
+                setTimeout(function () {
+                    loader.style.display = 'none';
+                    loader.classList.remove('fade-out');
+                }, 300); // Ajusta la duración de la animación de salida aquí
+            });
         });
 
         function registrosCreados() {
@@ -183,20 +354,21 @@
             }
         }
 
-
         // Llama a la función registrosCreados cuando se cargue la página
         window.onload = registrosCreados;
 
         function eliminarUsuario(id) {
-            swal.fire({
+            Swal.fire({
                 title: "¿Estás seguro?",
                 text: "Una vez eliminado, no podrás recuperar este registro.",
                 icon: "warning",
-                buttons: ["Cancelar", "Eliminar"],
-                dangerMode: true,
-            })
-                .then((eliminar) => {
-                    if (eliminar) {
+                showCancelButton: true,
+                confirmButtonColor: 'green',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Eliminar',
+                cancelButtonText: 'Cancelar'
+                }).then((result) => {
+                if (result.isConfirmed) {
                         // Realiza una solicitud AJAX para eliminar el registro
                         $.ajax({
                             url: '@Url.Action("Eliminar", "Usuario")', // Reemplaza "TuControlador" con el nombre de tu controlador
@@ -226,15 +398,17 @@
         }
 
         function eliminarTransportes(id) {
-            swal.fire({
+            Swal.fire({
                 title: "¿Estás seguro?",
                 text: "Una vez eliminado, no podrás recuperar este registro.",
                 icon: "warning",
-                buttons: ["Cancelar", "Eliminar"],
-                dangerMode: true,
-            })
-                .then((eliminar) => {
-                    if (eliminar) {
+                showCancelButton: true,
+                confirmButtonColor: 'green',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Eliminar',
+                cancelButtonText: 'Cancelar'
+                }).then((result) => {
+                if (result.isConfirmed) {
                         // Realiza una solicitud AJAX para eliminar el registro
                         $.ajax({
                             url: '@Url.Action("Eliminar", "Transporte")', // Reemplaza "TuControlador" con el nombre de tu controlador
@@ -264,15 +438,17 @@
         }
 
         function eliminarTours(id) {
-            swal.fire({
+            Swal.fire({
                 title: "¿Estás seguro?",
                 text: "Una vez eliminado, no podrás recuperar este registro.",
                 icon: "warning",
-                buttons: ["Cancelar", "Eliminar"],
-                dangerMode: true,
-            })
-                .then((eliminar) => {
-                    if (eliminar) {
+                showCancelButton: true,
+                confirmButtonColor: 'green',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Eliminar',
+                cancelButtonText: 'Cancelar'
+                }).then((result) => {
+                if (result.isConfirmed) {
                         // Realiza una solicitud AJAX para eliminar el registro
                         $.ajax({
                             url: '@Url.Action("Eliminar", "Tour")', // Reemplaza "TuControlador" con el nombre de tu controlador
@@ -302,15 +478,17 @@
         }
 
         function eliminarReviews(id) {
-            swal.fire({
+            Swal.fire({
                 title: "¿Estás seguro?",
                 text: "Una vez eliminado, no podrás recuperar este registro.",
                 icon: "warning",
-                buttons: ["Cancelar", "Eliminar"],
-                dangerMode: true,
-            })
-                .then((eliminar) => {
-                    if (eliminar) {
+                showCancelButton: true,
+                confirmButtonColor: 'green',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Eliminar',
+                cancelButtonText: 'Cancelar'
+                }).then((result) => {
+                if (result.isConfirmed) {
                         // Realiza una solicitud AJAX para eliminar el registro
                         $.ajax({
                             url: '@Url.Action("Eliminar", "Review")', // Reemplaza "TuControlador" con el nombre de tu controlador
@@ -340,15 +518,17 @@
         }
 
         function eliminarReservaciones(id) {
-            swal.fire({
+            Swal.fire({
                 title: "¿Estás seguro?",
                 text: "Una vez eliminado, no podrás recuperar este registro.",
                 icon: "warning",
-                buttons: ["Cancelar", "Eliminar"],
-                dangerMode: true,
-            })
-                .then((eliminar) => {
-                    if (eliminar) {
+                showCancelButton: true,
+                confirmButtonColor: 'green',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Eliminar',
+                cancelButtonText: 'Cancelar'
+                }).then((result) => {
+                if (result.isConfirmed) {
                         // Realiza una solicitud AJAX para eliminar el registro
                         $.ajax({
                             url: '@Url.Action("Eliminar", "Reservacion")', // Reemplaza "TuControlador" con el nombre de tu controlador
@@ -378,15 +558,17 @@
         }
 
         function eliminarImagenes(id) {
-            swal.fire({
+            Swal.fire({
                 title: "¿Estás seguro?",
                 text: "Una vez eliminado, no podrás recuperar este registro.",
                 icon: "warning",
-                buttons: ["Cancelar", "Eliminar"],
-                dangerMode: true,
-            })
-                .then((eliminar) => {
-                    if (eliminar) {
+                showCancelButton: true,
+                confirmButtonColor: 'green',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Eliminar',
+                cancelButtonText: 'Cancelar'
+                }).then((result) => {
+                if (result.isConfirmed) {
                         // Realiza una solicitud AJAX para eliminar el registro
                         $.ajax({
                             url: '@Url.Action("Eliminar", "Imagen")', // Reemplaza "TuControlador" con el nombre de tu controlador
@@ -416,16 +598,18 @@
         }
 
         function eliminarEmpresas(id) {
-            swal.fire({
+            Swal.fire({
                 title: "¿Estás seguro?",
                 text: "Una vez eliminado, no podrás recuperar este registro.",
                 icon: "warning",
-                buttons: ["Cancelar", "Eliminar"],
-                dangerMode: true,
-            })
-                .then((eliminar) => {
-                    if (eliminar) {
-                        // Realiza una solicitud AJAX para eliminar el registro
+                showCancelButton: true,
+                confirmButtonColor: 'green',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Eliminar',
+                cancelButtonText: 'Cancelar'
+                }).then((result) => {
+                if (result.isConfirmed) {
+                    // Realiza una solicitud AJAX para eliminar el registro
                         $.ajax({
                             url: '@Url.Action("Eliminar", "Empresa")', // Reemplaza "TuControlador" con el nombre de tu controlador
                             type: 'POST',
@@ -449,10 +633,10 @@
                                 swal.fire("Error", "Ha ocurrido un error al eliminar el registro.", "error");
                             }
                         });
-                    }
-                });
+                }
+                })
         }
-
+    
         function cerrarSesion() {
             Swal.fire({
                 title: 'Cerrando sesión',

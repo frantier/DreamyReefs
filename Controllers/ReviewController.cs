@@ -42,6 +42,15 @@ namespace DreamyReefs.Controllers
                 ViewBag.Tours[tourID] = tour.Nombre;
             }
 
+            ViewBag.Imagen = new Dictionary<int, string>();
+
+            foreach (var review in reviews)
+            {
+                var imagenID = review.TourID;
+                var img = _conexion.GetOneImagenesTour(imagenID);
+                ViewBag.Imagen[imagenID] = img.ImagenBase64;
+            }
+
             return View(reviews);
         }
 
@@ -53,8 +62,14 @@ namespace DreamyReefs.Controllers
 
         public IActionResult Actualizar(int id)
         {
-            var usuario = _conexion.GetOneReviews(id);
-            return View(usuario);
+            var reviews = _conexion.GetOneReviews(id);
+
+            var tourid = reviews.TourID;
+            var tour = _conexion.GetOneTour(tourid);
+
+            ViewBag.tour = tour.Nombre;
+
+            return View(reviews);
         }
 
         [HttpPost]

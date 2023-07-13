@@ -449,7 +449,7 @@ button {
     text-align: center;
 }
 
-.btn_main a {
+/*.btn_main a {
     width: 100%;
     float: left;
     font-size: 16px;
@@ -461,17 +461,31 @@ button {
     font-weight: bold;
     margin-top: 40px;
     text-transform: uppercase;
-}
+}*/
 
-.btn_main a:hover {
-    color: #ffffff;
-    background-color: #000d10;
-}
+    .btn_main button {
+        width: 100%;
+        float: left;
+        font-size: 16px;
+        color: #ffffff;
+        background-color: #2b2278;
+        text-align: center;
+        padding: 10px 0px;
+        border-radius: 12px;
+        font-weight: bold;
+        margin-top: 40px;
+        text-transform: uppercase;
+    }
 
-.btn_main.active a {
-    color: #ffffff;
-    background-color: #000d10;
-}
+        .btn_main button:hover {
+            color: #ffffff;
+            background-color: #000d10;
+        }
+
+    .btn_main.active button {
+        color: #ffffff;
+        background-color: #000d10;
+    }
 
 
 /* services section end */

@@ -196,6 +196,35 @@ namespace DreamyReefs.Data
             Database.ExecuteSqlRaw("EXEC [dbo].[EliminarUsuario] 'TOURS', {0}", ID);
         }
 
+        public List<Tours> SearchTour(string busqueda)
+        {
+            return Tours
+                .Where(t => t.Nombre.Contains(busqueda))
+                .ToList();
+        }
+
+        public List<Tours> SearchCaracteristica(string busqueda)
+        {
+            return Tours
+                .Where(t => t.Caracteristica1.Contains(busqueda) || t.Caracteristica2.Contains(busqueda) || t.Caracteristica3.Contains(busqueda))
+                .ToList();
+        }
+
+
+        public List<Tours> SearchCategoria(string busqueda)
+        {
+            return Tours
+                .Where(t => t.Categoria1.Contains(busqueda) || t.Categoria2.Contains(busqueda) || t.Categoria3.Contains(busqueda) || t.Categoria4.Contains(busqueda))
+                .ToList();
+        }
+
+        public List<Tours> SearchHorario(string busqueda)
+        {
+            return Tours
+                .Where(t => t.Disponibilidad.Contains(busqueda))
+                .ToList();
+        }
+
         #endregion
 
         #region Acciones de Caracteristicas
@@ -403,6 +432,13 @@ namespace DreamyReefs.Data
         public void EliminarReservaciones(int ID)
         {
             Database.ExecuteSqlRaw("EXEC [dbo].[EliminarUsuario] 'RESERVACIONES', {0}", ID);
+        }
+
+        public List<Reservacion> SearchReservaciones(string busqueda)
+        {
+            return Reservaciones
+                .Where(t => t.NombreCompleto.Contains(busqueda))
+                .ToList();
         }
 
         #endregion

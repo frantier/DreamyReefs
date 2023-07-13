@@ -29,6 +29,11 @@ else
         <a class="col col-2 btn btn-primary d-grid" asp-action="Crear">Agregar</a>
         &ensp;
         <a class="col col-2 btn btn-danger d-grid" asp-action="EliminarArchivosEnCarpeta">Eliminar PDF's'</a>
+        &nbsp;
+        <form asp-action="Buscar" method="post" class="d-flex" role="search">
+            <input name="busqueda" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" style="border-radius: 12px; border: 2px solid #ced4da;">
+            <input type="submit" value="Buscar" class="btn btn-outline-success" style="color: black; border: 2px solid #ced4da;" />
+        </form>
     </div>
     <div class="ms-4 me-4 mt-4 mb-4">
         <div class="row" data-aos="fade-up" data-aos-duration="1000">

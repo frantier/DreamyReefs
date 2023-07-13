@@ -24,6 +24,14 @@ namespace DreamyReefs.Controllers
                 return View(reservaciones);
             }
 
+            [HttpPost]
+            public IActionResult Buscar(string busqueda)
+            {
+                var reservaciones = _conexion.SearchReservaciones(busqueda); // Modificar SearchTour para devolver los resultados
+
+                return View("Index", reservaciones); // Pasar los resultados de la búsqueda a la vista Index
+            }
+
             public IActionResult Crear()
             {
                 return View();

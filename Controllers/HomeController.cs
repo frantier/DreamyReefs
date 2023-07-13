@@ -18,6 +18,24 @@ namespace DreamyReefs.Controllers
         {
 
             var reviews = _conexion.GetAllReviews().ToList();
+            ViewBag.Imagen = new Dictionary<int, string>();
+            
+            foreach (var review in reviews)
+            {
+                var imagenID = review.TourID;
+                var img = _conexion.GetOneImagenesTour(imagenID);
+                ViewBag.Imagen[imagenID] = img.ImagenBase64;
+            }
+
+            ViewBag.Tours = new Dictionary<int, string>();
+
+            foreach (var review in reviews)
+            {
+                var tourID = review.TourID;
+                var tour = _conexion.GetOneTour(tourID);
+                ViewBag.Tours[tourID] = tour.Nombre;
+            }
+
             return View(reviews);
         }
 

@@ -1,7 +1,7 @@
 ﻿﻿@{
     ViewData["Title"] = "Inicio";
     Layout = "_Layout";
-    List<Review> listaReview = Model;
+    List<Review> listaReview = Model.GetRange(0, Math.Min(3, Model.Count)); ;
 }
 
 <!DOCTYPE html>
@@ -131,17 +131,17 @@
                         <div class="col-md-4">
                             <div><img src="images/arrecife-paraiso.jpg" class="services_img" style="border-radius: 20px;" >
                             </div>
-                            <div class="btn_main"><a href="#">Snorkeling</a></div>
+                            <div class="btn_main"><button type="button" onclick="EnviarCategoria('Snorkeling')">Snorkeling</button></div>
                         </div>
                         <div class="col-md-4">
                             <div><img src="images/cozumel-diving-naw.jpg" class="services_img" style="border-radius: 20px;">
                             </div>
-                            <div class="btn_main"><a href="#">Buceo</a></div>
+                            <div class="btn_main"><button type="button" onclick="EnviarCategoria('Buceo')">Buceo</button></div>
                         </div>
                         <div class="col-md-4">
                             <div><img src="images/20220809_za_sangervasio_head.jpeg" class="services_img"
                                     style="border-radius: 20px;"></div>
-                            <div class="btn_main"><a href="#">Exploración</a></div>
+                            <div class="btn_main"><button type="button" onclick="EnviarCategoria('Exploración')">Exploración</button></div>
                         </div>
                     </div>
                 </div>
@@ -154,60 +154,22 @@
                 <h1 class="h12" style="font-weight: bold;">Comentarios</h1>
                 <div class="container-fluid" style="align-content:center;">
                     <div class="row">
+                        @foreach (var reviews in listaReview)
+                        {
                         <div class="col-md-4">
                             <div class="card2" style="background-color: white;border: 2px solid rgb(0 63 124);">
                                 <div class="col-md-12">
                                     <div class="image-container">
-                                        <img src="images/arrecife-paraiso.jpg" alt="Imagen del tour" class="tour-image img-fluid" style="border-radius: 15px;">
+                                        <img src="data:image;base64,@ViewBag.Imagen[reviews.TourID]" alt="Imagen del tour" class="tour-image img-fluid" style="border-radius: 15px;">
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <h5>Snorkel Cozumel</h5>
-                                    <p>Fue una experiencia increíble que superó todas mis expectativas. Desde
-                                        el momento en que subimos al barco hasta el final, todo estuvo bien organizado.
-                                        El equipo
-                                        de guías fue amable, lo que hizo que el recorrido fuera muy informativo.
-                                        Disfruté de cada
-                                        parada que hicimos, especialmente del snorkeling.</p>
+                                    <h5>@ViewBag.Tours[reviews.TourID]</h5>
+                                    <p>@reviews.Comentario</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card2" style="background-color: white;border: 2px solid rgb(0 63 124);">
-                                <div class="col-md-12">
-                                    <div class="image-container">
-                                        <img src="images/arrecife-paraiso.jpg" alt="Imagen del tour" class="tour-image img-fluid" style="border-radius: 15px;">
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <h5>Aventura de snorkel en bote invisible en Cozumel</h5>
-                                    <p>La atención al detalle y el nivel de servicio que recibimos durante
-                                        todo el recorrido fueron impecables. Además, quiero mencionar lo bien que se
-                                        adaptaron a
-                                        nuestras necesidades y preferencias individuales. Sin duda alguna, volvería a
-                                        elegir este
-                                        tour en mi próxima visita a Cozumel.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card2" style="background-color: white;border: 2px solid rgb(0 63 124);">
-                                <div class="col-md-12">
-                                    <div class="image-container">
-                                        <img src="images/arrecife-paraiso.jpg" alt="Imagen del tour" class="tour-image img-fluid" style="border-radius: 15px;">
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <h5>Paraiso del arrecife Cozumel</h5>
-                                    <p>El tour en Cozumel fue simplemente excepcional, y no puedo agradecer lo
-                                        suficiente a todo el equipo por brindarnos una experiencia inolvidable. Además,
-                                        el
-                                        almuerzo que se nos proporcionó fue delicioso, y las vistas panorámicas desde el
-                                        barco
-                                        fueron impresionantes.</p>
-                                </div>
-                            </div>
-                        </div>
+                        }
                     </div>
                 </div>
                 <div class="btn_main"><a asp-area="" asp-controller="Review" asp-action="Index2">Ver más comentarios</a>

@@ -44,8 +44,10 @@
                                     <div>
                                         <label asp-for="Disponibilidad" class="form-label">Disponibilidad del
                                             tour</label>
-                                        <input asp-for="Disponibilidad" placeholder="Disponibilidad del tour"
-                                            class="form-control" />
+                                        <select asp-for="Disponibilidad" class="form-control">
+                                            <option>Mañana</option>
+                                            <option>Tarde</option>
+                                        </select>
                                         <span asp-validation-for="Disponibilidad" class="text-danger"></span>
                                     </div>
                                     <div>

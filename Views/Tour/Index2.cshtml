@@ -55,6 +55,43 @@
 }
 else
 {
+        <div class="row row-cols-1 row-cols-md-2 justify-content-center">
+            <div class="d-flex justify-content-center">
+                <form method="post" asp-action="Categoria2">
+                    <div class="dropdown">
+                        <button class="dropbtn">Categorias</button>
+                        <div class="dropdown-content">
+                            @foreach (var categoria in ViewBag.Categorias)
+                            {
+                                <button type="submit" name="categoria" value="@categoria.IDCategorias">@categoria.NombreCategoria</button>
+                            }
+                        </div>
+                    </div>
+                </form>
+                <form method="post" asp-action="Caracteristica2">
+                    <div class="dropdown">
+                        <button class="dropbtn">Caracteristicas</button>
+                        <div class="dropdown-content">
+                            @foreach (var caracteristicas in ViewBag.Caracteristicas)
+                            {
+                                <button type="submit" name="caracteristica" value="@caracteristicas.IDCaracteristicas">@caracteristicas.NombreCaracteristica</button>
+                            }
+                        </div>
+                    </div>
+                </form>
+                <form method="post" asp-action="Horario2">
+                    <div class="dropdown">
+                        <button class="dropbtn">Horario</button>
+                        <div class="dropdown-content">
+                            @foreach (var horario in ViewBag.Horario)
+                            {
+                                <button type="submit" name="horario" value="@horario.Hora">@horario.Hora</button>
+                            }
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
 <div class="card_section layout_padding">
     @foreach (var tours in Model)
     {

@@ -26,9 +26,48 @@ else
     <br />
     <br />
     <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Tours</h1>
-    <div class="d-flex justify-content-center">
-        <a class="col col-2 btn btn-primary d-grid" asp-action="Crear">Agregar</a>
-    </div>
+        <div class="d-flex justify-content-center">
+            <a class="col col-2 btn btn-primary d-grid" asp-action="Crear">Agregar</a>
+            &ensp;
+            <form method="post" asp-action="Categoria">
+                <div class="dropdown">
+                    <button class="dropbtn">Categorias</button>
+                    <div class="dropdown-content">
+                        @foreach (var categoria in ViewBag.Categorias)
+                        {
+                            <button type="submit" name="categoria" value="@categoria.IDCategorias">@categoria.NombreCategoria</button>
+                        }
+                    </div>
+                </div>
+            </form>
+            <form method="post" asp-action="Caracteristica">
+                <div class="dropdown">
+                    <button class="dropbtn">Caracteristicas</button>
+                    <div class="dropdown-content">
+                        @foreach (var caracteristicas in ViewBag.Caracteristicas)
+                        {
+                            <button type="submit" name="caracteristica" value="@caracteristicas.IDCaracteristicas">@caracteristicas.NombreCaracteristica</button>
+                        }
+                    </div>
+                </div>
+            </form>
+            <form method="post" asp-action="Horario">
+                <div class="dropdown">
+                    <button class="dropbtn">Horario</button>
+                    <div class="dropdown-content">
+                        @foreach (var horario in ViewBag.Horario)
+                        {
+                            <button type="submit" name="horario" value="@horario.Hora">@horario.Hora</button>
+                        }
+                    </div>
+                </div>
+            </form>
+            &nbsp;
+            <form asp-action="Buscar" method="post" class="d-flex" role="search">
+                <input name="busqueda" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" style="border-radius: 12px; border: 2px solid #ced4da;">
+                <input type="submit" value="Buscar" class="btn btn-outline-success" style="color: black; border: 2px solid #ced4da;" />
+            </form>
+        </div>
     <div class="ms-2 me-2 mt-2 mb-2">
         <div class="row d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">
             <div class="col-lg-10">
