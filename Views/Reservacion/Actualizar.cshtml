@@ -63,6 +63,11 @@
                                         </select>
                                         <span asp-validation-for="Estatus" class="text-danger"></span>
                                     </div>
+                                    <div>
+                                        <label asp-for="TourID" hidden></label>
+                                        <input asp-for="TourID" placeholder="TourID"
+                                               class="form-control" hidden readonly />
+                                    </div>
                                     &ensp;
                                     <div class="d-flex justify-content-end">
                                         <input type="submit" value="Actualizar reservacion"

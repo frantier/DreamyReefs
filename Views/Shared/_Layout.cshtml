@@ -26,7 +26,7 @@
                         <ul>
                             <li class="active"><a id="inicio" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a></li>
                             <li><a id="tours" asp-area="" asp-controller="Tour" asp-action="Index2">Tours</a></li>
-                            <li><a id="acerca" href="#">Acerca de</a></li>
+                            <li><a id="acerca" asp-area="" asp-controller="Acercade" asp-action="Index">Acerca de</a></li>
                             <li class="active"><a id="review" asp-area="" asp-controller="Review"
                                     asp-action="Index2">Comentarios</a></li>
                         </ul>
@@ -165,7 +165,7 @@
 
             // Cargar la página después de que el loader haya aparecido
             setTimeout(function () {
-                window.location.href = '/';
+                window.location.href = '/Acercade/Index';
             }, duracionLoader);
 
             // Ocultar el loader después de que la página se haya cargado completamente
@@ -206,6 +206,72 @@
             });
         });
 
+        document.getElementById('Snorkeling').addEventListener('click', function () {
+
+            var loader = document.getElementById('loader');
+            loader.style.display = 'flex';
+            loader.classList.add('fade-in');
+
+            var duracionLoader = 4000;
+
+            // Ocultar el loader después de que la página se haya cargado completamente
+            setTimeout(function () {
+                window.addEventListener('load', function () {
+                    loader.classList.remove('fade-in');
+                    loader.classList.add('fade-out');
+
+                    setTimeout(function () {
+                        loader.style.display = 'none';
+                        loader.classList.remove('fade-out');
+                    }, 300); // Ajusta la duración de la animación de salida aquí
+                });
+            }, duracionLoader);
+        });
+
+        document.getElementById('Buceo').addEventListener('click', function () {
+
+            var loader = document.getElementById('loader');
+            loader.style.display = 'flex';
+            loader.classList.add('fade-in');
+
+            var duracionLoader = 4000;
+
+            // Ocultar el loader después de que la página se haya cargado completamente
+            setTimeout(function () {
+                window.addEventListener('load', function () {
+                    loader.classList.remove('fade-in');
+                    loader.classList.add('fade-out');
+
+                    setTimeout(function () {
+                        loader.style.display = 'none';
+                        loader.classList.remove('fade-out');
+                    }, 300); // Ajusta la duración de la animación de salida aquí
+                });
+            }, duracionLoader);
+        });
+
+        document.getElementById('Exploracion').addEventListener('click', function () {
+
+            var loader = document.getElementById('loader');
+            loader.style.display = 'flex';
+            loader.classList.add('fade-in');
+
+            var duracionLoader = 4000;
+
+            // Ocultar el loader después de que la página se haya cargado completamente
+            setTimeout(function () {
+                window.addEventListener('load', function () {
+                    loader.classList.remove('fade-in');
+                    loader.classList.add('fade-out');
+
+                    setTimeout(function () {
+                        loader.style.display = 'none';
+                        loader.classList.remove('fade-out');
+                    }, 300); // Ajusta la duración de la animación de salida aquí
+                });
+            }, duracionLoader);
+        });
+
         function registrosCreados() {
             var successMessage = '@TempData["SuccessMessage"]';
             if (successMessage) {
@@ -224,20 +290,6 @@
         }
 
         window.onload = registrosCreados;
-
-        function EnviarCategoria(categoria) {
-            $.ajax({
-                url: '@Url.Action("Categoria2", "Tour")', // Reemplaza "Tour" con el nombre de tu controlador
-                type: 'POST',
-                data: { categoria: categoria },
-                success: function (data) {
-                    
-                },
-                error: function () {
-                    swal.fire("Error", "Ha ocurrido un error al enviar la categoría.", "error");
-                }
-            });
-        }
 
     </script>
 </body>

@@ -129,19 +129,34 @@
                 <div class="services_section_2">
                     <div class="row">
                         <div class="col-md-4">
-                            <div><img src="images/arrecife-paraiso.jpg" class="services_img" style="border-radius: 20px;" >
+                            <div>
+                                <img src="images/arrecife-paraiso.jpg" class="services_img" style="border-radius: 20px;">
                             </div>
-                            <div class="btn_main"><button type="button" onclick="EnviarCategoria('Snorkeling')">Snorkeling</button></div>
+                            <div class="btn_main">
+                                <form method="post" asp-controller="Tour" asp-action="Categoria2">
+                                    <button id="Snorkeling" type="submit" name="categoria" value="10">Snorkeling</button>
+                                </form>
+                            </div>
                         </div>
                         <div class="col-md-4">
-                            <div><img src="images/cozumel-diving-naw.jpg" class="services_img" style="border-radius: 20px;">
+                            <div>
+                                <img src="images/cozumel-diving-naw.jpg" class="services_img" style="border-radius: 20px;">
                             </div>
-                            <div class="btn_main"><button type="button" onclick="EnviarCategoria('Buceo')">Buceo</button></div>
+                            <div class="btn_main">
+                                <form method="post" asp-controller="Tour" asp-action="Categoria2">
+                                    <button id="Buceo" type="submit" name="categoria" value="9">Buceo</button>
+                                </form>
+                            </div>
                         </div>
                         <div class="col-md-4">
-                            <div><img src="images/20220809_za_sangervasio_head.jpeg" class="services_img"
-                                    style="border-radius: 20px;"></div>
-                            <div class="btn_main"><button type="button" onclick="EnviarCategoria('Exploración')">Exploración</button></div>
+                            <div>
+                                <img src="images/20220809_za_sangervasio_head.jpeg" class="services_img" style="border-radius: 20px;">
+                            </div>
+                            <div class="btn_main">
+                                <form method="post" asp-controller="Tour" asp-action="Categoria2">
+                                    <button id="Exploracion" type="submit" name="categoria" value="8">Exploracion</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -172,7 +187,7 @@
                         }
                     </div>
                 </div>
-                <div class="btn_main"><a asp-area="" asp-controller="Review" asp-action="Index2">Ver más comentarios</a>
+                <div class="btn_main2"><a asp-area="" asp-controller="Review" asp-action="Index2">Ver más comentarios</a>
                 </div>
 
             </div>

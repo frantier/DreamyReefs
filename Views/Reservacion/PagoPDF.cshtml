@@ -1,0 +1,211 @@
+﻿@model DreamyReefs.Models.ViewModels.ViewModelReservacion
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Reservacion</title>
+    <style>
+        .contenedor {
+            width: 900px !important;
+            height: 842px !important;
+            margin: auto;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        p.title {
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        p.title2 {
+            font-weight: bold;
+            color: #03A99F;
+            font-size: 20px;
+        }
+
+        p.text {
+            font-size: 18px;
+            font-weight: 100;
+            color: black;
+        }
+
+        p.text-mdium {
+            font-size: 18px;
+            text-align: center;
+            margin-top: 10px;
+            color: red !important;
+        }
+
+        p.text-small {
+            font-size: 14px;
+            text-align: center;
+            margin-top: 10px;
+            color: black;
+        }
+
+        p {
+            margin: 0px
+        }
+
+        .tbth {
+            text-align: left;
+        }
+
+        table.tbproductos {
+            border-collapse: separate;
+            border-spacing: 4px;
+        }
+
+            table.tbproductos thead tr th {
+                background-color: #03A99F;
+                padding: 10px;
+                font-size: 15px;
+                color: white;
+            }
+
+            table.tbproductos tbody tr td {
+                padding: 10px;
+            }
+
+        .item {
+            font-size: 15px;
+            font-weight: 100;
+            color: #757575;
+        }
+
+        .item-2 {
+            font-size: 15px;
+            font-weight: bold;
+            color: #757575;
+        }
+
+        .item-3 {
+            font-size: 15px;
+            font-weight: bold;
+            background-color: #03A99F;
+            color: white;
+        }
+
+        .td-item {
+            border-bottom: 2px solid #E8E8E8 !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <img src="data:image;base64,@Model.imagenTour" style="width: 50%;" />
+                </td>
+                <td style="text-align:right">
+                    <table style="margin-right:0;margin-left:auto">
+                        <tr><td><p class="title2">RESERVACION</p></td></tr>
+                        <tr><td>Nº @Model.IDReservacionUsuario</td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <br />
+
+        <table style="width:100%;">
+            <tr>
+                <td style="text-align:justify;">
+                    <table style="margin-right:0; margin-left:auto; border-spacing: 10px;">
+                        <tr>
+                            <td><p class="title">DETALLES DEL TOUR</p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="text">Nombre: @Model.NombreTour</p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="text">Descripción: @Model.DescripcionTour</p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="text">Itinerario: @Model.ItinerarioTour</p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="text">Idioma: @Model.IdiomaTour</p></td>
+                        </tr>
+                        <tr>
+                            <td><p class="text">Horario: @Model.Horario</p></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <br />
+
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <table style="border-spacing: 10px;">
+                        <tr>
+                            <td>
+                                <p class="title">DATOS DEL CLIENTE</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p class="text">Nombre: @Model.NombrePersona</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="text">Email: @Model.EmailPersona</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="text">Telefono: @Model.TelefonoPersona</p>
+                            </td>
+                        </tr>
+                        <tr>
+                        <td>
+                        <p class="text">Nº de Adultos: @Model.AdultosPersona</p>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                        <p class="text">Nº de Niños: @Model.InfantesPersona</p>
+                        </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="text-align:right">
+                    <table style="margin-right:0;margin-left:auto">
+                        <tr>
+                            <td style="text-align: center;">
+                                <img src="~/images/Temporal.png" style="width: 150px; display: block; margin: 0 auto;" />
+                                <br />
+                                <p class="text" style="text-align: center;">WhatsApp: Javier Alejandro Ruvalcaba Novelo</p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+
+        <div style="text-align: center; margin-top: 20px;">
+            <p class="text-medium">Gracias por realizar su pago. Cualquier duda o aclaracion, favor de contactar por medio de WhatsApp.</p>
+            <p class="text-small">Tambien puede escanear el codigo QR o comuniquese al numero "+52 4495168427".</p>
+        </div>
+    </div>
+
+
+</body>
+</html>

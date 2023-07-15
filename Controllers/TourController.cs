@@ -13,6 +13,7 @@ using ZXing;
 using ZXing.Common;
 using System.Drawing;
 using System.Drawing.Imaging;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace DreamyReefs.Controllers
 {
@@ -195,7 +196,8 @@ namespace DreamyReefs.Controllers
                 Email = Email,
                 Adultos = Adultos,
                 Infantes = Ninos,
-                Estatus = "Pendiente" // Asigna un valor adecuado para el estatus de la reservación
+                Estatus = "Pendiente",
+                TourID = ID// Asigna un valor adecuado para el estatus de la reservación
             };
 
             CrearReservacion(reservacion);
@@ -252,7 +254,24 @@ namespace DreamyReefs.Controllers
             message.Subject = "Pre-Reservacion - " + modelo.NombreTour;
             message.To.Add(new MailAddress(modelo.EmailPersona));
             message.CC.Add("Brandonavila218@gmail.com");
-            message.Body = "Para terminar su reservacion, favor de hacer el pago correspondiente. Los datos para realizar dicho pago se encuentran en el PDF Adjuntado.";
+
+            // Crear el contenido HTML del mensaje
+            string htmlBody = "<div style='text-align: center;'>"; // Inicia el contenedor central
+            htmlBody += "<p>Para finalizar su reservacion, favor de realizar el pago correspondiente.</p>";
+
+            htmlBody += "<p>Los datos para realizar el deposito o transferencia electrónica se encuentran en el PDF adjunto.</p>";
+
+            htmlBody += "<p style='text-align: center;'>Atte: Javier Alejandro Ruvalcaba Novelo.</p>";
+
+            htmlBody += "<table style='margin: 0 auto;'>";
+            htmlBody += "<tr><td style='text-align: center;'><img src='https://i.ibb.co/y6zZ2W3/Logo.png' alt='Comprobante de Reservacion' width='150'></td></tr>";
+            htmlBody += "</table>";
+
+            htmlBody += "</div>"; // Cierra el contenedor central
+
+            // Asignar el contenido HTML al cuerpo del mensaje
+            message.IsBodyHtml = true;
+            message.Body = htmlBody;
 
             var smtpClient = new SmtpClient("smtp.gmail.com")
             {
@@ -274,9 +293,9 @@ namespace DreamyReefs.Controllers
         [HttpPost]
         public IActionResult CrearReservacion(Reservacion reservacion)
         {
-            if (ModelState.IsValid && reservacion.NombreCompleto is not null && reservacion.Telefono is not null && reservacion.Email is not null && reservacion.Adultos > 0 && reservacion.Infantes > 0 && reservacion.Estatus is not null)
+            if (ModelState.IsValid && reservacion.NombreCompleto is not null && reservacion.Telefono is not null && reservacion.Email is not null && reservacion.Adultos > 0 && reservacion.Infantes > 0 && reservacion.Estatus is not null && reservacion.TourID > 0)
             {
-                _conexion.CrearReservaciones(reservacion.NombreCompleto, reservacion.Telefono, reservacion.Email, reservacion.Adultos, reservacion.Infantes, reservacion.Estatus);
+                _conexion.CrearReservaciones(reservacion.NombreCompleto, reservacion.Telefono, reservacion.Email, reservacion.Adultos, reservacion.Infantes, reservacion.Estatus, reservacion.TourID);
                 TempData["SuccessMessage"] = "Reservacion creada exitosamente.";
                 return RedirectToAction("Home", "Index");
             }
@@ -346,9 +365,7 @@ namespace DreamyReefs.Controllers
             }
 
         }
-
         
-
         [HttpPost]
         public IActionResult Buscar(string busqueda)
         {
@@ -469,14 +486,37 @@ namespace DreamyReefs.Controllers
         }
 
         [HttpPost]
-        public IActionResult Crear(Tours tours)
+        public IActionResult Crear(Tours tours, Imagen imagen, IFormFile ImagenBase64)
         {
             if (ModelState.IsValid && tours.Nombre is not null && tours.Itinerario is not null && tours.Precio > 0 && tours.Descripcion is not null && tours.Disponibilidad is not null && tours.Idioma is not null && tours.Categoria1 is not null && tours.Categoria2 is not null && tours.Categoria3 is not null && tours.Categoria4 is not null && tours.Caracteristica1 is not null && tours.Caracteristica2 is not null && tours.Caracteristica3 is not null && tours.Estatus is not null && tours.PrecioAdulto > 0 && tours.PrecioInfantes > 0)
             {
-                _conexion.CrearTour(tours.Nombre, tours.Itinerario, tours.Precio, tours.Descripcion, tours.Disponibilidad, tours.Idioma, tours.Categoria1, tours.Categoria2, tours.Categoria3, tours.Categoria4, tours.Caracteristica1, tours.Caracteristica2, tours.Caracteristica3, tours.Estatus, tours.PrecioAdulto, tours.PrecioInfantes);
+                int nuevotour = _conexion.CrearTour(tours.Nombre, tours.Itinerario, tours.Precio, tours.Descripcion, tours.Disponibilidad, tours.Idioma, tours.Categoria1, tours.Categoria2, tours.Categoria3, tours.Categoria4, tours.Caracteristica1, tours.Caracteristica2, tours.Caracteristica3, tours.Estatus, tours.PrecioAdulto, tours.PrecioInfantes);
+                imagen.TourID = nuevotour;
+                CrearImagen(imagen, ImagenBase64);
                 TempData["SuccessMessage"] = "Tour creado exitosamente.";
                 return RedirectToAction("Index");
             }
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult CrearImagen(Imagen imagen, IFormFile ImagenBase64)
+        {
+            if (ModelState.IsValid && ImagenBase64 != null && imagen.TourID > 0)
+            {
+                using (var memoryStream = new MemoryStream())
+                {
+                    ImagenBase64.CopyTo(memoryStream);
+                    byte[] bytes = memoryStream.ToArray();
+                    string base64String = Convert.ToBase64String(bytes);
+                    imagen.ImagenBase64 = base64String;
+                }
+
+                _conexion.CrearImagenes(imagen.ImagenBase64, imagen.TourID);
+                TempData["SuccessMessage"] = "Imagen agregada exitosamente.";
+                return RedirectToAction("Index");
+            }
+
             return View();
         }
 
@@ -506,13 +546,50 @@ namespace DreamyReefs.Controllers
         }
 
         [HttpPost]
-        public IActionResult Actualizar(Tours tours)
+        public IActionResult Actualizar(Tours tours, Imagen imagen, IFormFile ImagenBase64)
         {
             if (ModelState.IsValid && tours.Nombre is not null && tours.Itinerario is not null && tours.Precio > 0 && tours.Descripcion is not null && tours.Disponibilidad is not null && tours.Idioma is not null && tours.Categoria1 is not null && tours.Categoria2 is not null && tours.Categoria3 is not null && tours.Categoria4 is not null && tours.Caracteristica1 is not null && tours.Caracteristica2 is not null && tours.Caracteristica3 is not null && tours.Estatus is not null && tours.PrecioAdulto > 0 && tours.PrecioInfantes > 0)
             {
-                _conexion.ActualizarTour(tours.IDTours, tours.Nombre, tours.Itinerario, tours.Precio, tours.Descripcion, tours.Disponibilidad, tours.Idioma, tours.Categoria1, tours.Categoria2, tours.Categoria3, tours.Categoria4, tours.Caracteristica1, tours.Caracteristica2, tours.Caracteristica3, tours.Estatus, tours.PrecioAdulto, tours.PrecioInfantes);
+                int nuevaimagen = _conexion.ActualizarTour(tours.IDTours, tours.Nombre, tours.Itinerario, tours.Precio, tours.Descripcion, tours.Disponibilidad, tours.Idioma, tours.Categoria1, tours.Categoria2, tours.Categoria3, tours.Categoria4, tours.Caracteristica1, tours.Caracteristica2, tours.Caracteristica3, tours.Estatus, tours.PrecioAdulto, tours.PrecioInfantes);
+                imagen.IDImagenes = nuevaimagen;
+                imagen.TourID = tours.IDTours;
+                ActualizarImagen(imagen, ImagenBase64);
                 TempData["SuccessMessage"] = "Tour actualizado exitosamente.";
                 return RedirectToAction("Index");
+            }
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult ActualizarImagen(Imagen imagen, IFormFile ImagenBase64)
+        {
+            if (ModelState.IsValid && imagen.IDImagenes > 0 && ImagenBase64 is not null && imagen.TourID > 0)
+            {
+                // Obtener la imagen original de la base de datos
+                var imagenOriginal = _conexion.GetOneImagenes(imagen.IDImagenes);
+
+                if (imagenOriginal != null)
+                {
+                    // Actualizar los datos de la imagen original con los valores del modelo recibido
+                    using (var memoryStream = new MemoryStream())
+                    {
+                        ImagenBase64.CopyTo(memoryStream);
+                        byte[] bytes = memoryStream.ToArray();
+                        string base64String = Convert.ToBase64String(bytes);
+                        imagen.ImagenBase64 = base64String;
+                    }
+
+                    // Guardar los cambios en la base de datos
+                    _conexion.ActualizarImagenes(imagen.IDImagenes, imagen.ImagenBase64, imagen.TourID);
+                    TempData["SuccessMessage"] = "Imagen actualizada exitosamente.";
+
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    // La imagen original no existe, mostrar un mensaje de error o realizar alguna acción apropiada
+                    ModelState.AddModelError("", "La imagen no se encontró en la base de datos.");
+                }
             }
             return View();
         }

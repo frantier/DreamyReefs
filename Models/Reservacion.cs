@@ -9,5 +9,6 @@
         public int Adultos { get; set; }
         public int Infantes { get; set; }
         public string? Estatus { get; set; }
+        public int TourID { get; set; }
     }
 }

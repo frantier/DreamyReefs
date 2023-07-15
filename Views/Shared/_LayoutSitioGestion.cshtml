@@ -98,12 +98,12 @@
                         <div data-i18n="Basic">Tours</div>
                     </a>
                 </li>
-                <li class="menu-item">
+                @*<li class="menu-item">
                     <a id="imagenes" asp-controller="Imagen" asp-action="Index" class="menu-link">
                         <i class="menu-icon tf-icons bx bx-collection"></i>
                         <div data-i18n="Basic">Imagenes</div>
                     </a>
-                </li>
+                </li>*@
                 <li class="menu-item">
                     <a id="usuario" asp-controller="Usuario" asp-action="Index" class="menu-link">
                         <i class="menu-icon tf-icons bx bx-collection"></i>
@@ -285,31 +285,31 @@
             });
         });
 
-        document.getElementById('imagenes').addEventListener('click', function () {
-            event.preventDefault();
+        //document.getElementById('imagenes').addEventListener('click', function () {
+        //    event.preventDefault();
 
-            var loader = document.getElementById('loader');
-            loader.style.display = 'flex';
-            loader.classList.add('fade-in');
+        //    var loader = document.getElementById('loader');
+        //    loader.style.display = 'flex';
+        //    loader.classList.add('fade-in');
 
-            var duracionLoader = 4000;
+        //    var duracionLoader = 4000;
 
-            // Cargar la página después de que el loader haya aparecido
-            setTimeout(function () {
-                window.location.href = '/Imagen';
-            }, duracionLoader);
+        //    // Cargar la página después de que el loader haya aparecido
+        //    setTimeout(function () {
+        //        window.location.href = '/Imagen';
+        //    }, duracionLoader);
 
-            // Ocultar el loader después de que la página se haya cargado completamente
-            window.addEventListener('load', function () {
-                loader.classList.remove('fade-in');
-                loader.classList.add('fade-out');
+        //    // Ocultar el loader después de que la página se haya cargado completamente
+        //    window.addEventListener('load', function () {
+        //        loader.classList.remove('fade-in');
+        //        loader.classList.add('fade-out');
 
-                setTimeout(function () {
-                    loader.style.display = 'none';
-                    loader.classList.remove('fade-out');
-                }, 300); // Ajusta la duración de la animación de salida aquí
-            });
-        });
+        //        setTimeout(function () {
+        //            loader.style.display = 'none';
+        //            loader.classList.remove('fade-out');
+        //        }, 300); // Ajusta la duración de la animación de salida aquí
+        //    });
+        //});
 
         document.getElementById('usuario').addEventListener('click', function () {
             event.preventDefault();

@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using DreamyReefs.Models;
+using System.Data.SqlClient;
 
 namespace DreamyReefs.Data
 {
@@ -80,6 +81,7 @@ namespace DreamyReefs.Data
             builder.Entity<Reservacion>().Property(u => u.Adultos).HasColumnName("Adultos");
             builder.Entity<Reservacion>().Property(u => u.Infantes).HasColumnName("Infantes");
             builder.Entity<Reservacion>().Property(u => u.Estatus).HasColumnName("Estatus");
+            builder.Entity<Reservacion>().Property(u => u.TourID).HasColumnName("TourID");
 
             builder.Entity<Review>().ToTable("Reviews");
             builder.Entity<Review>().HasKey(u => u.IDReviews);
@@ -181,19 +183,29 @@ namespace DreamyReefs.Data
             return tours;
         }
 
-        public void CrearTour(string name, string itinerario, int precio, string descripcion, string disponibilidad, string idioma, string categoria1, string categoria2, string categoria3, string categoria4, string caracteristica1, string caracteristica2, string caracteristica3, string estatus, int precioAdulto, int precioInfantes)
+        public int CrearTour(string name, string itinerario, int precio, string descripcion, string disponibilidad, string idioma, string categoria1, string categoria2, string categoria3, string categoria4, string caracteristica1, string caracteristica2, string caracteristica3, string estatus, int precioAdulto, int precioInfantes)
         {
             Database.ExecuteSqlRaw("EXEC [dbo].[CrearTours] {0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}, {10}, {11}, {12}, {13}, {14}, {15}", name, itinerario, precio, descripcion, disponibilidad, idioma, categoria1, categoria2, categoria3, categoria4, caracteristica1, caracteristica2, caracteristica3, estatus, precioAdulto, precioInfantes);
+
+            var idTour = Tours.FromSqlInterpolated($"SELECT IDTours FROM Tours WHERE Nombre = {name}").Select(t => t.IDTours).FirstOrDefault();
+
+            return idTour;
         }
 
-        public void ActualizarTour(int ID, string name, string itinerario, int precio, string descripcion, string disponibilidad, string idioma, string categoria1, string categoria2, string categoria3, string categoria4, string caracteristica1, string caracteristica2, string caracteristica3, string estatus, int precioAdulto, int precioInfantes)
+        public int ActualizarTour(int ID, string name, string itinerario, int precio, string descripcion, string disponibilidad, string idioma, string categoria1, string categoria2, string categoria3, string categoria4, string caracteristica1, string caracteristica2, string caracteristica3, string estatus, int precioAdulto, int precioInfantes)
         {
             Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarTours] {0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}, {10}, {11}, {12}, {13}, {14}, {15}, {16}", ID, name, itinerario, precio, descripcion, disponibilidad, idioma, categoria1, categoria2, categoria3, categoria4, caracteristica1, caracteristica2, caracteristica3, estatus, precioAdulto, precioInfantes);
+
+            var idImagen = Imagenes.FromSqlInterpolated($"SELECT IDImagenes FROM Imagenes WHERE TourID = {ID}").Select(t => t.IDImagenes).FirstOrDefault();
+
+            return idImagen;
         }
 
         public void EliminarTour(int ID)
         {
             Database.ExecuteSqlRaw("EXEC [dbo].[EliminarUsuario] 'TOURS', {0}", ID);
+
+            Database.ExecuteSqlRaw("EXEC [dbo].[EliminarUsuario] 'IMAGENES', {0}", ID);
         }
 
         public List<Tours> SearchTour(string busqueda)
@@ -419,14 +431,14 @@ namespace DreamyReefs.Data
             return reseervaciones;
         }
 
-        public void CrearReservaciones(string name, string telefono, string email, int adultos, int infantes, string estatus)
+        public void CrearReservaciones(string name, string telefono, string email, int adultos, int infantes, string estatus, int tourID)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[CrearReservaciones] {0}, {1}, {2}, {3}, {4}, {5}", name, telefono, email, adultos, infantes, estatus);
+            Database.ExecuteSqlRaw("EXEC [dbo].[CrearReservaciones] {0}, {1}, {2}, {3}, {4}, {5}, {6}", name, telefono, email, adultos, infantes, estatus, tourID);
         }
 
-        public void ActualizarReservaciones(int ID, string name, string telefono, string email, int adultos, int infantes, string estatus)
+        public void ActualizarReservaciones(int ID, string name, string telefono, string email, int adultos, int infantes, string estatus,int tourID)
         {
-            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarReservaciones] {0}, {1}, {2}, {3}, {4}, {5}, {6}", ID, name, telefono, email, adultos, infantes, estatus);
+            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarReservaciones] {0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}", ID, name, telefono, email, adultos, infantes, estatus, tourID);
         }
 
         public void EliminarReservaciones(int ID)
@@ -439,6 +451,13 @@ namespace DreamyReefs.Data
             return Reservaciones
                 .Where(t => t.NombreCompleto.Contains(busqueda))
                 .ToList();
+        }
+
+        public string BuscarImagen(int ID)
+        {
+            string idTour = Imagenes.FromSqlInterpolated($"SELECT ImagenBase64 FROM Imagenes WHERE TourID = {ID}").Select(t => t.ImagenBase64).FirstOrDefault();
+
+            return idTour;
         }
 
         #endregion
