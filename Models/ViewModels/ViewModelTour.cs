@@ -15,7 +15,6 @@
         public string? EmailPersona { get; set; }
         public int AdultosPersona { get; set; }
         public int InfantesPersona { get; set; }
-
         public int TotalAdultos { get; set; }
         public int TotalInfantes { get; set; }
         public int Total { get; set; }
@@ -25,7 +24,7 @@
         {
             TotalAdultos = AdultosPersona * AdultoPrecio;
             TotalInfantes = InfantesPersona * InfantePrecio;
-            Total = TotalAdultos + TotalInfantes;
+            Total = TotalAdultos + TotalInfantes + PrecioTour;
         }
 
         public string RutaImagenQR { get; set; }

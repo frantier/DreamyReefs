@@ -53,10 +53,10 @@ namespace DreamyReefs.Controllers
         {
             if (ModelState.IsValid && reservacion.IDReservaciones > 0 && reservacion.NombreCompleto is not null && reservacion.Telefono is not null && reservacion.Email is not null && reservacion.Adultos > 0 && reservacion.Infantes > 0 && reservacion.Estatus is not null && reservacion.TourID > 0)
             {
-                _conexion.ActualizarReservaciones(reservacion.IDReservaciones, reservacion.NombreCompleto, reservacion.Telefono, reservacion.Email, reservacion.Adultos, reservacion.Infantes, reservacion.Estatus, reservacion.TourID);
+                int ID = _conexion.ActualizarReservaciones(reservacion.IDReservaciones, reservacion.NombreCompleto, reservacion.Telefono, reservacion.Email, reservacion.Adultos, reservacion.Infantes, reservacion.Estatus, reservacion.TourID);
                 if (reservacion.Estatus == "Concluido")
                 {
-                    PagoPDF(reservacion.IDReservaciones);
+                    PagoPDF(reservacion.IDReservaciones, ID);
                 }
                 TempData["SuccessMessage"] = "Reservacion actualizada exitosamente.";
                 return RedirectToAction("Index");
@@ -91,7 +91,7 @@ namespace DreamyReefs.Controllers
             return RedirectToAction("Index"); // Redirecciona a la acción "Index" u otra acción deseada
         }
 
-        public IActionResult PagoPDF(int ID)
+        public IActionResult PagoPDF(int ID, int IDGrafica)
         {
             ViewModelReservacion? modelo = _conexion.Reservaciones.Where(v => v.IDReservaciones == ID)
                 .Select(v => new ViewModelReservacion()
@@ -112,10 +112,27 @@ namespace DreamyReefs.Controllers
             modelo.ItinerarioTour = tours.Itinerario;
             modelo.Horario = tours.Disponibilidad;
             modelo.IdiomaTour = tours.Idioma;
+            modelo.PrecioTour = tours.Precio;
+            modelo.AdultoPrecio = tours.PrecioAdulto;
+            modelo.InfantePrecio = tours.PrecioInfantes;
+            modelo.AdultoPrecio = tours.PrecioAdulto;
+
+            modelo.CalcularTotales();
 
             var imagen = _conexion.BuscarImagen(modelo.TourIDPersona);
 
             modelo.imagenTour = imagen;
+
+            TourGrafica tourGrafica = new TourGrafica
+            {
+                ID = IDGrafica,
+                NombreCliente = modelo.NombrePersona,
+                NombreTour = modelo.NombreTour,
+                TotalVTA = modelo.Total,
+                Estatus = "Concluido"
+            };
+
+            ActualizarTourGraficaDash(tourGrafica);
 
             string qrCodeData = "https://wa.me/524495168427"; // URL especial de WhatsApp
             string rutaImagenQR = Directory.GetCurrentDirectory() + "\\wwwroot\\images\\" + "Temporal.png";
@@ -202,6 +219,17 @@ namespace DreamyReefs.Controllers
             //HttpContext.Session.SetString("FilePath", filePath);
 
             return RedirectToAction("Index2");
+        }
+
+        [HttpPost]
+        public IActionResult ActualizarTourGraficaDash(TourGrafica tourGrafica)
+        {
+            if (ModelState.IsValid && tourGrafica.ID > 0 && tourGrafica.NombreCliente is not null && tourGrafica.NombreTour is not null && tourGrafica.TotalVTA > 0 && tourGrafica.Estatus is not null)
+            {
+                _conexion.ActualizarTourGrafica(tourGrafica.ID, tourGrafica.NombreCliente, tourGrafica.NombreTour, tourGrafica.TotalVTA, tourGrafica.Estatus);
+                return RedirectToAction("Index");
+            }
+            return View();
         }
     }
 }

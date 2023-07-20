@@ -177,6 +177,7 @@
             <thead>
                 <tr>
                     <th class="tbth">Tour</th>
+                    <th class="tbth" style="width:130px">Precio del Tour</th>
                     <th class="tbth" style="width:130px">Adultos</th>
                     <th class="tbth" style="width:130px">Infantes</th>
                     <th class="tbth" style="width:130px">Total</th>
@@ -185,13 +186,22 @@
             <tbody>
                 <tr>
                     <td class="td-item"><p class="item">@Model.NombreTour</p></td>
+                    <td class="td-item"><p class="item">@Model.PrecioTour</p></td>
                     <td class="td-item"><p class="item">@Model.AdultosPersona</p></td>
                     <td class="td-item"><p class="item">@Model.InfantesPersona</p></td>
                     <td class="item-3"><p>Desglose</p></td>
                 </tr>
                 <tr>
-                    <td colspan="2" rowspan="3">
+                    <td colspan="3" rowspan="4">
                     </td>
+                    <td class="td-item">
+                        <p class="item-2">Precio del Tour</p>
+                    </td>
+                    <td class="item-3">
+                        <p>@Model.PrecioTour</p>
+                    </td>
+                </tr>
+                <tr>
                     <td class="td-item">
                         <p class="item-2">Precio Adulto</p>
                     </td>

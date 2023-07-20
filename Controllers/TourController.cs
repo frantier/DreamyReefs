@@ -202,6 +202,16 @@ namespace DreamyReefs.Controllers
 
             CrearReservacion(reservacion);
 
+            TourGrafica tourGrafica = new TourGrafica
+            {
+                NombreCliente = NombreCompleto,
+                NombreTour = modelo.NombreTour,
+                TotalVTA = modelo.PrecioTour,
+                Estatus = reservacion.Estatus
+            };
+
+            CrearTourGraficaDash(tourGrafica);
+
             string qrCodeData = "https://wa.me/524495168427"; // URL especial de WhatsApp
             string rutaImagenQR = Directory.GetCurrentDirectory() + "\\wwwroot\\images\\" + "Temporal.png";
 
@@ -296,7 +306,18 @@ namespace DreamyReefs.Controllers
             if (ModelState.IsValid && reservacion.NombreCompleto is not null && reservacion.Telefono is not null && reservacion.Email is not null && reservacion.Adultos > 0 && reservacion.Infantes > 0 && reservacion.Estatus is not null && reservacion.TourID > 0)
             {
                 _conexion.CrearReservaciones(reservacion.NombreCompleto, reservacion.Telefono, reservacion.Email, reservacion.Adultos, reservacion.Infantes, reservacion.Estatus, reservacion.TourID);
-                TempData["SuccessMessage"] = "Reservacion creada exitosamente.";
+                return RedirectToAction("Home", "Index");
+            }
+            TempData["SuccessMessage"] = "Reservacion creada exitosamente.";
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult CrearTourGraficaDash(TourGrafica tourGrafica)
+        {
+            if (ModelState.IsValid && tourGrafica.NombreCliente is not null && tourGrafica.NombreTour is not null && tourGrafica.TotalVTA > 0 && tourGrafica.Estatus is not null)
+            {
+                _conexion.CrearTourGrafica(tourGrafica.NombreCliente, tourGrafica.NombreTour, tourGrafica.TotalVTA, tourGrafica.Estatus);
                 return RedirectToAction("Home", "Index");
             }
             return View();
@@ -326,7 +347,7 @@ namespace DreamyReefs.Controllers
             return RedirectToAction("Index2");
         }
 
-#endregion
+        #endregion
 
         #region Dashboard
 
@@ -365,7 +386,7 @@ namespace DreamyReefs.Controllers
             }
 
         }
-        
+
         [HttpPost]
         public IActionResult Buscar(string busqueda)
         {
@@ -593,42 +614,6 @@ namespace DreamyReefs.Controllers
             }
             return View();
         }
-
-        //public IActionResult Eliminar(int id)
-        //{
-        //    var storedToken = HttpContext.Session.GetString("Token");
-        //    var model = new DashboardViewModel
-        //    {
-        //        Token = storedToken
-        //    };
-        //    if (model.Token != null && model.Token == storedToken)
-        //    {
-        //        var categorias = _conexion.GetAllCategorias();
-        //        var caracteristicas = _conexion.GetAllCaracteristicas();
-
-        //        ViewBag.Categorias = categorias;
-        //        ViewBag.Caracteristicas = caracteristicas;
-        //        var tours = _conexion.GetOneTour(id);
-        //        return View(tours);
-        //    }
-        //    else
-        //    {
-        //        return RedirectToAction("Login", "Login");
-        //    }
-
-        //}
-
-
-        //[HttpPost]
-        //public IActionResult Eliminar(Tours tours)
-        //{
-        //    if (tours.IDTours > 0)
-        //    {
-        //        _conexion.EliminarTour(tours.IDTours);
-        //        return RedirectToAction("Index");
-        //    }
-        //    return View();
-        //}
 
         [HttpPost]
         public IActionResult Eliminar(int id)

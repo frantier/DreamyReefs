@@ -22,6 +22,7 @@ namespace DreamyReefs.Data
         public DbSet<Review> Reviews { get; set; }
         public DbSet<Tours> Tours { get; set; }
         public DbSet<Transportes> Transportes { get; set; }
+        public DbSet<TourGrafica> tourGraficas { get; set; }
 
         #region Tablas
         protected override void OnModelCreating(ModelBuilder builder)
@@ -114,6 +115,13 @@ namespace DreamyReefs.Data
             builder.Entity<Transportes>().Property(u => u.IDTransportes).HasColumnName("IDTransportes");
             builder.Entity<Transportes>().Property(u => u.NombreEmpresa).HasColumnName("NombreEmpresa");
             builder.Entity<Transportes>().Property(u => u.Transporte).HasColumnName("Transporte");
+
+            builder.Entity<TourGrafica>().ToTable("TourGrafica");
+            builder.Entity<TourGrafica>().HasKey(u => u.ID);
+            builder.Entity<TourGrafica>().Property(u => u.NombreCliente).HasColumnName("NombreCliente");
+            builder.Entity<TourGrafica>().Property(u => u.NombreTour).HasColumnName("NombreTour");
+            builder.Entity<TourGrafica>().Property(u => u.TotalVTA).HasColumnName("TotalVTA");
+            builder.Entity<TourGrafica>().Property(u => u.Estatus).HasColumnName("Estatus");
         }
 
         #endregion
@@ -436,9 +444,13 @@ namespace DreamyReefs.Data
             Database.ExecuteSqlRaw("EXEC [dbo].[CrearReservaciones] {0}, {1}, {2}, {3}, {4}, {5}, {6}", name, telefono, email, adultos, infantes, estatus, tourID);
         }
 
-        public void ActualizarReservaciones(int ID, string name, string telefono, string email, int adultos, int infantes, string estatus,int tourID)
+        public int ActualizarReservaciones(int ID, string name, string telefono, string email, int adultos, int infantes, string estatus, int tourID)
         {
             Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarReservaciones] {0}, {1}, {2}, {3}, {4}, {5}, {6}, {7}", ID, name, telefono, email, adultos, infantes, estatus, tourID);
+
+            var idGrafica = tourGraficas.FromSqlInterpolated($"SELECT ID FROM TourGrafica WHERE NombreCliente = {name}").Select(t => t.ID).FirstOrDefault();
+
+            return idGrafica;
         }
 
         public void EliminarReservaciones(int ID)
@@ -516,6 +528,50 @@ namespace DreamyReefs.Data
         public void EliminarTransportes(int ID)
         {
             Database.ExecuteSqlRaw("EXEC [dbo].[EliminarUsuario] 'TRANSPORTES', {0}", ID);
+        }
+
+        #endregion
+
+        #region Acciones de TourGrafica
+        public List<TourGrafica> GetAllTourGrafica()
+        {
+            return tourGraficas.FromSqlRaw("EXEC [dbo].[ObtenerUsuarios] 'TOURGRAFICA'").ToList();
+        }
+
+        public TourGrafica? GetOneTourGrafica(int id)
+        {
+            var tourGrafica = tourGraficas.FromSqlInterpolated($"EXEC [dbo].[ObtenerUsuarioPorID] 'TOURGRAFICA', {id}").AsEnumerable().FirstOrDefault();
+            return tourGrafica;
+        }
+
+        public void CrearTourGrafica(string nombreCliente, string NombreTour, int totalVTA, string estatus)
+        {
+            Database.ExecuteSqlRaw("EXEC [dbo].[CrearTourGrafica] {0}, {1}, {2}, {3}", nombreCliente, NombreTour, totalVTA, estatus);
+        }
+
+        public void ActualizarTourGrafica(int ID, string nombreCliente, string NombreTour, int totalVTA, string estatus)
+        {
+            Database.ExecuteSqlRaw("EXEC [dbo].[ActualizarTourGrafica] {0}, {1}, {2}, {3}, {4}", ID, nombreCliente, NombreTour, totalVTA, estatus);
+        }
+
+        public void EliminarTourGrafica(int ID)
+        {
+            Database.ExecuteSqlRaw("EXEC [dbo].[EliminarUsuario] 'TOURGRAFICA', {0}", ID);
+        }
+
+        public List<Grafica> GetGraficas()
+        {
+            var tourGrafica = tourGraficas
+                .Where(t => t.Estatus == "Concluido")
+                .GroupBy(t => t.NombreTour)
+                .Select(g => new Grafica
+                {
+                    Tour = g.Key,
+                    Total = g.Sum(t => t.TotalVTA)
+                })
+                .ToList();
+
+            return tourGrafica;
         }
 
         #endregion

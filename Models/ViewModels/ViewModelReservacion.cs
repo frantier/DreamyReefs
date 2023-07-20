@@ -15,21 +15,21 @@
         public string? Horario { get; set; }
         public string? IdiomaTour { get; set; }
         public string? imagenTour { get; set; }
-        //public int PrecioTour { get; set; }
-        //public int AdultoPrecio { get; set; }
-        //public int InfantePrecio { get; set; }
+        public int PrecioTour { get; set; }
+        public int AdultoPrecio { get; set; }
+        public int InfantePrecio { get; set; }
 
-        //public int TotalAdultos { get; set; }
-        //public int TotalInfantes { get; set; }
-        //public int Total { get; set; }
+        public int TotalAdultos { get; set; }
+        public int TotalInfantes { get; set; }
+        public int Total { get; set; }
 
-        //// Método para calcular los totales
-        //public void CalcularTotales()
-        //{
-        //    TotalAdultos = AdultosPersona * AdultoPrecio;
-        //    TotalInfantes = InfantesPersona * InfantePrecio;
-        //    Total = TotalAdultos + TotalInfantes;
-        //}
+        // Método para calcular los totales
+        public void CalcularTotales()
+        {
+            TotalAdultos = AdultosPersona * AdultoPrecio;
+            TotalInfantes = InfantesPersona * InfantePrecio;
+            Total = TotalAdultos + TotalInfantes + PrecioTour;
+        }
 
         public string? RutaImagenQR { get; set; }
     }

@@ -5,23 +5,25 @@ using DreamyReefs.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Http;
+using DreamyReefs.Data;
 
 namespace DreamyReefs.Controllers
 {
     public class DashboardController : Controller
     {
-        private readonly ILogger<DashboardController> _logger;
+        private readonly Conexion _conexion;
 
-        public DashboardController(ILogger<DashboardController> logger)
+        public DashboardController(Conexion con)
         {
-            _logger = logger;
+            _conexion = con;
         }
+
         public IActionResult Index()
         {
-            
+
             var usuario = HttpContext.Session.GetString("Usuario");
             var storedToken = HttpContext.Session.GetString("Token");
-            
+
             var Tok = new DashboardViewModel
             {
                 Token = storedToken
@@ -34,13 +36,15 @@ namespace DreamyReefs.Controllers
                     //Token = token
                 };
 
+                Graficas();
+
                 return View(model);
             }
             else
             {
                 return RedirectToAction("Login", "Login");
             }
-            
+
         }
 
         public IActionResult Salir()
@@ -52,5 +56,14 @@ namespace DreamyReefs.Controllers
             return RedirectToAction("Login", "Login");
         }
 
+        public IActionResult Graficas()
+        {
+            var data = _conexion.GetGraficas();
+            ViewBag.ChartData = data;
+
+            return View();
+        }
+
     }
 }
+    

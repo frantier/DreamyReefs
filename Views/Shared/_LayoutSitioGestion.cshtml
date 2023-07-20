@@ -40,6 +40,7 @@
     <script src="~/js/helpers.js"></script>
     <script src="~/js/config.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
 </head>
 
@@ -135,7 +136,83 @@
         </div>
     </div>
 
+    <!-- Tu código HTML para mostrar el gráfico -->
+
+    <script type="text/javascript">
+        // Cargar la biblioteca de Google Charts
+        google.charts.load('current', { 'packages': ['corechart'] });
+
+        // Callback para dibujar el gráfico cuando se cargue la biblioteca
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            // Obtener los datos pasados desde el controlador usando ViewBag
+            var rawData = @Html.Raw(Json.Serialize(ViewBag.ChartData));
+
+            // Convertir los datos de JSON a un array de arrays
+            var dataArray = [['Tour', 'Total', { role: 'style' }]]; // Encabezado de las columnas
+            for (var i = 0; i < rawData.length; i++) {
+                dataArray.push([rawData[i].tour, rawData[i].total, getRandomColor()]);
+            }
+
+            // Convertir el array de arrays en un objeto DataTable de Google Charts
+            var data = google.visualization.arrayToDataTable(dataArray);
+
+            // Aplicar formato de dinero a la columna "Total" en el DataTable
+            var formatter = new google.visualization.NumberFormat({
+                prefix: '$', // Símbolo "$" antes del valor
+                fractionDigits: 0 // Dos decimales
+            });
+            formatter.format(data, 1);
+
+            // Configuración del gráfico de barras horizontales
+            var options = {
+                title: 'Tours mas solicitados',
+                bars: 'horizontal', // Muestra las barras en dirección horizontal
+                hAxis: {
+                    title: 'Tours',
+                    //textStyle: {
+                    //    fontSize: 12,
+                    //    color: '#333'
+                    //},// Eje horizontal para el valor
+                    textPosition: 'none',
+                    //slantedText: true,
+                    //slantedTextAngle: 45
+                },
+                vAxis: { 
+                    title: 'Total'
+                }, // Eje vertical para el nombre de Tour
+                legend: { position: 'none' }, // Oculta la leyenda de la gráfica
+                backgroundColor: 'whitesmoke',
+                chartArea: { left: 150, right: 50, top: 50, bottom: 80 },// Color de fondo de la gráfica
+                annotations: {
+                    textStyle: {
+                        fontSize: 12,
+                        color: 'black',
+                        auraColor: 'none'
+                    },
+                    stem: { length: 0 }
+                }
+            };
+
+            // Dibujar el gráfico de barras horizontales
+            var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+        }
+
+        // Función para generar colores aleatorios
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    </script>
+
 <script>
+
     var menuToggle = document.querySelector('.menu-toggle');
     var menu = document.querySelector('#layout-menu');
 
