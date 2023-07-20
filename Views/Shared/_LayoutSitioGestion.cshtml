@@ -155,148 +155,18 @@
         }
     });
 
-        document.getElementById('reservaciones').addEventListener('click', function () {
-            event.preventDefault();
-
-            var loader = document.getElementById('loader');
-            loader.style.display = 'flex';
-            loader.classList.add('fade-in');
-
-            var duracionLoader = 4000;
-
-            // Cargar la página después de que el loader haya aparecido
-            setTimeout(function () {
-                window.location.href = '/Reservacion';
-            }, duracionLoader);
-
-            // Ocultar el loader después de que la página se haya cargado completamente
-            window.addEventListener('load', function () {
-                loader.classList.remove('fade-in');
-                loader.classList.add('fade-out');
-
-                setTimeout(function () {
-                    loader.style.display = 'none';
-                    loader.classList.remove('fade-out');
-                }, 300); // Ajusta la duración de la animación de salida aquí
-            });
-        });
-
-        document.getElementById('transportes').addEventListener('click', function () {
-            event.preventDefault();
-
-            var loader = document.getElementById('loader');
-            loader.style.display = 'flex';
-            loader.classList.add('fade-in');
-
-            var duracionLoader = 4000;
-
-            // Cargar la página después de que el loader haya aparecido
-            setTimeout(function () {
-                window.location.href = '/Transporte';
-            }, duracionLoader);
-
-            // Ocultar el loader después de que la página se haya cargado completamente
-            window.addEventListener('load', function () {
-                loader.classList.remove('fade-in');
-                loader.classList.add('fade-out');
-
-                setTimeout(function () {
-                    loader.style.display = 'none';
-                    loader.classList.remove('fade-out');
-                }, 300); // Ajusta la duración de la animación de salida aquí
-            });
-        });
-
-        document.getElementById('empresas').addEventListener('click', function () {
-            event.preventDefault();
-
-            var loader = document.getElementById('loader');
-            loader.style.display = 'flex';
-            loader.classList.add('fade-in');
-
-            var duracionLoader = 4000;
-
-            // Cargar la página después de que el loader haya aparecido
-            setTimeout(function () {
-                window.location.href = '/Empresa';
-            }, duracionLoader);
-
-            // Ocultar el loader después de que la página se haya cargado completamente
-            window.addEventListener('load', function () {
-                loader.classList.remove('fade-in');
-                loader.classList.add('fade-out');
-
-                setTimeout(function () {
-                    loader.style.display = 'none';
-                    loader.classList.remove('fade-out');
-                }, 300); // Ajusta la duración de la animación de salida aquí
-            });
-        });
-
-        document.getElementById('reviews').addEventListener('click', function () {
-            event.preventDefault();
-
-            var loader = document.getElementById('loader');
-            loader.style.display = 'flex';
-            loader.classList.add('fade-in');
-
-            var duracionLoader = 4000;
-
-            // Cargar la página después de que el loader haya aparecido
-            setTimeout(function () {
-                window.location.href = '/Review';
-            }, duracionLoader);
-
-            // Ocultar el loader después de que la página se haya cargado completamente
-            window.addEventListener('load', function () {
-                loader.classList.remove('fade-in');
-                loader.classList.add('fade-out');
-
-                setTimeout(function () {
-                    loader.style.display = 'none';
-                    loader.classList.remove('fade-out');
-                }, 300); // Ajusta la duración de la animación de salida aquí
-            });
-        });
-
-        document.getElementById('tours').addEventListener('click', function () {
-            event.preventDefault();
-
-            var loader = document.getElementById('loader');
-            loader.style.display = 'flex';
-            loader.classList.add('fade-in');
-
-            var duracionLoader = 4000;
-
-            // Cargar la página después de que el loader haya aparecido
-            setTimeout(function () {
-                window.location.href = '/Tour';
-            }, duracionLoader);
-
-            // Ocultar el loader después de que la página se haya cargado completamente
-            window.addEventListener('load', function () {
-                loader.classList.remove('fade-in');
-                loader.classList.add('fade-out');
-
-                setTimeout(function () {
-                    loader.style.display = 'none';
-                    loader.classList.remove('fade-out');
-                }, 300); // Ajusta la duración de la animación de salida aquí
-            });
-        });
-
-        //document.getElementById('imagenes').addEventListener('click', function () {
+        //document.getElementById('reservaciones').addEventListener('click', function () {
         //    event.preventDefault();
 
         //    var loader = document.getElementById('loader');
         //    loader.style.display = 'flex';
         //    loader.classList.add('fade-in');
 
-        //    var duracionLoader = 4000;
+        //    var duracionLoader = 1400;
 
         //    // Cargar la página después de que el loader haya aparecido
         //    setTimeout(function () {
-        //        window.location.href = '/Imagen';
+        //        window.location.href = '/Reservacion';
         //    }, duracionLoader);
 
         //    // Ocultar el loader después de que la página se haya cargado completamente
@@ -311,31 +181,161 @@
         //    });
         //});
 
-        document.getElementById('usuario').addEventListener('click', function () {
-            event.preventDefault();
+        //document.getElementById('transportes').addEventListener('click', function () {
+        //    event.preventDefault();
 
-            var loader = document.getElementById('loader');
-            loader.style.display = 'flex';
-            loader.classList.add('fade-in');
+        //    var loader = document.getElementById('loader');
+        //    loader.style.display = 'flex';
+        //    loader.classList.add('fade-in');
 
-            var duracionLoader = 4000;
+        //    var duracionLoader = 2000;
 
-            // Cargar la página después de que el loader haya aparecido
-            setTimeout(function () {
-                window.location.href = '/Usuario';
-            }, duracionLoader);
+        //    // Cargar la página después de que el loader haya aparecido
+        //    setTimeout(function () {
+        //        window.location.href = '/Transporte';
+        //    }, duracionLoader);
 
-            // Ocultar el loader después de que la página se haya cargado completamente
-            window.addEventListener('load', function () {
-                loader.classList.remove('fade-in');
-                loader.classList.add('fade-out');
+        //    // Ocultar el loader después de que la página se haya cargado completamente
+        //    window.addEventListener('load', function () {
+        //        loader.classList.remove('fade-in');
+        //        loader.classList.add('fade-out');
 
-                setTimeout(function () {
-                    loader.style.display = 'none';
-                    loader.classList.remove('fade-out');
-                }, 300); // Ajusta la duración de la animación de salida aquí
-            });
-        });
+        //        setTimeout(function () {
+        //            loader.style.display = 'none';
+        //            loader.classList.remove('fade-out');
+        //        }, 300); // Ajusta la duración de la animación de salida aquí
+        //    });
+        //});
+
+        //document.getElementById('empresas').addEventListener('click', function () {
+        //    event.preventDefault();
+
+        //    var loader = document.getElementById('loader');
+        //    loader.style.display = 'flex';
+        //    loader.classList.add('fade-in');
+
+        //    var duracionLoader = 2000;
+
+        //    // Cargar la página después de que el loader haya aparecido
+        //    setTimeout(function () {
+        //        window.location.href = '/Empresa';
+        //    }, duracionLoader);
+
+        //    // Ocultar el loader después de que la página se haya cargado completamente
+        //    window.addEventListener('load', function () {
+        //        loader.classList.remove('fade-in');
+        //        loader.classList.add('fade-out');
+
+        //        setTimeout(function () {
+        //            loader.style.display = 'none';
+        //            loader.classList.remove('fade-out');
+        //        }, 300); // Ajusta la duración de la animación de salida aquí
+        //    });
+        //});
+
+        //document.getElementById('reviews').addEventListener('click', function () {
+        //    event.preventDefault();
+
+        //    var loader = document.getElementById('loader');
+        //    loader.style.display = 'flex';
+        //    loader.classList.add('fade-in');
+
+        //    var duracionLoader = 2000;
+
+        //    // Cargar la página después de que el loader haya aparecido
+        //    setTimeout(function () {
+        //        window.location.href = '/Review';
+        //    }, duracionLoader);
+
+        //    // Ocultar el loader después de que la página se haya cargado completamente
+        //    window.addEventListener('load', function () {
+        //        loader.classList.remove('fade-in');
+        //        loader.classList.add('fade-out');
+
+        //        setTimeout(function () {
+        //            loader.style.display = 'none';
+        //            loader.classList.remove('fade-out');
+        //        }, 300); // Ajusta la duración de la animación de salida aquí
+        //    });
+        //});
+
+        //document.getElementById('tours').addEventListener('click', function () {
+        //    event.preventDefault();
+
+        //    var loader = document.getElementById('loader');
+        //    loader.style.display = 'flex';
+        //    loader.classList.add('fade-in');
+
+        //    var duracionLoader = 2000;
+
+        //    // Cargar la página después de que el loader haya aparecido
+        //    setTimeout(function () {
+        //        window.location.href = '/Tour';
+        //    }, duracionLoader);
+
+        //    // Ocultar el loader después de que la página se haya cargado completamente
+        //    window.addEventListener('load', function () {
+        //        loader.classList.remove('fade-in');
+        //        loader.classList.add('fade-out');
+
+        //        setTimeout(function () {
+        //            loader.style.display = 'none';
+        //            loader.classList.remove('fade-out');
+        //        }, 300); // Ajusta la duración de la animación de salida aquí
+        //    });
+        //});
+
+        ////document.getElementById('imagenes').addEventListener('click', function () {
+        ////    event.preventDefault();
+
+        ////    var loader = document.getElementById('loader');
+        ////    loader.style.display = 'flex';
+        ////    loader.classList.add('fade-in');
+
+        ////    var duracionLoader = 4000;
+
+        ////    // Cargar la página después de que el loader haya aparecido
+        ////    setTimeout(function () {
+        ////        window.location.href = '/Imagen';
+        ////    }, duracionLoader);
+
+        ////    // Ocultar el loader después de que la página se haya cargado completamente
+        ////    window.addEventListener('load', function () {
+        ////        loader.classList.remove('fade-in');
+        ////        loader.classList.add('fade-out');
+
+        ////        setTimeout(function () {
+        ////            loader.style.display = 'none';
+        ////            loader.classList.remove('fade-out');
+        ////        }, 300); // Ajusta la duración de la animación de salida aquí
+        ////    });
+        ////});
+
+        //document.getElementById('usuario').addEventListener('click', function () {
+        //    event.preventDefault();
+
+        //    var loader = document.getElementById('loader');
+        //    loader.style.display = 'flex';
+        //    loader.classList.add('fade-in');
+
+        //    var duracionLoader = 2000;
+
+        //    // Cargar la página después de que el loader haya aparecido
+        //    setTimeout(function () {
+        //        window.location.href = '/Usuario';
+        //    }, duracionLoader);
+
+        //    // Ocultar el loader después de que la página se haya cargado completamente
+        //    window.addEventListener('load', function () {
+        //        loader.classList.remove('fade-in');
+        //        loader.classList.add('fade-out');
+
+        //        setTimeout(function () {
+        //            loader.style.display = 'none';
+        //            loader.classList.remove('fade-out');
+        //        }, 300); // Ajusta la duración de la animación de salida aquí
+        //    });
+        //});
 
         function registrosCreados() {
             var successMessage = '@TempData["SuccessMessage"]';
