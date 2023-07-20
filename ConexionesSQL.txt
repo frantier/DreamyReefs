@@ -2,4 +2,6 @@ Pedro: "Conexion": "Server=MSI\\SQLEXPRESS;Database=DreamyReefs;Trusted_Connecti
 
 Brandon: "Conexion": "Server=REDRAGON-DESKTO\\SQLEXPRESS;Database=DreamyReefs;Trusted_Connection=True;TrustServerCertificate=true;"
 
-Javier: "Server=DESKTOP-M98G2JA\SQLEXPRESS;Database=DreamyReefs;Trusted_Connection=True;TrustServerCertificate=true;"
+Javier: "Conexion": Server=DESKTOP-M98G2JA\SQLEXPRESS;Database=DreamyReefs;Trusted_Connection=True;TrustServerCertificate=true;"
+
+Trabajo: "Conexion": "Server=NETLANCERS4;Database=DreamyReefs;Trusted_Connection=True;TrustServerCertificate=true;"
