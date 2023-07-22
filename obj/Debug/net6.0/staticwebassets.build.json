@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lXNgKHEUvfmOY4qIQgAdq86fNxdnUoikZjf88oiy9jk=",
+  "Hash": "QZNxwzI4VgejdN0sH5UK34tg3D1B9n6YZW3+cuDDwT4=",
   "Source": "DreamyReefs",
   "BasePath": "_content/DreamyReefs",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "DreamyReefs\\wwwroot",
       "Source": "DreamyReefs",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\obj\\Debug\\net6.0\\scopedcss\\bundle\\DreamyReefs.styles.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\obj\\Debug\\net6.0\\scopedcss\\bundle\\DreamyReefs.styles.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "DreamyReefs.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\obj\\Debug\\net6.0\\scopedcss\\bundle\\DreamyReefs.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\obj\\Debug\\net6.0\\scopedcss\\bundle\\DreamyReefs.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DreamyReefs.bundle.scp.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DreamyReefs.bundle.scp.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "DreamyReefs.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DreamyReefs.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DreamyReefs.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\.DS_Store",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\.DS_Store",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/.DS_Store",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\.DS_Store"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\animate.min.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\animate.min.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/animate.min.css",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\animate.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\Bodylogin.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\Bodylogin.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/Bodylogin.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Bodylogin.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\bootstrap-grid.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\bootstrap-grid.css.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\bootstrap-grid.min.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\bootstrap-grid.min.css.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\bootstrap-reboot.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\bootstrap-reboot.css.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\bootstrap-reboot.min.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\bootstrap.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/bootstrap.css",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\bootstrap.css.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/bootstrap.css.map",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\bootstrap.min.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/bootstrap.min.css",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\bootstrap.min.css.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\Cards.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\Cards.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/Cards.css",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Cards.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\Container.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\Container.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/Container.css",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Container.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\container3.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\container3.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/container3.css",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\css\\container3.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\core.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\core.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/core.css",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\css\\core.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\default-skin.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\default-skin.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/default-skin.css",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\css\\default-skin.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\font-awesome.min.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\font-awesome.min.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/font-awesome.min.css",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\css\\font-awesome.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\icomoon.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\icomoon.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/icomoon.css",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\css\\icomoon.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\jquery-ui.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\jquery-ui.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/jquery-ui.css",
       "AssetKind": "All",
@@ -442,10 +442,10 @@
       "OriginalItemSpec": "wwwroot\\css\\jquery-ui.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\jquery.fancybox.min.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\jquery.fancybox.min.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/jquery.fancybox.min.css",
       "AssetKind": "All",
@@ -459,10 +459,10 @@
       "OriginalItemSpec": "wwwroot\\css\\jquery.fancybox.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\jquery.mCustomScrollbar.min.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\jquery.mCustomScrollbar.min.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/jquery.mCustomScrollbar.min.css",
       "AssetKind": "All",
@@ -476,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\css\\jquery.mCustomScrollbar.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\meanmenu.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\meanmenu.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/meanmenu.css",
       "AssetKind": "All",
@@ -493,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\css\\meanmenu.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\nice-select.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\nice-select.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/nice-select.css",
       "AssetKind": "All",
@@ -510,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\css\\nice-select.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\normalize.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\normalize.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/normalize.css",
       "AssetKind": "All",
@@ -527,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\css\\normalize.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\owl.carousel.min.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\owl.carousel.min.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/owl.carousel.min.css",
       "AssetKind": "All",
@@ -544,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\css\\owl.carousel.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\pages\\page-account-settings.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\pages\\page-account-settings.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/pages/page-account-settings.css",
       "AssetKind": "All",
@@ -561,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\css\\pages\\page-account-settings.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\pages\\page-auth.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\pages\\page-auth.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/pages/page-auth.css",
       "AssetKind": "All",
@@ -578,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\css\\pages\\page-auth.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\pages\\page-icons.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\pages\\page-icons.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/pages/page-icons.css",
       "AssetKind": "All",
@@ -595,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\css\\pages\\page-icons.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\pages\\page-misc.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\pages\\page-misc.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/pages/page-misc.css",
       "AssetKind": "All",
@@ -612,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\css\\pages\\page-misc.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\responsive.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\responsive.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/responsive.css",
       "AssetKind": "All",
@@ -629,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\css\\responsive.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\site.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -646,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\slick.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\slick.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/slick.css",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\css\\slick.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\slider.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\slider.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/slider.css",
       "AssetKind": "All",
@@ -680,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\css\\slider.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\style.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\style.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -697,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\css\\theme-default.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\css\\theme-default.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "css/theme-default.css",
       "AssetKind": "All",
@@ -714,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\css\\theme-default.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\favicon.ico",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\fonts\\boxicons.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\fonts\\boxicons.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "fonts/boxicons.css",
       "AssetKind": "All",
@@ -748,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\boxicons.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\fonts\\boxicons\\boxicons.eot",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\fonts\\boxicons\\boxicons.eot",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "fonts/boxicons/boxicons.eot",
       "AssetKind": "All",
@@ -765,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\boxicons\\boxicons.eot"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\fonts\\boxicons\\boxicons.svg",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\fonts\\boxicons\\boxicons.svg",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "fonts/boxicons/boxicons.svg",
       "AssetKind": "All",
@@ -782,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\boxicons\\boxicons.svg"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\fonts\\boxicons\\boxicons.ttf",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\fonts\\boxicons\\boxicons.ttf",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "fonts/boxicons/boxicons.ttf",
       "AssetKind": "All",
@@ -799,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\boxicons\\boxicons.ttf"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\fonts\\boxicons\\boxicons.woff",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\fonts\\boxicons\\boxicons.woff",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "fonts/boxicons/boxicons.woff",
       "AssetKind": "All",
@@ -816,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\boxicons\\boxicons.woff"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\fonts\\boxicons\\boxicons.woff2",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\fonts\\boxicons\\boxicons.woff2",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "fonts/boxicons/boxicons.woff2",
       "AssetKind": "All",
@@ -833,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\fonts\\boxicons\\boxicons.woff2"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\154119248_4619967884757545_8983751579742422639_n.jpg",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\154119248_4619967884757545_8983751579742422639_n.jpg",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/154119248_4619967884757545_8983751579742422639_n.jpg",
       "AssetKind": "All",
@@ -850,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\images\\154119248_4619967884757545_8983751579742422639_n.jpg"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\20220809_za_sangervasio_head.jpeg",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\20220809_za_sangervasio_head.jpeg",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/20220809_za_sangervasio_head.jpeg",
       "AssetKind": "All",
@@ -867,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\images\\20220809_za_sangervasio_head.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\3-Reefs-min-1-1Mx450.jpg",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\3-Reefs-min-1-1Mx450.jpg",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/3-Reefs-min-1-1Mx450.jpg",
       "AssetKind": "All",
@@ -884,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\images\\3-Reefs-min-1-1Mx450.jpg"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\Alejandro.jpg",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\Alejandro.jpg",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/Alejandro.jpg",
       "AssetKind": "All",
@@ -901,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Alejandro.jpg"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\arrecife-paraiso.jpg",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\arrecife-paraiso.jpg",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/arrecife-paraiso.jpg",
       "AssetKind": "All",
@@ -918,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\images\\arrecife-paraiso.jpg"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\brandini.jpg",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\brandini.jpg",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/brandini.jpg",
       "AssetKind": "All",
@@ -935,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\images\\brandini.jpg"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\buceo-luis-canul-960x480.jpg",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\buceo-luis-canul-960x480.jpg",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/buceo-luis-canul-960x480.jpg",
       "AssetKind": "All",
@@ -952,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\images\\buceo-luis-canul-960x480.jpg"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\call-icon.png",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\call-icon.png",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/call-icon.png",
       "AssetKind": "All",
@@ -969,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\images\\call-icon.png"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\cielo_tour.jpg",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\cielo_tour.jpg",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/cielo_tour.jpg",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cielo_tour.jpg"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\club_playa.jpg",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\club_playa.jpg",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/club_playa.jpg",
       "AssetKind": "All",
@@ -1003,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\images\\club_playa.jpg"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\cozumel-diving-naw.jpg",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\cozumel-diving-naw.jpg",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/cozumel-diving-naw.jpg",
       "AssetKind": "All",
@@ -1020,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cozumel-diving-naw.jpg"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\cozumel-excursions-social-media-image.png",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\cozumel-excursions-social-media-image.png",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/cozumel-excursions-social-media-image.png",
       "AssetKind": "All",
@@ -1037,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cozumel-excursions-social-media-image.png"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\DreamyReefs.gif",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\DreamyReefs.gif",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/DreamyReefs.gif",
       "AssetKind": "All",
@@ -1054,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\images\\DreamyReefs.gif"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\DreamyReefs.jpg",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\DreamyReefs.jpg",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/DreamyReefs.jpg",
       "AssetKind": "All",
@@ -1071,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\images\\DreamyReefs.jpg"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\DreamyReefs.png",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\DreamyReefs.png",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/DreamyReefs.png",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\images\\DreamyReefs.png"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\fb-icon.png",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\fb-icon.png",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/fb-icon.png",
       "AssetKind": "All",
@@ -1105,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\images\\fb-icon.png"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\fondo_card.jpg",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\fondo_card.jpg",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/fondo_card.jpg",
       "AssetKind": "All",
@@ -1122,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\images\\fondo_card.jpg"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\IMG_1184.jpeg",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\IMG_1184.jpeg",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/IMG_1184.jpeg",
       "AssetKind": "All",
@@ -1139,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\images\\IMG_1184.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\instagram-icon.png",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\instagram-icon.png",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/instagram-icon.png",
       "AssetKind": "All",
@@ -1156,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\images\\instagram-icon.png"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\JavierFoto.jpeg",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\JavierFoto.jpeg",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/JavierFoto.jpeg",
       "AssetKind": "All",
@@ -1173,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\images\\JavierFoto.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\linkedin.png",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\linkedin.png",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/linkedin.png",
       "AssetKind": "All",
@@ -1190,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\images\\linkedin.png"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\Logo.png",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\Logo.png",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/Logo.png",
       "AssetKind": "All",
@@ -1207,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Logo.png"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\maxresdefault.jpg",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\maxresdefault.jpg",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/maxresdefault.jpg",
       "AssetKind": "All",
@@ -1224,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\images\\maxresdefault.jpg"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\Pedro.jpg",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\Pedro.jpg",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/Pedro.jpg",
       "AssetKind": "All",
@@ -1241,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Pedro.jpg"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\PM_20_3COL_BYN_MIRADOR-750x406.jpeg",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\PM_20_3COL_BYN_MIRADOR-750x406.jpeg",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/PM_20_3COL_BYN_MIRADOR-750x406.jpeg",
       "AssetKind": "All",
@@ -1258,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\images\\PM_20_3COL_BYN_MIRADOR-750x406.jpeg"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\scuba-diving-with-scuba-tony-cozumel.jpg",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\scuba-diving-with-scuba-tony-cozumel.jpg",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/scuba-diving-with-scuba-tony-cozumel.jpg",
       "AssetKind": "All",
@@ -1275,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\images\\scuba-diving-with-scuba-tony-cozumel.jpg"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\Top-4-tours-in-Cozumel.jpg",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\Top-4-tours-in-Cozumel.jpg",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/Top-4-tours-in-Cozumel.jpg",
       "AssetKind": "All",
@@ -1292,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Top-4-tours-in-Cozumel.jpg"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\tours-en-cozumel1.jpg",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\tours-en-cozumel1.jpg",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/tours-en-cozumel1.jpg",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\images\\tours-en-cozumel1.jpg"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\Whats2.png",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\Whats2.png",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/Whats2.png",
       "AssetKind": "All",
@@ -1326,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Whats2.png"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\images\\where-to-stay-in-cozumel.jpg",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\images\\where-to-stay-in-cozumel.jpg",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "images/where-to-stay-in-cozumel.jpg",
       "AssetKind": "All",
@@ -1343,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\images\\where-to-stay-in-cozumel.jpg"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\js\\.DS_Store",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\.DS_Store",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "js/.DS_Store",
       "AssetKind": "All",
@@ -1360,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\js\\.DS_Store"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\bootstrap.bundle.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1377,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\bootstrap.bundle.js.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1394,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\bootstrap.bundle.min.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1411,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1428,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\bootstrap.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "js/bootstrap.js",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\bootstrap.js.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1462,10 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\bootstrap.min.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1479,10 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\bootstrap.min.js.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1496,10 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\js\\custom.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\custom.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "js/custom.js",
       "AssetKind": "All",
@@ -1513,10 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\js\\custom.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\js\\helpers.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\helpers.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "js/helpers.js",
       "AssetKind": "All",
@@ -1530,10 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\js\\helpers.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\js\\jquery-3.0.0.min.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\jquery-3.0.0.min.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "js/jquery-3.0.0.min.js",
       "AssetKind": "All",
@@ -1547,10 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery-3.0.0.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\js\\jquery.mCustomScrollbar.concat.min.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\jquery.mCustomScrollbar.concat.min.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "js/jquery.mCustomScrollbar.concat.min.js",
       "AssetKind": "All",
@@ -1564,10 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.mCustomScrollbar.concat.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\js\\jquery.min.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\jquery.min.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "js/jquery.min.js",
       "AssetKind": "All",
@@ -1581,10 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\js\\jquery.validate.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\jquery.validate.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "js/jquery.validate.js",
       "AssetKind": "All",
@@ -1598,10 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\js\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\js\\modernizer.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\modernizer.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "js/modernizer.js",
       "AssetKind": "All",
@@ -1615,10 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\js\\modernizer.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\js\\plugin.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\plugin.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "js/plugin.js",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\js\\plugin.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\js\\popper.min.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\popper.min.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "js/popper.min.js",
       "AssetKind": "All",
@@ -1649,10 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\js\\popper.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\site.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1666,10 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\js\\slider-setting.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\js\\slider-setting.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "js/slider-setting.js",
       "AssetKind": "All",
@@ -1683,10 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\js\\slider-setting.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1700,10 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1717,10 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1734,10 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1751,10 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1768,10 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1785,10 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1819,10 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1836,10 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1853,10 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1870,10 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1887,10 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1904,10 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1921,10 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1938,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -1972,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -1989,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2006,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2023,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2040,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2057,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2074,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2091,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -2108,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -2125,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -2142,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -2159,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -2176,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -2193,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -2210,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -2227,10 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2244,10 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2261,10 +2261,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2278,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2295,10 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2312,10 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2329,10 +2329,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2346,10 +2346,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2363,10 +2363,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2380,10 +2380,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2397,10 +2397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2414,10 +2414,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2431,10 +2431,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2448,10 +2448,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2465,10 +2465,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2482,10 +2482,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -2499,10 +2499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2516,10 +2516,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2533,10 +2533,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2550,10 +2550,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2567,10 +2567,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2584,10 +2584,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2601,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2618,10 +2618,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2635,10 +2635,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "DreamyReefs",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Dell\\source\\repos\\DreamyReefs\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Pedro\\OneDrive - addereMX+Córima\\Escritorio\\DreamyReefs\\wwwroot\\",
       "BasePath": "_content/DreamyReefs",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
