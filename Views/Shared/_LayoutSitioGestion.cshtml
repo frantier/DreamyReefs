@@ -150,9 +150,10 @@
             var rawData = @Html.Raw(Json.Serialize(ViewBag.ChartData));
 
             // Convertir los datos de JSON a un array de arrays
-            var dataArray = [['Tour', 'Total', { role: 'style' }]]; // Encabezado de las columnas
+            var dataArray = [['Tour', 'Total']]; // Encabezado de las columnas
+
             for (var i = 0; i < rawData.length; i++) {
-                dataArray.push([rawData[i].tour, rawData[i].total, getRandomColor()]);
+                dataArray.push([rawData[i].tour, rawData[i].total]);
             }
 
             // Convertir el array de arrays en un objeto DataTable de Google Charts
@@ -167,7 +168,7 @@
 
             if (data.getNumberOfRows() === 0) {
                 // Mostrar un mensaje personalizado en lugar del gráfico
-                document.getElementById('barchart').innerText = "No hay datos disponibles para mostrar el gráfico.";
+                document.getElementById('chart_div').innerText = "No hay datos disponibles para mostrar el gráfico.";
                 return;
             }
 
@@ -175,52 +176,43 @@
             var options = {
                 title: 'TOURS MAS SOLICITADOS',
                 is3D: true,
-                hAxis: {
-                    title: 'Tours',
-                    //textStyle: {
-                    //    fontSize: 12,
-                    //    color: '#333'
-                    //},// Eje horizontal para el valor
-                    //textPosition: 'none',
-                    //slantedText: true,
-                    //slantedTextAngle: 45
-                },
-                vAxis: { 
-                    title: '',
-                    format: '$#,##0.00'
-                },
                 animation: {
                     duration: 1000,
                     easing: 'out',
                     startup: true
-                }, // Eje vertical para el nombre de Tour
-                legend: { position: '' }, // Oculta la leyenda de la gráfica
+                },
                 backgroundColor: 'whitesmoke',
-                chartArea: { left: 150, right: 50, top: 80, bottom: 80 },// Color de fondo de la gráfica
+                chartArea: { left: 150, right: 50, top: 80, bottom: 80 },
                 annotations: {
                     textStyle: {
                         fontSize: 12,
-                        bold:  true,
+                        bold: true,
                         color: 'black',
                         auraColor: 'none'
                     },
-                    stem: { length: 0 }
-                }
+                },
+                slices: {} // Dejamos inicialmente vacío, lo llenaremos más adelante
             };
+
+            // Generar colores pastel y asignarlos a las barras
+            var numRows = data.getNumberOfRows();
+            for (var i = 0; i < numRows; i++) {
+                options.slices[i] = { color: getRandomPastelColor() };
+            }
 
             // Dibujar el gráfico de barras horizontales
             var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
             chart.draw(data, options);
         }
 
-        // Función para generar colores aleatorios
-        function getRandomColor() {
-            var letters = '0123456789ABCDEF';
-            var color = '#';
-            for (var i = 0; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
-            }
-            return color;
+        // Función para generar colores pastel aleatorios
+        function getRandomPastelColor() {
+            var min = 100; // Valor mínimo para los componentes RGB
+            var max = 230; // Valor máximo para los componentes RGB
+            var r = Math.floor(Math.random() * (max - min + 1) + min);
+            var g = Math.floor(Math.random() * (max - min + 1) + min);
+            var b = Math.floor(Math.random() * (max - min + 1) + min);
+            return 'rgb(' + r + ',' + g + ',' + b + ')';
         }
     </script>
 
