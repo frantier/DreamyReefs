@@ -557,6 +557,11 @@ namespace DreamyReefs.Controllers
                 ViewBag.Caracteristicas = caracteristicas;
 
                 var tours = _conexion.GetOneTour(id);
+                
+                var imagenID = tours.IDTours;
+                var img = _conexion.GetOneImagenesTour(imagenID);
+                ViewBag.img = img.ImagenBase64;
+
                 return View(tours);
             }
             else
