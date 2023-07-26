@@ -10,10 +10,11 @@
         <br />
         <br />
         <div class="row justify-content-center">
-            
+
             <div class="col-md-8 ">
                 <div class="card">
-                    <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">No hay Transportes para mostrar</h1>                  
+                    <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">No hay Transportes para
+                        mostrar</h1>
                 </div>
             </div>
         </div>
@@ -21,47 +22,50 @@
 }
 else
 {
-<div class="layout-page">
-    <br />
-    <br />
-    <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Transportes</h1>
-    <div class="d-flex justify-content-center">
-        <a class="col col-2 btn btn-primary d-grid" asp-action="Crear">Agregar</a>
-    </div>
-    <div class="ms-4 me-4 mt-4 mb-4">
-        <div>
-            <div class="row" data-aos="fade-up" data-aos-duration="1000">
-                @foreach (var transporte in Model)
-                {
-                <div class="col-sm-6 col-md-4">
-                    <div class="card m-2" style="background-color: whitesmoke;border: 3px solid gray;">
-                        <div class="card-body">
-                            @* <div class="d-flex justify-content-center">
-                                <h6 class="fw-medium" style="color: rgb(40, 180, 99);">Activo</h6>
+    <div class="layout-page">
+        <br />
+        <br />
+        <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Transportes</h1>
+        <div class="d-flex justify-content-center">
+            <a class="col col-2 btn btn-primary d-grid" asp-action="Crear">Agregar</a>
+        </div>
+        <div class="ms-4 me-4 mt-4 mb-4">
+            <div>
+                <div class="row" data-aos="fade-up" data-aos-duration="1000">
+                    @foreach (var transporte in Model)
+                    {
+                        <div class="col-sm-6 col-md-4">
+                            <div class="card m-2" style="background-color: whitesmoke;border: 3px solid gray;">
+                                <div class="card-body">
+                                    @* <div class="d-flex justify-content-center">
+                            <h6 class="fw-medium" style="color: rgb(40, 180, 99);">Activo</h6>
                             </div> *@
-                            <div>
-                                <label style="font-size: medium; font-weight: bold; display: inline-block;">Nombre empresa:</label>
-                                <h3 class="fw-normal" style="display: inline-block;">@transporte.NombreEmpresa</h3>
-                            </div>
-                            <div>
-                                <div>
-                                    <label style="font-size: medium; font-weight: bold; display: inline-block;">Tipo de vehiculo:</label>
-                                    <h3 class="fw-normal" style="display: inline-block;">@transporte.Transporte</h3>
+                                    <div>
+                                        <label style="font-size: medium; font-weight: bold; display: inline-block;">Nombre
+                                            empresa:</label>
+                                        <h3 class="fw-normal" style="display: inline-block;">@transporte.NombreEmpresa</h3>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <label style="font-size: medium; font-weight: bold; display: inline-block;">Tipo de
+                                                vehiculo:</label>
+                                            <h3 class="fw-normal" style="display: inline-block;">@transporte.Transporte</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-end">
+                                        <a type="button" class="btn btn-warning text-white btn-modify" asp-action="Actualizar"
+                                            asp-route-id="@transporte.IDTransportes">Modificar</a>
+                                        &nbsp;
+                                        <button type="button" class="btn btn-danger text-white btn-delete"
+                                            onclick="eliminarTransportes(@transporte.IDTransportes)">Eliminar</button>
+                                    </div>
                                 </div>
                             </div>
-
-                            <div class="d-flex justify-content-end">
-                                <a type="button" class="btn btn-warning text-white btn-modify" asp-action="Actualizar" asp-route-id="@transporte.IDTransportes">Modificar</a>
-                                &nbsp;
-                                <button type="button" class="btn btn-danger text-white btn-delete" onclick="eliminarTransportes(@transporte.IDTransportes)">Eliminar</button>
-                            </div>
                         </div>
-                    </div>
+                    }
                 </div>
-                }
             </div>
         </div>
     </div>
-</div>
 }
-

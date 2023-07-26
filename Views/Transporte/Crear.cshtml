@@ -22,20 +22,20 @@
                                     <div class="form-group">
                                         <label asp-for="NombreEmpresa">Nombre de la empresa</label>
                                         <input asp-for="NombreEmpresa" class="form-control"
-                                            placeholder="Nombre de la empresa" />
+                                            placeholder="Nombre de la empresa" autocomplete="off" />
                                         <span asp-validation-for="NombreEmpresa" class="text-danger"></span>
                                     </div>
                                     <div class="form-group">
                                         <label asp-for="Transporte" class="form-label">Transporte</label>
                                         <input asp-for="Transporte" class="form-control"
-                                            placeholder="Transporte de la empresa" />
+                                            placeholder="Transporte de la empresa" autocomplete="off" />
                                         <span asp-validation-for="Transporte" class="text-danger"></span>
                                     </div>
                                     &ensp;
                                     <div class="d-flex justify-content-end">
                                         <input type="submit" value="Agregar Transporte"
                                             class="btn btn-success btn-md" />
-                                            &ensp;
+                                        &ensp;
                                         <a asp-action="Index" class="btn btn-primary btn-md">Volver al listado</a>
                                     </div>
                                 </form>

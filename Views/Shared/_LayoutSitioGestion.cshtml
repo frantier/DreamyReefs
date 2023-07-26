@@ -27,8 +27,9 @@
     <link rel="stylesheet" href="~/css/theme-default.css" class="template-customizer-theme-css" />
     <link rel="stylesheet" href="~/css/demo.css" />
     <link rel="stylesheet" href="~/css/Cards.css" />
+    <link rel="stylesheet" href="~/css/fancy-file-style.css" />
     <link rel="stylesheet" type="text/css" href="~/css/style.css">
-    
+
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="~/lib/perfect-scrollbar/perfect-scrollbar.css" />
@@ -45,88 +46,88 @@
 </head>
 
 <body style="background: linear-gradient(to bottom, rgba(102, 204, 255, 0.3), rgba(0, 51, 102, 0.8));">
-<!-- Layout wrapper -->
-<div class="layout-wrapper layout-content-navbar">
-    <div class="layout-container">
-        <!-- Menu -->
-        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-            <div class="app-brand demo">
-                <a asp-controller="Home" asp-action="Index" class="app-brand-link">
-                    <h3><span class="app-brand-text demo menu-text fw-bolder ms-2">Dreamy Reefs</span></h3>
-                </a>
-            </div>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+        <div class="layout-container">
+            <!-- Menu -->
+            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+                <div class="app-brand demo">
+                    <a asp-controller="Home" asp-action="Index" class="app-brand-link">
+                        <h3><span class="app-brand-text demo menu-text fw-bolder ms-2">Dreamy Reefs</span></h3>
+                    </a>
+                </div>
 
-            <div class="menu-inner-shadow"></div>
+                <div class="menu-inner-shadow"></div>
 
-            <ul class="menu-inner py-1">
-                <!-- Dashboard -->
-                <li class="menu-item">
-                    <a asp-controller="Dashboard" asp-action="Index" class="menu-link">
-                        <i class="menu-icon tf-icons bx bx-home-circle"></i>
-                        <div data-i18n="Analytics">Dashboard</div>
-                    </a>
-                </li>
-                <!-- Components -->
-                <li class="menu-header small text-uppercase"><span class="menu-header-text">Módulos</span></li>
-                <!-- Cards -->
-                <li class="menu-item">
-                    <a id="reservaciones" asp-controller="Reservacion" asp-action="Index" class="menu-link">
-                        <i class="menu-icon tf-icons bx bx-collection"></i>
-                        <div data-i18n="Basic">Reservaciones</div>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a id="transportes" asp-controller="Transporte" asp-action="Index" class="menu-link">
-                        <i class="menu-icon tf-icons bx bx-collection"></i>
-                        <div data-i18n="Basic">Transportes</div>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a id="empresas" asp-controller="Empresa" asp-action="Index" class="menu-link">
-                        <i class="menu-icon tf-icons bx bx-collection"></i>
-                        <div data-i18n="Basic">Empresas</div>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a id="reviews" asp-controller="Review" asp-action="Index" class="menu-link">
-                        <i class="menu-icon tf-icons bx bx-collection"></i>
-                        <div data-i18n="Basic">Reviews</div>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a id="tours" asp-controller="Tour" asp-action="Index" class="menu-link">
-                        <i class="menu-icon tf-icons bx bx-collection"></i>
-                        <div data-i18n="Basic">Tours</div>
-                    </a>
-                </li>
-                @*<li class="menu-item">
+                <ul class="menu-inner py-1">
+                    <!-- Dashboard -->
+                    <li class="menu-item">
+                        <a asp-controller="Dashboard" asp-action="Index" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                            <div data-i18n="Analytics">Dashboard</div>
+                        </a>
+                    </li>
+                    <!-- Components -->
+                    <li class="menu-header small text-uppercase"><span class="menu-header-text">Módulos</span></li>
+                    <!-- Cards -->
+                    <li class="menu-item">
+                        <a id="reservaciones" asp-controller="Reservacion" asp-action="Index" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-collection"></i>
+                            <div data-i18n="Basic">Reservaciones</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a id="transportes" asp-controller="Transporte" asp-action="Index" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-collection"></i>
+                            <div data-i18n="Basic">Transportes</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a id="empresas" asp-controller="Empresa" asp-action="Index" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-collection"></i>
+                            <div data-i18n="Basic">Empresas</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a id="reviews" asp-controller="Review" asp-action="Index" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-collection"></i>
+                            <div data-i18n="Basic">Reviews</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a id="tours" asp-controller="Tour" asp-action="Index" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-collection"></i>
+                            <div data-i18n="Basic">Tours</div>
+                        </a>
+                    </li>
+                    @*<li class="menu-item">
                     <a id="imagenes" asp-controller="Imagen" asp-action="Index" class="menu-link">
-                        <i class="menu-icon tf-icons bx bx-collection"></i>
-                        <div data-i18n="Basic">Imagenes</div>
+                    <i class="menu-icon tf-icons bx bx-collection"></i>
+                    <div data-i18n="Basic">Imagenes</div>
                     </a>
-                </li>*@
-                <li class="menu-item">
-                    <a id="usuario" asp-controller="Usuario" asp-action="Index" class="menu-link">
-                        <i class="menu-icon tf-icons bx bx-collection"></i>
-                        <div data-i18n="Basic">Usuarios</div>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" onclick="cerrarSesion()" class="menu-link">
-                        <i class="menu-icon tf-icons bx bx-collection"></i>
-                        <div data-i18n="Basic">Cerrar sesión</div>
-                    </a>
-                </li>
-            </ul>
-            <div class="menu-toggle">
-                <span class="menu-toggle-icon"></span>
-            </div>
-        </aside>
-        @RenderBody()
+                    </li>*@
+                    <li class="menu-item">
+                        <a id="usuario" asp-controller="Usuario" asp-action="Index" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-collection"></i>
+                            <div data-i18n="Basic">Usuarios</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" onclick="cerrarSesion()" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-collection"></i>
+                            <div data-i18n="Basic">Cerrar sesión</div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="menu-toggle">
+                    <span class="menu-toggle-icon"></span>
+                </div>
+            </aside>
+            @RenderBody()
+        </div>
+        <!-- Overlay -->
+        <div class="layout-overlay layout-menu-toggle"></div>
     </div>
-    <!-- Overlay -->
-    <div class="layout-overlay layout-menu-toggle"></div>
-</div>
 
     <div id="loader" style="display: none;">
         <div class="loader-content">
@@ -216,26 +217,26 @@
         }
     </script>
 
-<script>
+    <script>
 
-    var menuToggle = document.querySelector('.menu-toggle');
-    var menu = document.querySelector('#layout-menu');
+        var menuToggle = document.querySelector('.menu-toggle');
+        var menu = document.querySelector('#layout-menu');
 
-    menuToggle.addEventListener('click', function() {
-        menu.classList.toggle('menu-open');
-    });
+        menuToggle.addEventListener('click', function () {
+            menu.classList.toggle('menu-open');
+        });
 
-    // Resaltar enlace activo
-    var currentUrl = window.location.href;
-    var menuLinks = document.querySelectorAll('.menu-link');
+        // Resaltar enlace activo
+        var currentUrl = window.location.href;
+        var menuLinks = document.querySelectorAll('.menu-link');
 
-    menuLinks.forEach(function (link) {
-        if (link.href === currentUrl) {
-            link.parentElement.classList.add('active');
-        } else {
-            link.parentElement.classList.remove('active');
-        }
-    });
+        menuLinks.forEach(function (link) {
+            if (link.href === currentUrl) {
+                link.parentElement.classList.add('active');
+            } else {
+                link.parentElement.classList.remove('active');
+            }
+        });
 
         //document.getElementById('reservaciones').addEventListener('click', function () {
         //    event.preventDefault();
@@ -449,34 +450,34 @@
                 cancelButtonColor: '#d33',
                 confirmButtonText: 'Eliminar',
                 cancelButtonText: 'Cancelar'
-                }).then((result) => {
+            }).then((result) => {
                 if (result.isConfirmed) {
-                        // Realiza una solicitud AJAX para eliminar el registro
-                        $.ajax({
-                            url: '@Url.Action("Eliminar", "Usuario")', // Reemplaza "TuControlador" con el nombre de tu controlador
-                            type: 'POST',
-                            data: { id: id },
-                            success: function () {
-                                swal.fire({
-                                    title: "Éxito",
-                                    text: "El registro se ha eliminado correctamente.",
-                                    icon: "success",
-                                    showConfirmButton: false,
-                                    timer: 1500,
-                                    timerProgressBar: true,
-                                    didOpen: () => {
-                                        Swal.showLoading();
-                                    }
-                                }).then(function () {
-                                        location.reload(); // Actualiza la página después de eliminar el registro
-                                });
-                            },
-                            error: function () {
-                                swal.fire("Error", "Ha ocurrido un error al eliminar el registro.", "error");
-                            }
-                        });
-                    }
-                });
+                    // Realiza una solicitud AJAX para eliminar el registro
+                    $.ajax({
+                        url: '@Url.Action("Eliminar", "Usuario")', // Reemplaza "TuControlador" con el nombre de tu controlador
+                        type: 'POST',
+                        data: { id: id },
+                        success: function () {
+                            swal.fire({
+                                title: "Éxito",
+                                text: "El registro se ha eliminado correctamente.",
+                                icon: "success",
+                                showConfirmButton: false,
+                                timer: 1500,
+                                timerProgressBar: true,
+                                didOpen: () => {
+                                    Swal.showLoading();
+                                }
+                            }).then(function () {
+                                location.reload(); // Actualiza la página después de eliminar el registro
+                            });
+                        },
+                        error: function () {
+                            swal.fire("Error", "Ha ocurrido un error al eliminar el registro.", "error");
+                        }
+                    });
+                }
+            });
         }
 
         function eliminarTransportes(id) {
@@ -489,34 +490,34 @@
                 cancelButtonColor: '#d33',
                 confirmButtonText: 'Eliminar',
                 cancelButtonText: 'Cancelar'
-                }).then((result) => {
+            }).then((result) => {
                 if (result.isConfirmed) {
-                        // Realiza una solicitud AJAX para eliminar el registro
-                        $.ajax({
-                            url: '@Url.Action("Eliminar", "Transporte")', // Reemplaza "TuControlador" con el nombre de tu controlador
-                            type: 'POST',
-                            data: { id: id },
-                            success: function () {
-                                swal.fire({
-                                    title: "Éxito",
-                                    text: "El registro se ha eliminado correctamente.",
-                                    icon: "success",
-                                    showConfirmButton: false,
-                                    timer: 1500,
-                                    timerProgressBar: true,
-                                    didOpen: () => {
-                                        Swal.showLoading();
-                                    }
-                                }).then(function () {
-                                    location.reload(); // Actualiza la página después de eliminar el registro
-                                });
-                            },
-                            error: function () {
-                                swal.fire("Error", "Ha ocurrido un error al eliminar el registro.", "error");
-                            }
-                        });
-                    }
-                });
+                    // Realiza una solicitud AJAX para eliminar el registro
+                    $.ajax({
+                        url: '@Url.Action("Eliminar", "Transporte")', // Reemplaza "TuControlador" con el nombre de tu controlador
+                        type: 'POST',
+                        data: { id: id },
+                        success: function () {
+                            swal.fire({
+                                title: "Éxito",
+                                text: "El registro se ha eliminado correctamente.",
+                                icon: "success",
+                                showConfirmButton: false,
+                                timer: 1500,
+                                timerProgressBar: true,
+                                didOpen: () => {
+                                    Swal.showLoading();
+                                }
+                            }).then(function () {
+                                location.reload(); // Actualiza la página después de eliminar el registro
+                            });
+                        },
+                        error: function () {
+                            swal.fire("Error", "Ha ocurrido un error al eliminar el registro.", "error");
+                        }
+                    });
+                }
+            });
         }
 
         function eliminarTours(id) {
@@ -529,34 +530,34 @@
                 cancelButtonColor: '#d33',
                 confirmButtonText: 'Eliminar',
                 cancelButtonText: 'Cancelar'
-                }).then((result) => {
+            }).then((result) => {
                 if (result.isConfirmed) {
-                        // Realiza una solicitud AJAX para eliminar el registro
-                        $.ajax({
-                            url: '@Url.Action("Eliminar", "Tour")', // Reemplaza "TuControlador" con el nombre de tu controlador
-                            type: 'POST',
-                            data: { id: id },
-                            success: function () {
-                                swal.fire({
-                                    title: "Éxito",
-                                    text: "El registro se ha eliminado correctamente.",
-                                    icon: "success",
-                                    showConfirmButton: false,
-                                    timer: 1500,
-                                    timerProgressBar: true,
-                                    didOpen: () => {
-                                        Swal.showLoading();
-                                    }
-                                }).then(function () {
-                                    location.reload(); // Actualiza la página después de eliminar el registro
-                                });
-                            },
-                            error: function () {
-                                swal.fire("Error", "Ha ocurrido un error al eliminar el registro.", "error");
-                            }
-                        });
-                    }
-                });
+                    // Realiza una solicitud AJAX para eliminar el registro
+                    $.ajax({
+                        url: '@Url.Action("Eliminar", "Tour")', // Reemplaza "TuControlador" con el nombre de tu controlador
+                        type: 'POST',
+                        data: { id: id },
+                        success: function () {
+                            swal.fire({
+                                title: "Éxito",
+                                text: "El registro se ha eliminado correctamente.",
+                                icon: "success",
+                                showConfirmButton: false,
+                                timer: 1500,
+                                timerProgressBar: true,
+                                didOpen: () => {
+                                    Swal.showLoading();
+                                }
+                            }).then(function () {
+                                location.reload(); // Actualiza la página después de eliminar el registro
+                            });
+                        },
+                        error: function () {
+                            swal.fire("Error", "Ha ocurrido un error al eliminar el registro.", "error");
+                        }
+                    });
+                }
+            });
         }
 
         function eliminarReviews(id) {
@@ -569,34 +570,34 @@
                 cancelButtonColor: '#d33',
                 confirmButtonText: 'Eliminar',
                 cancelButtonText: 'Cancelar'
-                }).then((result) => {
+            }).then((result) => {
                 if (result.isConfirmed) {
-                        // Realiza una solicitud AJAX para eliminar el registro
-                        $.ajax({
-                            url: '@Url.Action("Eliminar", "Review")', // Reemplaza "TuControlador" con el nombre de tu controlador
-                            type: 'POST',
-                            data: { id: id },
-                            success: function () {
-                                swal.fire({
-                                    title: "Éxito",
-                                    text: "El registro se ha eliminado correctamente.",
-                                    icon: "success",
-                                    showConfirmButton: false,
-                                    timer: 1500,
-                                    timerProgressBar: true,
-                                    didOpen: () => {
-                                        Swal.showLoading();
-                                    }
-                                }).then(function () {
-                                        location.reload(); // Actualiza la página después de eliminar el registro
-                                });
-                            },
-                            error: function () {
-                                swal.fire("Error", "Ha ocurrido un error al eliminar el registro.", "error");
-                            }
-                        });
-                    }
-                });
+                    // Realiza una solicitud AJAX para eliminar el registro
+                    $.ajax({
+                        url: '@Url.Action("Eliminar", "Review")', // Reemplaza "TuControlador" con el nombre de tu controlador
+                        type: 'POST',
+                        data: { id: id },
+                        success: function () {
+                            swal.fire({
+                                title: "Éxito",
+                                text: "El registro se ha eliminado correctamente.",
+                                icon: "success",
+                                showConfirmButton: false,
+                                timer: 1500,
+                                timerProgressBar: true,
+                                didOpen: () => {
+                                    Swal.showLoading();
+                                }
+                            }).then(function () {
+                                location.reload(); // Actualiza la página después de eliminar el registro
+                            });
+                        },
+                        error: function () {
+                            swal.fire("Error", "Ha ocurrido un error al eliminar el registro.", "error");
+                        }
+                    });
+                }
+            });
         }
 
         function eliminarReservaciones(id) {
@@ -609,34 +610,34 @@
                 cancelButtonColor: '#d33',
                 confirmButtonText: 'Eliminar',
                 cancelButtonText: 'Cancelar'
-                }).then((result) => {
+            }).then((result) => {
                 if (result.isConfirmed) {
-                        // Realiza una solicitud AJAX para eliminar el registro
-                        $.ajax({
-                            url: '@Url.Action("Eliminar", "Reservacion")', // Reemplaza "TuControlador" con el nombre de tu controlador
-                            type: 'POST',
-                            data: { id: id },
-                            success: function () {
-                                swal.fire({
-                                    title: "Éxito",
-                                    text: "El registro se ha eliminado correctamente.",
-                                    icon: "success",
-                                    showConfirmButton: false,
-                                    timer: 1500,
-                                    timerProgressBar: true,
-                                    didOpen: () => {
-                                        Swal.showLoading();
-                                    }
-                                }).then(function () {
-                                        location.reload(); // Actualiza la página después de eliminar el registro
-                                });
-                            },
-                            error: function () {
-                                swal.fire("Error", "Ha ocurrido un error al eliminar el registro.", "error");
-                            }
-                        });
-                    }
-                });
+                    // Realiza una solicitud AJAX para eliminar el registro
+                    $.ajax({
+                        url: '@Url.Action("Eliminar", "Reservacion")', // Reemplaza "TuControlador" con el nombre de tu controlador
+                        type: 'POST',
+                        data: { id: id },
+                        success: function () {
+                            swal.fire({
+                                title: "Éxito",
+                                text: "El registro se ha eliminado correctamente.",
+                                icon: "success",
+                                showConfirmButton: false,
+                                timer: 1500,
+                                timerProgressBar: true,
+                                didOpen: () => {
+                                    Swal.showLoading();
+                                }
+                            }).then(function () {
+                                location.reload(); // Actualiza la página después de eliminar el registro
+                            });
+                        },
+                        error: function () {
+                            swal.fire("Error", "Ha ocurrido un error al eliminar el registro.", "error");
+                        }
+                    });
+                }
+            });
         }
 
         function eliminarImagenes(id) {
@@ -649,34 +650,34 @@
                 cancelButtonColor: '#d33',
                 confirmButtonText: 'Eliminar',
                 cancelButtonText: 'Cancelar'
-                }).then((result) => {
+            }).then((result) => {
                 if (result.isConfirmed) {
-                        // Realiza una solicitud AJAX para eliminar el registro
-                        $.ajax({
-                            url: '@Url.Action("Eliminar", "Imagen")', // Reemplaza "TuControlador" con el nombre de tu controlador
-                            type: 'POST',
-                            data: { id: id },
-                            success: function () {
-                                swal.fire({
-                                    title: "Éxito",
-                                    text: "El registro se ha eliminado correctamente.",
-                                    icon: "success",
-                                    showConfirmButton: false,
-                                    timer: 1500,
-                                    timerProgressBar: true,
-                                    didOpen: () => {
-                                        Swal.showLoading();
-                                    }
-                                }).then(function () {
-                                    location.reload(); // Actualiza la página después de eliminar el registro
-                                });
-                            },
-                            error: function () {
-                                swal.fire("Error", "Ha ocurrido un error al eliminar el registro.", "error");
-                            }
-                        });
-                    }
-                });
+                    // Realiza una solicitud AJAX para eliminar el registro
+                    $.ajax({
+                        url: '@Url.Action("Eliminar", "Imagen")', // Reemplaza "TuControlador" con el nombre de tu controlador
+                        type: 'POST',
+                        data: { id: id },
+                        success: function () {
+                            swal.fire({
+                                title: "Éxito",
+                                text: "El registro se ha eliminado correctamente.",
+                                icon: "success",
+                                showConfirmButton: false,
+                                timer: 1500,
+                                timerProgressBar: true,
+                                didOpen: () => {
+                                    Swal.showLoading();
+                                }
+                            }).then(function () {
+                                location.reload(); // Actualiza la página después de eliminar el registro
+                            });
+                        },
+                        error: function () {
+                            swal.fire("Error", "Ha ocurrido un error al eliminar el registro.", "error");
+                        }
+                    });
+                }
+            });
         }
 
         function eliminarEmpresas(id) {
@@ -689,36 +690,36 @@
                 cancelButtonColor: '#d33',
                 confirmButtonText: 'Eliminar',
                 cancelButtonText: 'Cancelar'
-                }).then((result) => {
+            }).then((result) => {
                 if (result.isConfirmed) {
                     // Realiza una solicitud AJAX para eliminar el registro
-                        $.ajax({
-                            url: '@Url.Action("Eliminar", "Empresa")', // Reemplaza "TuControlador" con el nombre de tu controlador
-                            type: 'POST',
-                            data: { id: id },
-                            success: function () {
-                                swal.fire({
-                                    title: "Éxito",
-                                    text: "El registro se ha eliminado correctamente.",
-                                    icon: "success",
-                                    showConfirmButton: false,
-                                    timer: 1500,
-                                    timerProgressBar: true,
-                                    didOpen: () => {
-                                        Swal.showLoading();
-                                    }
-                                }).then(function () {
-                                    location.reload(); // Actualiza la página después de eliminar el registro
-                                });
-                            },
-                            error: function () {
-                                swal.fire("Error", "Ha ocurrido un error al eliminar el registro.", "error");
-                            }
-                        });
+                    $.ajax({
+                        url: '@Url.Action("Eliminar", "Empresa")', // Reemplaza "TuControlador" con el nombre de tu controlador
+                        type: 'POST',
+                        data: { id: id },
+                        success: function () {
+                            swal.fire({
+                                title: "Éxito",
+                                text: "El registro se ha eliminado correctamente.",
+                                icon: "success",
+                                showConfirmButton: false,
+                                timer: 1500,
+                                timerProgressBar: true,
+                                didOpen: () => {
+                                    Swal.showLoading();
+                                }
+                            }).then(function () {
+                                location.reload(); // Actualiza la página después de eliminar el registro
+                            });
+                        },
+                        error: function () {
+                            swal.fire("Error", "Ha ocurrido un error al eliminar el registro.", "error");
+                        }
+                    });
                 }
-                })
+            })
         }
-    
+
         function cerrarSesion() {
             Swal.fire({
                 title: 'Cerrando sesión',
@@ -745,7 +746,24 @@
         }
 
 
-</script>
+    </script>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const files = document.querySelectorAll('.fancy-file');
+            Array.from(files).forEach(f => {
+                const span = f.nextElementSibling.querySelector('span');
+
+                // Muestra el nombre del archivo actual cuando se carga la página
+                span.innerHTML = f.value || 'Ningún archivo seleccionado';
+
+                f.addEventListener('change', e => {
+                    // Actualiza el nombre del archivo cuando se selecciona un archivo nuevo
+                    span.innerHTML = e.target.files[0]?.name || 'Ningún archivo seleccionado';
+                });
+            });
+        });
+    </script>
 
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

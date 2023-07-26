@@ -27,20 +27,20 @@
                                     <div>
                                         <label asp-for="NombreEmpresa"></label>
                                         <input asp-for="NombreEmpresa" placeholder="Nombre de la empresa"
-                                            class="form-control" />
+                                            class="form-control" autocomplete="off" />
                                         <span asp-validation-for="NombreEmpresa" class="text-danger"></span>
                                     </div>
                                     <div>
                                         <label asp-for="Transporte" class="form-label">Transporte</label>
                                         <input asp-for="Transporte" placeholder="Transporte de la empresa"
-                                            class="form-control" />
+                                            class="form-control" autocomplete="off" />
                                         <span asp-validation-for="Transporte" class="text-danger"></span>
                                     </div>
                                     &ensp;
                                     <div class="d-flex justify-content-end">
                                         <input type="submit" value="Actualizar Transporte"
                                             class="btn btn-warning btn-md" />
-                                            &ensp;
+                                        &ensp;
                                         <a asp-action="Index" class="btn btn-primary btn-md">Volver al listado</a>
                                     </div>
                                 </form>
@@ -52,4 +52,3 @@
         </div>
     </div>
 </div>
-

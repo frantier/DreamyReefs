@@ -12,7 +12,7 @@
         <div data-aos="fade-up" data-aos-duration="1000">
             <div class="row row-cols-1 row-cols-md-2 justify-content-center">
                 <div class="col">
-                    <div class="card m-2" style="background-color: whitesmoke;border: 3px solid gray;" >
+                    <div class="card m-2" style="background-color: whitesmoke;border: 3px solid gray;">
                         <div class="card-body">
                             <div class="d-flex justify-content-center">
                                 <h6 class="fw-medium" style="color: rgb(40, 180, 99);"></h6>
@@ -27,7 +27,7 @@
                                     <div>
                                         <label asp-for="NombreCompleto"></label>
                                         <input asp-for="NombreCompleto" placeholder="Nombre Completo"
-                                            class="form-control" />
+                                            class="form-control" autocomplete="off" />
                                         <span asp-validation-for="NombreCompleto" class="text-danger"></span>
                                     </div>
                                     <div>
@@ -57,22 +57,22 @@
                                     <div>
                                         <label asp-for="Estatus" class="form-label">Estatus</label>
                                         <select asp-for="Estatus" class="form-control">
-                                            <option >Concluido</option>
-                                            <option >Pendiente</option>
-                                            <option >Cancelado</option>
+                                            <option>Concluido</option>
+                                            <option>Pendiente</option>
+                                            <option>Cancelado</option>
                                         </select>
                                         <span asp-validation-for="Estatus" class="text-danger"></span>
                                     </div>
                                     <div>
                                         <label asp-for="TourID" hidden></label>
-                                        <input asp-for="TourID" placeholder="TourID"
-                                               class="form-control" hidden readonly />
+                                        <input asp-for="TourID" placeholder="TourID" class="form-control" hidden
+                                            readonly />
                                     </div>
                                     &ensp;
                                     <div class="d-flex justify-content-end">
                                         <input type="submit" value="Actualizar reservacion"
                                             class="btn btn-warning btn-md" />
-                                            &ensp;
+                                        &ensp;
                                         <a asp-action="Index" class="btn btn-primary btn-md">Volver al listado</a>
                                     </div>
                                 </form>

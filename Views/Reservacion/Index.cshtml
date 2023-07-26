@@ -10,10 +10,11 @@
         <br />
         <br />
         <div class="row justify-content-center">
-            
+
             <div class="col-md-8 ">
                 <div class="card">
-                    <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">No hay Reservaciones para mostrar</h1>                  
+                    <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">No hay Reservaciones para
+                        mostrar</h1>
                 </div>
             </div>
         </div>
@@ -21,77 +22,84 @@
 }
 else
 {
-   <div class="layout-page">
-    <br />
-    <br />
-    <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Reservaciones</h1>
-    <div class="d-flex justify-content-center">
-        <a class="col col-2 btn btn-primary d-grid" asp-action="Crear">Agregar</a>
-        &ensp;
-        <a class="col col-2 btn btn-danger d-grid" asp-action="EliminarArchivosEnCarpeta">Eliminar PDF's'</a>
-        &nbsp;
-        <form asp-action="Buscar" method="post" class="d-flex" role="search">
-            <input name="busqueda" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" style="border-radius: 12px; border: 2px solid #ced4da;">
-            <input type="submit" value="Buscar" class="btn btn-outline-success" style="color: black; border: 2px solid #ced4da;" />
-        </form>
-    </div>
-    <div class="ms-4 me-4 mt-4 mb-4">
-        <div class="row" data-aos="fade-up" data-aos-duration="1000">
-            @foreach (var reservaciones in Model)
-            {
-            <div class="col-sm-6">
-                <div class="card m-2" style="background-color: whitesmoke;border: 3px solid gray;">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-center">
-                            @if (reservaciones.Estatus == "Concluido")
-                            {
-                                <h3 class="fw-medium" style="color: rgb(40, 180, 99);">@reservaciones.Estatus</h3>
-                            }
-                            else if (reservaciones.Estatus == "Pendiente")
-                            {
-                                <h3 class="fw-medium" style="color: rgb(255, 119, 0);">@reservaciones.Estatus</h3>
-                            }
-                            else if (reservaciones.Estatus == "Cancelado")
-                            {
-                                <h3 class="fw-medium" style="color: rgb(224, 36, 36);">@reservaciones.Estatus</h3>
-                            }
-                        </div>
-                        
-                        <div>
-                            <div>
-                                <label style="font-size: medium; font-weight: bold; display: inline-block;">Nombre:</label>
-                                <h3 class="fw-normal" style="display: inline-block;">@reservaciones.NombreCompleto</h3>
-                            </div>
+    <div class="layout-page">
+        <br />
+        <br />
+        <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Reservaciones</h1>
+        <div class="d-flex justify-content-center">
+            <a class="col col-2 btn btn-danger d-grid" asp-action="EliminarArchivosEnCarpeta">Eliminar PDF's'</a>
+            &nbsp;
+            <form asp-action="Buscar" method="post" class="d-flex" role="search">
+                <input name="busqueda" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"
+                    style="border-radius: 12px; border: 2px solid #ced4da;" autocomplete="off">
+                <input type="submit" value="Buscar" class="btn btn-outline-success"
+                    style="color: black; border: 2px solid #ced4da;" />
+            </form>
+        </div>
+        <div class="ms-4 me-4 mt-4 mb-4">
+            <div class="row" data-aos="fade-up" data-aos-duration="1000">
+                @foreach (var reservaciones in Model)
+                {
+                    <div class="col-sm-6">
+                        <div class="card m-2" style="background-color: whitesmoke;border: 3px solid gray;">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-center">
+                                    @if (reservaciones.Estatus == "Concluido")
+                                    {
+                                        <h3 class="fw-medium" style="color: rgb(40, 180, 99);">@reservaciones.Estatus</h3>
+                                    }
+                                    else if (reservaciones.Estatus == "Pendiente")
+                                    {
+                                        <h3 class="fw-medium" style="color: rgb(255, 119, 0);">@reservaciones.Estatus</h3>
+                                    }
+                                    else if (reservaciones.Estatus == "Cancelado")
+                                    {
+                                        <h3 class="fw-medium" style="color: rgb(224, 36, 36);">@reservaciones.Estatus</h3>
+                                    }
+                                </div>
 
-                            <div>
-                                <label style="font-size: medium; font-weight: bold; display: inline-block;">Telefono:</label>
-                                <h3 class="fw-normal" style="display: inline-block;">@reservaciones.Telefono</h3>
-                            </div>
+                                <div>
+                                    <div>
+                                        <label
+                                            style="font-size: medium; font-weight: bold; display: inline-block;">Nombre:</label>
+                                        <h3 class="fw-normal" style="display: inline-block;">@reservaciones.NombreCompleto</h3>
+                                    </div>
 
-                            <div>
-                                <label style="font-size: medium; font-weight: bold; display: inline-block;">Correo:</label>
-                                <h3 class="fw-normal" style="display: inline-block;">@reservaciones.Email</h3>
-                            </div>
+                                    <div>
+                                        <label
+                                            style="font-size: medium; font-weight: bold; display: inline-block;">Telefono:</label>
+                                        <h3 class="fw-normal" style="display: inline-block;">@reservaciones.Telefono</h3>
+                                    </div>
 
-                            <div>
-                                <label style="font-size: medium; font-weight: bold; display: inline-block;">Adultos:</label>
-                                <h3 class="fw-normal" style="display: inline-block;">@reservaciones.Adultos</h3>
-  
-                                <label style="font-size: medium; font-weight: bold; display: inline-block;">Niños:</label>
-                                <h3 class="fw-normal" style="display: inline-block;">@reservaciones.Infantes</h3>
-                            </div>
-                        </div>
+                                    <div>
+                                        <label
+                                            style="font-size: medium; font-weight: bold; display: inline-block;">Correo:</label>
+                                        <h3 class="fw-normal" style="display: inline-block;">@reservaciones.Email</h3>
+                                    </div>
 
-                        <div class="d-flex justify-content-end">
-                            <a type="button" class="btn btn-warning text-white btn-modify" asp-action="Actualizar" asp-route-id="@reservaciones.IDReservaciones">Modificar</a>
-                                &nbsp;
-                            <button type="button" class="btn btn-danger text-white btn-delete" onclick="eliminarReservaciones(@reservaciones.IDReservaciones)">Eliminar</button>
+                                    <div>
+                                        <label
+                                            style="font-size: medium; font-weight: bold; display: inline-block;">Adultos:</label>
+                                        <h3 class="fw-normal" style="display: inline-block;">@reservaciones.Adultos</h3>
+
+                                        <label
+                                            style="font-size: medium; font-weight: bold; display: inline-block;">Niños:</label>
+                                        <h3 class="fw-normal" style="display: inline-block;">@reservaciones.Infantes</h3>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-end">
+                                    <a type="button" class="btn btn-warning text-white btn-modify" asp-action="Actualizar"
+                                        asp-route-id="@reservaciones.IDReservaciones">Modificar</a>
+                                    &nbsp;
+                                    <button type="button" class="btn btn-danger text-white btn-delete"
+                                        onclick="eliminarReservaciones(@reservaciones.IDReservaciones)">Eliminar</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                }
             </div>
-            }
         </div>
     </div>
-</div> 
 }

@@ -28,13 +28,15 @@
                                     </div>
                                     <div>
                                         <label asp-for="TourID">Nombre del Tour</label>
-                                        <input asp-for="TourID" placeholder="Nombre del Tour" class="form-control" />
+                                        <input asp-for="TourID" placeholder="Nombre del Tour" class="form-control"
+                                            autocomplete="off" />
                                         <span asp-validation-for="TourID" class="text-danger"></span>
                                     </div>
                                     <div>
                                         <label asp-for="Comentario" class="form-label">Comentario</label>
                                         <textarea asp-for="Comentario" placeholder="Comentario" class="form-control"
-                                            id="comentarioTextarea" style="text-align: justify;"></textarea>
+                                            id="comentarioTextarea" style="text-align: justify;"
+                                            autocomplete="off"></textarea>
                                         <span asp-validation-for="Comentario" class="text-danger"></span>
                                     </div>
                                     &ensp;

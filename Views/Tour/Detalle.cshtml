@@ -124,8 +124,8 @@
                 </div>
                 <div class="col-md-4">
                     <div style="text-align: center;">
-                        <img src="data:image;base64,@ViewBag.img"
-                            alt="about_img" style="border-radius: 15px; margin: auto; max-width: 100%; height: auto;box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0);">
+                        <img src="data:image;base64,@ViewBag.img" alt="about_img"
+                            style="border-radius: 15px; margin: auto; max-width: 100%; height: auto;box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0);">
                     </div>
                     &ensp;
                     <div class="card2">
@@ -139,32 +139,36 @@
                                     &ensp;
                                     <div>
                                         <label for="NombreCompleto">Nombre</label>
-                                        <input name="NombreCompleto" placeholder="Nombre Completo"
-                                            class="form-control" />
+                                        <input name="NombreCompleto" placeholder="Nombre Completo" class="form-control"
+                                            autocomplete="off" />
                                         @*<span asp-validation-for="Usuario"
                                         class="text-danger"></span>*@
                                     </div>
                                     <div>
                                         <label for="Telefono" class="form-label">Telefono</label>
-                                        <input name="Telefono" placeholder="Telefono" class="form-control" />
+                                        <input name="Telefono" placeholder="Telefono" class="form-control"
+                                            autocomplete="off" />
                                         @*<span asp-validation-for="Nombre"
                                         class="text-danger"></span>*@
                                     </div>
                                     <div>
                                         <label for="Email" class="form-label">Correo</label>
-                                        <input name="Email" placeholder="Correo electrónico" class="form-control" />
+                                        <input name="Email" placeholder="Correo electrónico" class="form-control"
+                                            autocomplete="off" />
                                         @*<span asp-validation-for="Correo"
                                         class="text-danger"></span>*@
                                     </div>
                                     <div>
                                         <label for="Adultos" class="form-label">N° de adultos</label>
-                                        <input name="Adultos" placeholder="Numero de Adultos" class="form-control" />
+                                        <input name="Adultos" placeholder="Numero de Adultos" class="form-control"
+                                            autocomplete="off" />
                                         @*<span asp-validation-for="Contrasena"
                                         class="text-danger"></span>*@
                                     </div>
                                     <div>
                                         <label for="Niños" class="form-label">N° de niños</label>
-                                        <input name="Ninos" placeholder="Numero de Niños" class="form-control" />
+                                        <input name="Ninos" placeholder="Numero de Niños" class="form-control"
+                                            autocomplete="off" />
                                         @*<span asp-validation-for="Contrasena"
                                         class="text-danger"></span>*@
                                     </div>
@@ -197,7 +201,7 @@
                                     <div>
                                         <label for="Comentario" class="form-label">Opinión</label>
                                         <textarea name="Comentario" placeholder="Escribe tu opinión"
-                                            class="form-control"></textarea>
+                                            class="form-control" autocomplete="off"></textarea>
                                         @* <span asp-validation-for="Comentario"
                                         class="text-danger"></span> *@
                                     </div>

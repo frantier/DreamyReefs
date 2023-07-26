@@ -4,68 +4,69 @@
     Layout = "_LayoutSitioGestion";
 }
 
-    <div class="layout-page">
-        <br />
-        <br />
-        <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Actualizar empresa</h1>
-        <div class="ms-4 me-4 mt-4 mb-4">
-            <div data-aos="fade-up" data-aos-duration="1000">
-                <div class="row row-cols-1 row-cols-md-2 justify-content-center">
-                    <div class="col">
-                        <div class="card m-2" style="background-color: whitesmoke;border: 3px solid gray;">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-center">
-                                        <h6 class="fw-medium" style="color: rgb(40, 180, 99);"></h6>
+<div class="layout-page">
+    <br />
+    <br />
+    <h1 style="text-align: center;" data-aos="zoom-in" data-aos-duration="900">Actualizar empresa</h1>
+    <div class="ms-4 me-4 mt-4 mb-4">
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <div class="row row-cols-1 row-cols-md-2 justify-content-center">
+                <div class="col">
+                    <div class="card m-2" style="background-color: whitesmoke;border: 3px solid gray;">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center">
+                                <h6 class="fw-medium" style="color: rgb(40, 180, 99);"></h6>
+                            </div>
+                            <div>
+                                <form asp-action="Actualizar" method="post">
+                                    <div>
+                                        <label asp-for="IDEmpresas" hidden></label>
+                                        <input asp-for="IDEmpresas" placeholder="IDEmpresas" class="form-control"
+                                            hidden />
                                     </div>
                                     <div>
-                                        <form asp-action="Actualizar" method="post">
-                                            <div>
-                                                <label asp-for="IDEmpresas" hidden  ></label>
-                                                <input asp-for="IDEmpresas"
-                                                    placeholder="IDEmpresas" class="form-control" hidden  />
-                                            </div>
-                                            <div>
-                                                <label asp-for="NombreEmpresa"></label>
-                                                <input asp-for="NombreEmpresa"
-                                                    placeholder="Nombre de la empresa" class="form-control"/>
-                                                <span asp-validation-for="NombreEmpresa" class="text-danger"></span>
-                                            </div>
-                                            <div>
-                                                <label asp-for="Correo" class="form-label"></label>
-                                                <input asp-for="Correo"
-                                                    placeholder="Correo" class="form-control"/>
-                                                <span asp-validation-for="Correo" class="text-danger"></span>
-                                            </div>
-                                            <div>
-                                                <label asp-for="Telefono" class="form-label"></label>
-                                                <input asp-for="Telefono"
-                                                    placeholder="Telefono" class="form-control"/>
-                                                <span asp-validation-for="Telefono" class="text-danger"></span>
-                                            </div>
-                                            <div>
-                                                <label asp-for="Direccion" class="form-label"></label>
-                                                <input asp-for="Direccion"
-                                                    placeholder="Direccion" class="form-control"/>
-                                                <span asp-validation-for="Direccion" class="text-danger"></span>
-                                            </div>
-                                            <div>
-                                                <label asp-for="RFC" class="form-label"></label>
-                                                <input asp-for="RFC"
-                                                    placeholder="RFC" class="form-control"/>
-                                                <span asp-validation-for="RFC" class="text-danger"></span>
-                                            </div>
-                                            &ensp;
-                                            <div class="d-flex justify-content-end">
-                                                <input type="submit" value="Actualizar empresa" class="btn btn-warning btn-md"/>
-                                                &ensp;
-                                                <a asp-action="Index" class="btn btn-primary btn-md">Volver al listado</a>
-                                            </div>
-                                        </form>
+                                        <label asp-for="NombreEmpresa"></label>
+                                        <input asp-for="NombreEmpresa" placeholder="Nombre de la empresa"
+                                            class="form-control" autocomplete="off" />
+                                        <span asp-validation-for="NombreEmpresa" class="text-danger"></span>
                                     </div>
-                                </div>
+                                    <div>
+                                        <label asp-for="Correo" class="form-label"></label>
+                                        <input asp-for="Correo" placeholder="Correo" class="form-control"
+                                            autocomplete="off" />
+                                        <span asp-validation-for="Correo" class="text-danger"></span>
+                                    </div>
+                                    <div>
+                                        <label asp-for="Telefono" class="form-label"></label>
+                                        <input asp-for="Telefono" placeholder="Telefono" class="form-control"
+                                            autocomplete="off" />
+                                        <span asp-validation-for="Telefono" class="text-danger"></span>
+                                    </div>
+                                    <div>
+                                        <label asp-for="Direccion" class="form-label"></label>
+                                        <input asp-for="Direccion" placeholder="Direccion" class="form-control"
+                                            autocomplete="off" />
+                                        <span asp-validation-for="Direccion" class="text-danger"></span>
+                                    </div>
+                                    <div>
+                                        <label asp-for="RFC" class="form-label"></label>
+                                        <input asp-for="RFC" placeholder="RFC" class="form-control"
+                                            autocomplete="off" />
+                                        <span asp-validation-for="RFC" class="text-danger"></span>
+                                    </div>
+                                    &ensp;
+                                    <div class="d-flex justify-content-end">
+                                        <input type="submit" value="Actualizar empresa"
+                                            class="btn btn-warning btn-md" />
+                                        &ensp;
+                                        <a asp-action="Index" class="btn btn-primary btn-md">Volver al listado</a>
+                                    </div>
+                                </form>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>

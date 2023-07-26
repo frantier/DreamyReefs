@@ -24,23 +24,34 @@
                                         <input asp-for="IDTours" class="form-control" hidden />
                                     </div>
                                     <div>
-                                        <img src="data:image;base64,@ViewBag.img" alt="" />
+                                        <img src="data:image;base64,@ViewBag.img" alt="" style="border-radius: 15px;" />
                                     </div>
-                                    &ensp;
-                                    <div>
-                                        <input type="file" name="ImagenBase64" placeholder="Seleccione un archivo"
-                                               class="form-control-file" accept="image/*">
+
+                                    <div style="padding-top: 2px;">
+                                        <input type="file" name="ImagenBase64" id="archivo"
+                                            placeholder="Seleccione un archivo" class="fancy-file" accept="image/*"
+                                            value="@ViewBag.img">
+                                        <label for="archivo">
+                                            <span class="fancy-file__fancy-file-name">
+                                                <span>@(ViewBag.img ?? "Ningún archivo seleccionado")</span>
+                                            </span>
+                                            <span class="fancy-file__fancy-file-button">Buscar archivo</span>
+                                        </label>
                                     </div>
+
+
                                     &ensp;
                                     <div>
                                         <label asp-for="Nombre"></label>
-                                        <input asp-for="Nombre" placeholder="Nombre del Tour" autocomplete="off" class="form-control" />
+                                        <input asp-for="Nombre" placeholder="Nombre del Tour" autocomplete="off"
+                                            class="form-control" />
                                         <span asp-validation-for="Nombre" class="text-danger"></span>
                                     </div>
                                     <div>
                                         <label asp-for="Itinerario" class="form-label"></label>
                                         <textarea asp-for="Itinerario" placeholder="Itinerario del tour"
-                                            class="form-control" id="ItinerarioTextarea" style="text-align: justify;"></textarea>
+                                            class="form-control" id="ItinerarioTextarea"
+                                            style="text-align: justify;"></textarea>
                                         <span asp-validation-for="Itinerario" class="text-danger"></span>
                                     </div>
                                     <div>
@@ -51,7 +62,8 @@
                                     <div>
                                         <label asp-for="Descripcion" class="form-label"></label>
                                         <textarea asp-for="Descripcion" placeholder="Descripcion del tour"
-                                            class="form-control" id="comentarioTextarea" style="text-align: justify;"></textarea>
+                                            class="form-control" id="comentarioTextarea"
+                                            style="text-align: justify;"></textarea>
                                         <span asp-validation-for="Descripcion" class="text-danger"></span>
                                     </div>
                                     <div>
@@ -143,8 +155,8 @@
                                     <div>
                                         <label asp-for="Estatus" class="form-label">Estatus</label>
                                         <select asp-for="Estatus" class="form-control">
-                                            <option >Activo</option>
-                                            <option >Inactivo</option>
+                                            <option>Activo</option>
+                                            <option>Inactivo</option>
                                         </select>
                                         <span asp-validation-for="Estatus" class="text-danger"></span>
                                     </div>
@@ -201,4 +213,3 @@
         this.style.height = this.scrollHeight + 'px';
     });
 </script>
-
