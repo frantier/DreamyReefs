@@ -1490,3 +1490,5 @@ C:\Users\Dell\source\repos\DreamyReefs\obj\Debug\net6.0\ref\DreamyReefs.dll
 C:\Users\Usuario\Desktop\Tareas\Word\9°B\Desarrollo web integral\DreamyReefs\bin\Debug\net6.0\JetBrains.Annotations.dll
 C:\Users\Usuario\Desktop\Tareas\Word\9°B\Desarrollo web integral\DreamyReefs\bin\Debug\net6.0\X.PagedList.dll
 C:\Users\Usuario\Desktop\Tareas\Word\9°B\Desarrollo web integral\DreamyReefs\bin\Debug\net6.0\X.PagedList.Mvc.Core.dll
+C:\Users\Usuario\Desktop\Tareas\Word\9°B\Desarrollo web integral\DreamyReefs\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\Usuario\Desktop\Tareas\Word\9°B\Desarrollo web integral\DreamyReefs\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

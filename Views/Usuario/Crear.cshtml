@@ -22,25 +22,25 @@
                                     <div>
                                         <label asp-for="Usuario"></label>
                                         <input asp-for="Usuario" placeholder="Usuario" class="form-control"
-                                            autocomplete="off" />
+                                            autocomplete="off" required />
                                         <span asp-validation-for="Usuario" class="text-danger"></span>
                                     </div>
                                     <div>
                                         <label asp-for="Nombre" class="form-label"></label>
                                         <input asp-for="Nombre" placeholder="Nombre Completo" class="form-control"
-                                            autocomplete="off" />
+                                               autocomplete="off" required />
                                         <span asp-validation-for="Nombre" class="text-danger"></span>
                                     </div>
                                     <div>
                                         <label asp-for="Correo" class="form-label"></label>
                                         <input asp-for="Correo" placeholder="Correo electrónico" class="form-control"
-                                            autocomplete="off" />
+                                               autocomplete="off" required />
                                         <span asp-validation-for="Correo" class="text-danger"></span>
                                     </div>
                                     <div>
                                         <label asp-for="Contrasena" class="form-label">Contraseña</label>
-                                        <input asp-for="Contrasena" placeholder="Contraseña" class="form-control"
-                                            autocomplete="off" />
+                                        <input asp-for="Contrasena" type="password" placeholder="Contraseña" class="form-control"
+                                               autocomplete="off" required />
                                         <span asp-validation-for="Contrasena" class="text-danger"></span>
                                     </div>
                                     <div>

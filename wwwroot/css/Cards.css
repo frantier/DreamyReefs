@@ -18,24 +18,24 @@
     transform: translateX(-8rem);
 }
 
-.blog-post_img img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0.8rem;
-}
+    .blog-post_img img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.8rem;
+    }
 
 
-.blog-post_img::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    /* background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); */
-    box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0, 0, 0, 0.05);
-    border-radius: 0.8rem;
-    opacity: 0.5;
-}
+    .blog-post_img::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        /* background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); */
+        box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0, 0, 0, 0.05);
+        border-radius: 0.8rem;
+        opacity: 0.5;
+    }
 
 
 
@@ -85,9 +85,9 @@
 }
 
 
-.blog-post_cta:hover {
-    background-image: linear-gradient(to right, #00f2fe 0%, #4facfe 100%);
-}
+    .blog-post_cta:hover {
+        background-image: linear-gradient(to right, #00f2fe 0%, #4facfe 100%);
+    }
 
 .map-responsive {
     overflow: hidden;
@@ -98,13 +98,13 @@
 }
 
 
-.map-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}
+    .map-responsive iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
 
 .fondo-card {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.5) 100%), linear-gradient(to top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), url("../images/fondo_card.jpg");
@@ -136,9 +136,9 @@
         padding-right: 0;
     }
 
-    .layout-container.menu-open {
-        overflow: hidden;
-    }
+        .layout-container.menu-open {
+            overflow: hidden;
+        }
 
     .menu {
         display: none;
@@ -162,9 +162,9 @@
         display: block;
     }
 
-    .menu-item.active {
-        background-color: #e6e6e6;
-    }
+        .menu-item.active {
+            background-color: #e6e6e6;
+        }
 }
 
 @media (max-width: 768px) {
@@ -193,7 +193,7 @@
     bottom: 40px;
     right: 14px;
     background: #25d366;
-    color: #FFF;
+    color: #FFF !important;
     border-radius: 50px;
     text-align: center;
     font-size: 35px;
@@ -202,9 +202,9 @@
     transition: all 300ms ease;
 }
 
-.btn-wsp:hover {
-    background: #20ba5a;
-}
+    .btn-wsp:hover {
+        background: #20ba5a;
+    }
 
 .image-container {
     padding-top: 15px;
@@ -269,9 +269,9 @@
     height: 65px;
     margin-top: 10px;
     margin-bottom: 10px;
-  }
+}
 
-  .card2 {
+.card2 {
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -284,9 +284,9 @@
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 15px;
     box-shadow: 0 1.4rem 8rem rgba(0, 0, 0, 0.2);
-  }
+}
 
-  .card-container {
+.card-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -336,8 +336,8 @@
         border-radius: 8px;*/ /* Mantenemos los bordes redondeados */
     /*}*/
 
-        /* Change color of dropdown links on hover */
-        /*.dropdown-content a:hover {
+    /* Change color of dropdown links on hover */
+    /*.dropdown-content a:hover {
             background-color: #f1f1f1;
         }*/
 
@@ -364,3 +364,44 @@
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
+
+.paginacion {
+    margin: 20px 0;
+}
+
+    .paginacion ul {
+        list-style: none;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+        .paginacion ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+            .paginacion ul li a {
+                display: block;
+                padding: 10px 20px;
+                color: #fff;
+                background: #024959;
+                text-decoration: none;
+                border-radius: 6px;
+            }
+                .paginacion ul li a:hover {
+                    background: #037E8C;
+                }
+
+            .paginacion ul li .active {
+                background: #037E8C;
+                font-weight: bold;
+            }
+
+    .paginacion span {
+        display: block;
+        padding: 10px 20px;
+        color: #fff;
+        background: #037E8C;
+        text-decoration: none;
+        border-radius: 6px;
+    }

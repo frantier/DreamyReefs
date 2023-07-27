@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Http;
+using X.PagedList;
 
 namespace DreamyReefs.Controllers
 {
@@ -17,7 +18,7 @@ namespace DreamyReefs.Controllers
             _conexion = con;
         }
         
-        public IActionResult Index()
+        public IActionResult Index(int? page)
         {           
             var storedToken = HttpContext.Session.GetString("Token");
             
@@ -28,7 +29,13 @@ namespace DreamyReefs.Controllers
             if (model.Token != null && model.Token == storedToken)
             {
                 var empresa = _conexion.GetAllEmpresas().ToList();
-                return View(empresa);
+
+
+                int pageSize = 9; // Define el tamaño de página que desees mostrar
+                int pageNumber = page ?? 1;
+
+                IPagedList<Empresa> pagedEmpresas = empresa.ToPagedList(pageNumber, pageSize);
+                return View(pagedEmpresas);
             }
             else
             {

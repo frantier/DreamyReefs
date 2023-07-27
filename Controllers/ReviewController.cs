@@ -2,7 +2,7 @@
 using DreamyReefs.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-
+using X.PagedList;
 
 namespace DreamyReefs.Controllers
 {
@@ -15,7 +15,7 @@ namespace DreamyReefs.Controllers
             _conexion = con;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int? page)
         {
             var reviews = _conexion.GetAllReviews().ToList();
             ViewBag.Tours = new Dictionary<int, string>();
@@ -27,7 +27,12 @@ namespace DreamyReefs.Controllers
                 ViewBag.Tours[tourID] = tour.Nombre;
             }
 
-            return View(reviews);
+            int pageSize = 6; 
+            int pageNumber = page ?? 1;
+
+            IPagedList<Review> pagedReview = reviews.ToPagedList(pageNumber, pageSize);
+
+            return View(pagedReview);
         }
 
         public IActionResult Index2()

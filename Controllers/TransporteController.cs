@@ -27,7 +27,7 @@ namespace DreamyReefs.Controllers
             {
                 var transportes = _conexion.GetAllTransportes().ToList();
 
-                int pageSize = 6; // Define el tamaño de página que desees mostrar
+                int pageSize = 12; // Define el tamaño de página que desees mostrar
                 int pageNumber = page ?? 1;
 
                 IPagedList<Transportes> pagedTransportes = transportes.ToPagedList(pageNumber, pageSize);

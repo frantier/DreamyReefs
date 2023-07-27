@@ -1,6 +1,10 @@
 using DreamyReefs.Controllers;
 using DreamyReefs.Data;
 using Microsoft.EntityFrameworkCore;
+using FluentValidation.AspNetCore;
+using FluentValidation;
+using DreamyReefs.Models;
+using DreamyReefs.Validators;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +13,14 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<Conexion>(option => option.UseSqlServer(builder.Configuration.GetConnectionString("conexion")));
 
 builder.Services.AddScoped<ReservacionController>();
+//builder.Services.AddControllersWithViews().AddFluentValidation();
+//builder.Services.AddTransient<IValidator<AccesoWeb>, Validadores>();
+//builder.Services.AddTransient<IValidator<Empresa>, EmpresasValidator>();
+//builder.Services.AddTransient<IValidator<Reservacion>, ReservacionValidator>();
+//builder.Services.AddTransient<IValidator<Review>, ReviewValidator>();
+//builder.Services.AddTransient<IValidator<Tours>, TourValidator>();
+//builder.Services.AddTransient<IValidator<Transportes>, TransporteValidator>();
+
 
 // Configure session management
 builder.Services.AddSession(options =>
