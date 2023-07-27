@@ -25,8 +25,20 @@ namespace DreamyReefs.Controllers
 
         public IActionResult Index()
         {
-            var reservaciones = _conexion.GetAllReservaciones().ToList();
-            return View(reservaciones);
+            var storedToken = HttpContext.Session.GetString("Token");
+            var model = new DashboardViewModel
+            {
+                Token = storedToken
+            };
+            if (model.Token != null && model.Token == storedToken)
+            {
+                var reservaciones = _conexion.GetAllReservaciones().ToList();
+                return View(reservaciones);
+            }
+            else
+            {
+                return RedirectToAction("Login", "Login");
+            }
         }
 
         [HttpPost]
@@ -39,13 +51,38 @@ namespace DreamyReefs.Controllers
 
         public IActionResult Crear()
         {
-            return View();
+            var storedToken = HttpContext.Session.GetString("Token");
+
+            var model = new DashboardViewModel
+            {
+                Token = storedToken
+            };
+            if (model.Token != null && model.Token == storedToken)
+            {
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Login", "Login");
+            }
         }
 
         public IActionResult Actualizar(int id)
         {
-            var reservacion = _conexion.GetOneReservaciones(id);
-            return View(reservacion);
+            var storedToken = HttpContext.Session.GetString("Token");
+            var model = new DashboardViewModel
+            {
+                Token = storedToken
+            };
+            if (model.Token != null && model.Token == storedToken)
+            {
+                var reservacion = _conexion.GetOneReservaciones(id);
+                return View(reservacion);
+            }
+            else
+            {
+                return RedirectToAction("Login", "Login");
+            }
         }
 
         [HttpPost]

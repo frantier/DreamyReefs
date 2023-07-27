@@ -18,8 +18,20 @@ namespace DreamyReefs.Controllers
 
         public IActionResult Index()
         {
-            var accesosweb = _conexion.GetAllUsuarios().ToList();
-            return View(accesosweb);
+            var storedToken = HttpContext.Session.GetString("Token");
+            var model = new DashboardViewModel
+            {
+                Token = storedToken
+            };
+            if (model.Token != null && model.Token == storedToken)
+            {
+                var accesosweb = _conexion.GetAllUsuarios().ToList();
+                return View(accesosweb);
+            }
+            else
+            {
+                return RedirectToAction("Login", "Login");
+            }
         }
 
         public IActionResult Crear()

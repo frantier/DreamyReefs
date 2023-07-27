@@ -1,0 +1,30 @@
+﻿.container-bg {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container-bg::after {
+    content: "";
+    background-image: url(../images/IMG_1184.jpeg);
+    opacity: 0.6;
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  .card-container {
+    width: 100%;
+    max-width: 400px;
+  }

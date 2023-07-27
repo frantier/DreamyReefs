@@ -50,7 +50,16 @@ namespace DreamyReefs.Controllers
         public IActionResult Salir()
         {
             // Eliminar los datos de la sesión del usuario
+            HttpContext.Session.Remove("Usuario");
+            HttpContext.Session.Remove("Token");
+
             HttpContext.Session.Clear();
+
+            // Eliminar la cookie del token si existe
+            if (Request.Cookies.ContainsKey("Token"))
+            {
+                Response.Cookies.Delete("Token");
+            }
 
             // Redirigir al login
             return RedirectToAction("Login", "Login");

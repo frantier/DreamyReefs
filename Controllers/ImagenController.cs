@@ -23,26 +23,51 @@ namespace DreamyReefs.Controllers
 
         public IActionResult Index()
         {
-            var imagenes = _conexion.GetAllImagenes().ToList();
-            ViewBag.Tours = new Dictionary<int, string>();
-
-            foreach (var imagen in imagenes)
+            var storedToken = HttpContext.Session.GetString("Token");
+            var model = new DashboardViewModel
             {
-                var tourID = imagen.TourID;
-                var tour = _conexion.GetOneTour(tourID);
-                ViewBag.Tours[tourID] = tour.Nombre;
-            }
+                Token = storedToken
+            };
+            if (model.Token != null && model.Token == storedToken)
+            {
+                var imagenes = _conexion.GetAllImagenes().ToList();
+                ViewBag.Tours = new Dictionary<int, string>();
 
-            return View(imagenes);
+                foreach (var imagen in imagenes)
+                {
+                    var tourID = imagen.TourID;
+                    var tour = _conexion.GetOneTour(tourID);
+                    ViewBag.Tours[tourID] = tour.Nombre;
+                }
+
+                return View(imagenes);
+            }
+            else
+            {
+                return RedirectToAction("Login", "Login");
+            }
         }
 
 
         public IActionResult Crear()
         {
-            var tours = _conexion.GetAllTours();
+            var storedToken = HttpContext.Session.GetString("Token");
 
-            ViewBag.Tours = tours;
-            return View();
+            var model = new DashboardViewModel
+            {
+                Token = storedToken
+            };
+            if (model.Token != null && model.Token == storedToken)
+            {
+                var tours = _conexion.GetAllTours();
+
+                ViewBag.Tours = tours;
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Login", "Login");
+            }
         }
 
         [HttpPost]
@@ -69,11 +94,25 @@ namespace DreamyReefs.Controllers
 
         public IActionResult Actualizar(int id)
         {
-            var tours = _conexion.GetAllTours();
+            var storedToken = HttpContext.Session.GetString("Token");
 
-            ViewBag.Tours = tours;
-            var imagenes = _conexion.GetOneImagenes(id);
-            return View(imagenes);
+            var model = new DashboardViewModel
+            {
+                Token = storedToken
+            };
+            if (model.Token != null && model.Token == storedToken)
+            {
+                var tours = _conexion.GetAllTours();
+
+                ViewBag.Tours = tours;
+                var imagenes = _conexion.GetOneImagenes(id);
+                return View(imagenes);
+
+            }
+            else
+            { 
+                return RedirectToAction("Login", "Login");
+            }
         }
 
         [HttpPost]

@@ -1,0 +1,21 @@
+﻿.container3 {
+    width: 92%;
+    margin: 0 auto;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container3 {
+      width: 100%; /* Cambia el ancho a 100% en pantallas más pequeñas */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .container3 {
+      width: 90vw; /* Cambia el ancho a 90% del ancho de la ventana en pantallas aún más pequeñas */
+    }
+  }
+
+
+  
+  
+  

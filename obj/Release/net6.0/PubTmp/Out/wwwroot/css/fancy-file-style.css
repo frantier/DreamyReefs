@@ -1,0 +1,36 @@
+.fancy-file{
+    display: none;
+}
+
+.fancy-file + label{
+    display: flex;
+}
+
+.fancy-file__fancy-file-name,
+.fancy-file__fancy-file-button{
+    padding: 5px 10px;
+}
+
+.fancy-file__fancy-file-name{
+    background: #fff;
+    border: 1px solid #CACACA;
+    border-radius: 6px 0 0 6px;
+}
+
+.fancy-file__fancy-file-name span{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+.fancy-file__fancy-file-button{
+    background: #5BC0DE url(../images/folder.png) 4px center/25px
+    no-repeat;
+    border: 1px solid #5BC0DE;
+    color: white;
+    white-space: nowrap;
+    border-radius: 0 6px 6px 0;
+    padding-left: 33px;
+    cursor: pointer;
+}

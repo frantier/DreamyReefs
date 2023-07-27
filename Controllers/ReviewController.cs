@@ -17,22 +17,34 @@ namespace DreamyReefs.Controllers
 
         public IActionResult Index(int? page)
         {
-            var reviews = _conexion.GetAllReviews().ToList();
-            ViewBag.Tours = new Dictionary<int, string>();
-
-            foreach (var review in reviews)
+            var storedToken = HttpContext.Session.GetString("Token");
+            var model = new DashboardViewModel
             {
-                var tourID = review.TourID;
-                var tour = _conexion.GetOneTour(tourID);
-                ViewBag.Tours[tourID] = tour.Nombre;
+                Token = storedToken
+            };
+            if (model.Token != null && model.Token == storedToken)
+            {
+                var reviews = _conexion.GetAllReviews().ToList();
+                ViewBag.Tours = new Dictionary<int, string>();
+
+                foreach (var review in reviews)
+                {
+                    var tourID = review.TourID;
+                    var tour = _conexion.GetOneTour(tourID);
+                    ViewBag.Tours[tourID] = tour.Nombre;
+                }
+
+                int pageSize = 6;
+                int pageNumber = page ?? 1;
+
+                IPagedList<Review> pagedReview = reviews.ToPagedList(pageNumber, pageSize);
+
+                return View(pagedReview);
             }
-
-            int pageSize = 6; 
-            int pageNumber = page ?? 1;
-
-            IPagedList<Review> pagedReview = reviews.ToPagedList(pageNumber, pageSize);
-
-            return View(pagedReview);
+            else
+            {
+                return RedirectToAction("Login", "Login");
+            }
         }
 
         public IActionResult Index2()
@@ -61,20 +73,45 @@ namespace DreamyReefs.Controllers
 
         public IActionResult Crear()
         {
-            return View();
+            var storedToken = HttpContext.Session.GetString("Token");
+
+            var model = new DashboardViewModel
+            {
+                Token = storedToken
+            };
+            if (model.Token != null && model.Token == storedToken)
+            {
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Login", "Login");
+            }
         }
 
 
         public IActionResult Actualizar(int id)
         {
-            var reviews = _conexion.GetOneReviews(id);
+            var storedToken = HttpContext.Session.GetString("Token");
+            var model = new DashboardViewModel
+            {
+                Token = storedToken
+            };
+            if (model.Token != null && model.Token == storedToken)
+            {
+                var reviews = _conexion.GetOneReviews(id);
 
-            var tourid = reviews.TourID;
-            var tour = _conexion.GetOneTour(tourid);
+                var tourid = reviews.TourID;
+                var tour = _conexion.GetOneTour(tourid);
 
-            ViewBag.tour = tour.Nombre;
+                ViewBag.tour = tour.Nombre;
 
-            return View(reviews);
+                return View(reviews);
+            }
+            else
+            {
+                return RedirectToAction("Login", "Login");
+            }
         }
 
         [HttpPost]
