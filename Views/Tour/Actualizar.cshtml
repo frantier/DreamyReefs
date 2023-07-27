@@ -75,10 +75,18 @@
                                         <span asp-validation-for="Disponibilidad" class="text-danger"></span>
                                     </div>
                                     <div>
+                                        <label asp-for="Idioma" class="form-label">Estatus</label>
+                                        <select asp-for="Idioma" class="form-control">
+                                            <option>Español</option>
+                                            <option>Ingles</option>
+                                        </select>
+                                        <span asp-validation-for="Idioma" class="text-danger"></span>
+                                    </div>
+                                    @* <div>
                                         <label asp-for="Idioma"></label>
                                         <input asp-for="Idioma" placeholder="Idioma del Tour" class="form-control" />
                                         <span asp-validation-for="Idioma" class="text-danger"></span>
-                                    </div>
+                                    </div> *@
                                     <div>
                                         <label asp-for="Categoria1" class="form-label">Categoría 1</label>
                                         <select asp-for="Categoria1" class="form-control">

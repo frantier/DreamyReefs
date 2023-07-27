@@ -1,7 +1,11 @@
-﻿@{
+﻿@using X.PagedList
+@model IPagedList<DreamyReefs.Models.Transportes>
+@using X.PagedList.Mvc.Core
+
+@{
     ViewData["Title"] = "Transportes";
     Layout = "_LayoutSitioGestion";
-    List<Transportes> listTransporte = Model;
+    //List<Transportes> listTransporte = Model;
 }
 
 @if (Model == null || Model.Count == 0)
@@ -64,6 +68,10 @@ else
                             </div>
                         </div>
                     }
+
+                    <div class="pagination-container">
+                        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+                    </div>
                 </div>
             </div>
         </div>

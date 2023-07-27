@@ -3,7 +3,7 @@ using DreamyReefs.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-
+using X.PagedList;
 
 namespace DreamyReefs.Controllers
 {
@@ -16,28 +16,33 @@ namespace DreamyReefs.Controllers
             _conexion = con;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int? page)
         {
-            var storedToken = HttpContext.Session.GetString("Token");            
+            var storedToken = HttpContext.Session.GetString("Token");
             var model = new DashboardViewModel
             {
                 Token = storedToken
             };
             if (model.Token != null && model.Token == storedToken)
             {
-               var transportes = _conexion.GetAllTransportes().ToList();
-                return View(transportes);
+                var transportes = _conexion.GetAllTransportes().ToList();
+
+                int pageSize = 6; // Define el tamaño de página que desees mostrar
+                int pageNumber = page ?? 1;
+
+                IPagedList<Transportes> pagedTransportes = transportes.ToPagedList(pageNumber, pageSize);
+                return View(pagedTransportes);
             }
             else
             {
                 return RedirectToAction("Login", "Login");
             }
-            
+
         }
 
         public IActionResult Crear()
         {
-            var storedToken = HttpContext.Session.GetString("Token");            
+            var storedToken = HttpContext.Session.GetString("Token");
             var model = new DashboardViewModel
             {
                 Token = storedToken
@@ -50,7 +55,7 @@ namespace DreamyReefs.Controllers
             {
                 return RedirectToAction("Login", "Login");
             }
-            
+
         }
 
         [HttpPost]
@@ -67,7 +72,7 @@ namespace DreamyReefs.Controllers
 
         public IActionResult Actualizar(int id)
         {
-            var storedToken = HttpContext.Session.GetString("Token");            
+            var storedToken = HttpContext.Session.GetString("Token");
             var model = new DashboardViewModel
             {
                 Token = storedToken
@@ -81,7 +86,7 @@ namespace DreamyReefs.Controllers
             {
                 return RedirectToAction("Login", "Login");
             }
-            
+
         }
 
         [HttpPost]
